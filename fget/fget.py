@@ -128,18 +128,19 @@ else:
     with open(cached_settings_file) as f:
         for line in f:
             if line.startswith('http://'):
-                url = line
+                url = line.strip()
                 cached_settings[url] = []
                 continue
-            cached_settings[url].append(line)
+            cached_settings[url].append(line.strip())
 
 jobs = []
 jobs += [value for _, value in cached_settings.items()]
+jobs = [job + ' ' for job in jobs[0]]
 
 parser = argparse.ArgumentParser(description='fuel artifacts downloader')
 parser.add_argument(
-    '-j', '--job',
-    required=True, help='Jenkins job').completer = ChoicesCompleter(jobs[0])
+    '-j', '--job', dest='job',
+    required=True, help='Jenkins job').completer = ChoicesCompleter(jobs)
 parser.add_argument('-b', '--build', help='Jenkins build')
 parser.add_argument(
     '-i', '--iso', action='store_true', help='Download iso-file')
@@ -155,7 +156,14 @@ artifacts_dir = os.path.join(cache_dir, args.job)
 if not os.path.isdir(artifacts_dir):
     os.makedirs(artifacts_dir)
 
-url = args.jenkins_url.strip('/')
+url = None
+for u, jobs in cached_settings.items():
+    if args.job in jobs:
+        url = u
+        break
+else:
+    print 'fget: Error: job not found!'
+    sys.exit(1)
 
 build = get_build(url, args.job, args.build, args.author)
 
