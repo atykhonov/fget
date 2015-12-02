@@ -96,9 +96,10 @@ def get_build_url(url, job, build):
     return build_url
 
 settings_filename = 'fget.yaml'
+cached_filename = 'fget.jobs'
 
 cache_dir = os.path.expanduser(os.path.join('~', '.cache', 'fget'))
-cached_settings_file = os.path.join(cache_dir, settings_filename)
+cached_settings_file = os.path.join(cache_dir, cached_filename)
 
 cached_settings = {}
 if not os.path.isfile(cached_settings_file):
