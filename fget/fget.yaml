@@ -1,0 +1,3 @@
+JENKINS_URLS:
+  - http://jenkins-product.srt.mirantis.net:8080
+  - http://product-ci.infra.mirantis.net
