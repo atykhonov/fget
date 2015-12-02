@@ -7,8 +7,8 @@ import sys
 import yaml
 
 from fget.resource.root import Root
-from parser import ArgParser
-from utils import download_iso, fgetprint
+from fget.parser import ArgParser
+from fget.utils import download_iso, fgetprint
 
 
 def main():
