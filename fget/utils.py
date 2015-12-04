@@ -1,4 +1,5 @@
 import math
+import os
 import sys
 import urllib2
 
@@ -34,9 +35,9 @@ def human_size(nbytes):
 
 
 def fgetprint(message, error=False):
-    if stderr:
-        message = 'Error: ' + message
+    if error:
+        message = 'Error: {0}\n'.format(message)
         out = sys.stderr
     else:
         out = sys.stdout
-    out.write('fget: {0}'.format(message))
+    out.write('fget: {0}\n'.format(message))
