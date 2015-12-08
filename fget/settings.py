@@ -9,11 +9,14 @@ from fget.resource.root import Root
 class CachedSettings(object):
 
     def __init__(self, cache_dir):
+        self.cache_dir = cache_dir
+
+    def init(self):
 
         settings_filename = 'fget.yaml'
         cached_filename = 'fget.jobs'
 
-        cached_settings_file = os.path.join(cache_dir, cached_filename)
+        cached_settings_file = os.path.join(self.cache_dir, cached_filename)
 
         self.cached_settings = {}
         if not os.path.isfile(cached_settings_file):

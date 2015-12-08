@@ -10,6 +10,10 @@ from fget.parser import ArgParser
 from fget.utils import download_iso, fgetprint
 
 
+cache_dir = os.path.expanduser(os.path.join('~', '.cache', 'fget'))
+settings = CachedSettings(cache_dir)
+
+
 def main(job, build=None, iso=False, author=None):
 
     artifacts_dir = os.path.join(cache_dir, job)
@@ -75,9 +79,6 @@ def main(job, build=None, iso=False, author=None):
 
 if __name__ == '__main__':
 
-    cache_dir = os.path.expanduser(os.path.join('~', '.cache', 'fget'))
-    settings = CachedSettings(cache_dir)
-
     jobs = []
     jobs += [value for _, value in settings.get_settings().items()]
     jobs = [job + ' ' for job in jobs[0]]
@@ -85,4 +86,6 @@ if __name__ == '__main__':
     parser = ArgParser(jobs)
     args = parser.parse_args()
 
-    main(job, build=None, iso=False, author=None)
+    settings.init()
+
+    main(args.job, build=args.build, iso=args.iso, author=args.author)
