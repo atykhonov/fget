@@ -1,0 +1,178 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:6f151b7ee15ca3cdd0e203eb95896e39e2a3b125&dn=fuel-8.0-238-2015-12-01%5F19-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-238-2015-12-01%5F19-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-12-01-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 223", 
+                    "upstreamBuild": 223, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 223, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                        "branch": [
+                            {
+                                "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                        "branch": [
+                            {
+                                "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                "branch": [
+                    {
+                        "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-12-01_22-30-00.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-12-01_22-30-00.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-12-01_22-30-00.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-12-01_20-40-40.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-12-01_20-40-40.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-12-01_20-40-40.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-12-01_20-40-01.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-12-01_20-40-01.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-12-01_20-40-01.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151201.yaml", 
+            "fileName": "timestat_20151201.yaml", 
+            "relativePath": "logs/timestat_20151201.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv44-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Fix incorrect parameter for restore_check_nailgun_api\n\nDue to changes in restore_check_nailgun_api, parameter remote\nwas deleted, but in test for backup-restore signature of method\nwasn't modified.\n\nCloses-Bug: #1520451\n\nChange-Id: I93df6736fb5331c13bd2cb606cc134da2323ad7e\n", 
+                "commitId": "1222a40603bd7ceccaa09457b90f33612386cc44", 
+                "date": "2015-11-27T07:31:26+0000 +0000", 
+                "id": "1222a40603bd7ceccaa09457b90f33612386cc44", 
+                "msg": "Fix incorrect parameter for restore_check_nailgun_api", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1448609486000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#223", 
+    "duration": 8827432, 
+    "estimatedDuration": 8594353, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.bvt_2 #223", 
+    "id": "223", 
+    "keepLog": false, 
+    "number": 223, 
+    "queueId": 19303, 
+    "result": "SUCCESS", 
+    "timestamp": 1449000407397, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/223/"
+}

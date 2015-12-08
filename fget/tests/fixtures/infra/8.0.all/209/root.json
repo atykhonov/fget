@@ -1,0 +1,179 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 209, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "daed38102b6074393821d675e3d7d866fcdb3da5", 
+                        "branch": [
+                            {
+                                "SHA1": "daed38102b6074393821d675e3d7d866fcdb3da5", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "daed38102b6074393821d675e3d7d866fcdb3da5", 
+                        "branch": [
+                            {
+                                "SHA1": "daed38102b6074393821d675e3d7d866fcdb3da5", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "daed38102b6074393821d675e3d7d866fcdb3da5", 
+                "branch": [
+                    {
+                        "SHA1": "daed38102b6074393821d675e3d7d866fcdb3da5", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "centos-packages.changelog", 
+            "fileName": "centos-packages.changelog", 
+            "relativePath": "artifacts/centos-packages.changelog"
+        }, 
+        {
+            "displayPath": "fuel-8.0-209-2015-11-25_19-42-00.iso.data.html", 
+            "fileName": "fuel-8.0-209-2015-11-25_19-42-00.iso.data.html", 
+            "relativePath": "artifacts/fuel-8.0-209-2015-11-25_19-42-00.iso.data.html"
+        }, 
+        {
+            "displayPath": "fuel-8.0-209-2015-11-25_19-42-00.iso.data.txt", 
+            "fileName": "fuel-8.0-209-2015-11-25_19-42-00.iso.data.txt", 
+            "relativePath": "artifacts/fuel-8.0-209-2015-11-25_19-42-00.iso.data.txt"
+        }, 
+        {
+            "displayPath": "ubuntu-packages.changelog", 
+            "fileName": "ubuntu-packages.changelog", 
+            "relativePath": "artifacts/ubuntu-packages.changelog"
+        }, 
+        {
+            "displayPath": "listing.txt", 
+            "fileName": "listing.txt", 
+            "relativePath": "listing.txt"
+        }, 
+        {
+            "displayPath": "magnet_link.txt", 
+            "fileName": "magnet_link.txt", 
+            "relativePath": "magnet_link.txt"
+        }, 
+        {
+            "displayPath": "version.yaml.txt", 
+            "fileName": "version.yaml.txt", 
+            "relativePath": "version.yaml.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "virtualbox/actions/slave-nodes-create-and-boot.sh"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dteselkin", 
+                    "fullName": "dteselkin"
+                }, 
+                "comment": "Fix mac generate for non-GNU awk.\n\nDefault awk in MacOSX has no gensub function.\n\nCloses-Bug: #1517145\n\nChange-Id: I7cda2e0ed6cdc29dc16ef74fd2cab7b8e3d735ea\n", 
+                "commitId": "e46ec765d148b4dc6463f42c25eaf95d6fc1143f", 
+                "date": "2015-11-24T18:57:00+0000 +0000", 
+                "id": "e46ec765d148b4dc6463f42c25eaf95d6fc1143f", 
+                "msg": "Fix mac generate for non-GNU awk.", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "virtualbox/actions/slave-nodes-create-and-boot.sh"
+                    }
+                ], 
+                "timestamp": 1448391420000
+            }, 
+            {
+                "affectedPaths": [
+                    "virtualbox/functions/product.sh"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dteselkin", 
+                    "fullName": "dteselkin"
+                }, 
+                "comment": "Disable colorised grep output\n\nIn centos 7 grep aliased to\n\n  grep --color=auto\n\nwhich causes line matching error in product.sh\n\nBlueprint: master-on-centos7\n\nBreaks: nothing\n\nCloses-Bug: #1517140\n\nChange-Id: If7b351834535a5dbe900ec5387d48fcb81885458\n", 
+                "commitId": "1bfa5a804292e5d526c78d2c3b453b0c5bf28f48", 
+                "date": "2015-11-25T13:38:03+0000 +0000", 
+                "id": "1bfa5a804292e5d526c78d2c3b453b0c5bf28f48", 
+                "msg": "Disable colorised grep output", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "virtualbox/functions/product.sh"
+                    }
+                ], 
+                "timestamp": 1448458683000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dteselkin", 
+            "fullName": "dteselkin"
+        }
+    ], 
+    "description": "<a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-209-2015-11-25_19-42-00.iso>ISO download link</a> <a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-209-2015-11-25_19-42-00.iso.torrent>ISO torrent link</a><br>magnet:?xt=urn:btih:8e4d3a3ac5776d676fe5f8b8ae53fd6ef6111855&dn=fuel-8.0-209-2015-11-25%5F19-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-209-2015-11-25%5F19-42-00.iso<br>", 
+    "displayName": "#209", 
+    "duration": 1563790, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #209", 
+    "id": "209", 
+    "keepLog": false, 
+    "number": 209, 
+    "queueId": 17030, 
+    "result": "SUCCESS", 
+    "timestamp": 1448480520535, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/209/"
+}

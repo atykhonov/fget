@@ -1,0 +1,151 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:b1a65af914c31d5e07976dee0a5d1d69cd26463c&dn=fuel-8.0-219-2015-11-27%5F14-07-31.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-219-2015-11-27%5F14-07-31.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-26-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 206", 
+                    "upstreamBuild": 206, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 206, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                        "branch": [
+                            {
+                                "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                        "branch": [
+                            {
+                                "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                "branch": [
+                    {
+                        "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-11-27_17-25-58.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-11-27_17-25-58.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-11-27_17-25-58.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-27_15-12-00.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-27_15-12-00.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-27_15-12-00.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-27_15-11-22.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-27_15-11-22.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-27_15-11-22.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151127.yaml", 
+            "fileName": "timestat_20151127.yaml", 
+            "relativePath": "logs/timestat_20151127.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv30-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [], 
+    "description": null, 
+    "displayName": "#206", 
+    "duration": 10772609, 
+    "estimatedDuration": 8594353, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.bvt_2 #206", 
+    "id": "206", 
+    "keepLog": false, 
+    "number": 206, 
+    "queueId": 17765, 
+    "result": "SUCCESS", 
+    "timestamp": 1448634705410, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/206/"
+}

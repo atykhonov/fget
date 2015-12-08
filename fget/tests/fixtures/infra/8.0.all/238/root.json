@@ -1,0 +1,158 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 238, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "7ccc35fd66431ed8b6516748dcaf99b76a8c1386", 
+                        "branch": [
+                            {
+                                "SHA1": "7ccc35fd66431ed8b6516748dcaf99b76a8c1386", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "7ccc35fd66431ed8b6516748dcaf99b76a8c1386", 
+                        "branch": [
+                            {
+                                "SHA1": "7ccc35fd66431ed8b6516748dcaf99b76a8c1386", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "7ccc35fd66431ed8b6516748dcaf99b76a8c1386", 
+                "branch": [
+                    {
+                        "SHA1": "7ccc35fd66431ed8b6516748dcaf99b76a8c1386", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "centos-packages.changelog", 
+            "fileName": "centos-packages.changelog", 
+            "relativePath": "artifacts/centos-packages.changelog"
+        }, 
+        {
+            "displayPath": "fuel-8.0-238-2015-12-01_19-42-00.iso.data.html", 
+            "fileName": "fuel-8.0-238-2015-12-01_19-42-00.iso.data.html", 
+            "relativePath": "artifacts/fuel-8.0-238-2015-12-01_19-42-00.iso.data.html"
+        }, 
+        {
+            "displayPath": "fuel-8.0-238-2015-12-01_19-42-00.iso.data.txt", 
+            "fileName": "fuel-8.0-238-2015-12-01_19-42-00.iso.data.txt", 
+            "relativePath": "artifacts/fuel-8.0-238-2015-12-01_19-42-00.iso.data.txt"
+        }, 
+        {
+            "displayPath": "ubuntu-packages.changelog", 
+            "fileName": "ubuntu-packages.changelog", 
+            "relativePath": "artifacts/ubuntu-packages.changelog"
+        }, 
+        {
+            "displayPath": "listing.txt", 
+            "fileName": "listing.txt", 
+            "relativePath": "listing.txt"
+        }, 
+        {
+            "displayPath": "magnet_link.txt", 
+            "fileName": "magnet_link.txt", 
+            "relativePath": "magnet_link.txt"
+        }, 
+        {
+            "displayPath": "version.yaml.txt", 
+            "fileName": "version.yaml.txt", 
+            "relativePath": "version.yaml.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "docker/mcollective/Dockerfile"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/bpiotrowski", 
+                    "fullName": "bpiotrowski"
+                }, 
+                "comment": "Remove unused conditional from mcollective Dockerfile\n\nChange-Id: I80f934e2c8775e226ce2ce7cd73fa02b07de579c\nRelated-bug: 1508058\n", 
+                "commitId": "990a9a326e21bc3b42b578248d2e0c5d9c085088", 
+                "date": "2015-11-24T09:29:16+0000 +0100", 
+                "id": "990a9a326e21bc3b42b578248d2e0c5d9c085088", 
+                "msg": "Remove unused conditional from mcollective Dockerfile", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "docker/mcollective/Dockerfile"
+                    }
+                ], 
+                "timestamp": 1448357356000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/bpiotrowski", 
+            "fullName": "bpiotrowski"
+        }
+    ], 
+    "description": "<a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-238-2015-12-01_19-42-00.iso>ISO download link</a> <a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-238-2015-12-01_19-42-00.iso.torrent>ISO torrent link</a><br>magnet:?xt=urn:btih:6f151b7ee15ca3cdd0e203eb95896e39e2a3b125&dn=fuel-8.0-238-2015-12-01%5F19-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-238-2015-12-01%5F19-42-00.iso<br>", 
+    "displayName": "#238", 
+    "duration": 1468786, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #238", 
+    "id": "238", 
+    "keepLog": false, 
+    "number": 238, 
+    "queueId": 19256, 
+    "result": "SUCCESS", 
+    "timestamp": 1448998920535, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/238/"
+}

@@ -1,0 +1,203 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 36, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                        "branch": [
+                            {
+                                "SHA1": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                        "branch": [
+                            {
+                                "SHA1": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                "branch": [
+                    {
+                        "SHA1": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "system_test/__init__.py", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImg_wo_components.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml", 
+                    "fuelweb_test/__init__.py", 
+                    "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cndr_neutronVLAN.yaml", 
+                    "fuelweb_test/run_tests.py", 
+                    "system_test/tests/strength/destroy_controllers.py", 
+                    "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Add custom groups for template base cases\n\nFor define own group, put it into group_list in\n    define_custom_group() at run_tests.py\n\nImplements blueprint template-based-testcases\nChange-Id: I8804768f17dc2368b7c2f99dc838ec0308bba79a\n", 
+                "commitId": "68ed1d679300151ca1a5d8a03912b92acb2c5827", 
+                "date": "2015-11-12T13:47:43+0000 +0200", 
+                "id": "68ed1d679300151ca1a5d8a03912b92acb2c5827", 
+                "msg": "Add custom groups for template base cases", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/destroy_controllers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/__init__.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cndr_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImg_wo_components.yaml"
+                    }
+                ], 
+                "timestamp": 1447336063000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "check if 'ironic' network exist in devops\n\n In release settings all networks are present.\n Since 'ironic' is optional component and 'ironic' network is\n created in devops ONLY if IRONIC_ENABLED=True we need\n to check that 'ironic' network exist in devops before trying to update\n release network settings.\n\nChange-Id: Ic5acb0d15c0012a824b2381abda96d6e8aa7cfb9\n", 
+                "commitId": "df45a35b8bd0969d850f566c062dcec4c62d8978", 
+                "date": "2015-11-13T10:57:29+0000 +0000", 
+                "id": "df45a35b8bd0969d850f566c062dcec4c62d8978", 
+                "msg": "check if 'ironic' network exist in devops", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1447412249000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/environment.py", 
+                    "system_test/helpers/decorators.py", 
+                    "system_test/tests/base_actions_factory.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Fix snapshot name fot template test cases\n\nFor snapshot name used case class + hash from config name + step\n    DeployCheckRadosGW_562aa0fd_Step002\n\nImplements blueprint template-based-testcases\n\nChange-Id: Iad3be3f4a4f7cd7977ed7a22948247e4c2354624\n", 
+                "commitId": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                "date": "2015-11-13T13:11:52+0000 +0200", 
+                "id": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                "msg": "Fix snapshot name fot template test cases", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/base_actions_factory.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/decorators.py"
+                    }
+                ], 
+                "timestamp": 1447420312000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4522\">TestRail Report URL</a>", 
+    "displayName": "#36", 
+    "duration": 14591208, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #36", 
+    "id": "36", 
+    "keepLog": false, 
+    "number": 36, 
+    "queueId": 12948, 
+    "result": "SUCCESS", 
+    "timestamp": 1447446600618, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/36/"
+}

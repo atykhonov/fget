@@ -1,0 +1,156 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:f448b3aa7aed942caf83b380865b48b27a69a80f&dn=fuel-kilo-8.0-232-2015-11-05%5F12-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-232-2015-11-05%5F12-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-04-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 213", 
+                    "upstreamBuild": 213, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 213, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "branch": [
+                    {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-05_14-27-42.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-05_14-27-42.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-11-05_14-27-42.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-05_13-22-11.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-05_13-22-11.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-05_13-22-11.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-11-05_13-28-35.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-11-05_13-28-35.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-11-05_13-28-35.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-05_13-21-31.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-05_13-21-31.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-05_13-21-31.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151105.yaml", 
+            "fileName": "timestat_20151105.yaml", 
+            "relativePath": "logs/timestat_20151105.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [], 
+    "description": null, 
+    "displayName": "#213", 
+    "duration": 5700152, 
+    "estimatedDuration": 5467640, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.smoke_neutron #213", 
+    "id": "213", 
+    "keepLog": false, 
+    "number": 213, 
+    "queueId": 9448, 
+    "result": "SUCCESS", 
+    "timestamp": 1446728028509, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/213/"
+}

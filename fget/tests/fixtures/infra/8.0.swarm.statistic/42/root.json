@@ -1,0 +1,422 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 42, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "2dc4166e72b5f4e056bdf43da0da805a1552f1bd", 
+                        "branch": [
+                            {
+                                "SHA1": "2dc4166e72b5f4e056bdf43da0da805a1552f1bd", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "2dc4166e72b5f4e056bdf43da0da805a1552f1bd", 
+                        "branch": [
+                            {
+                                "SHA1": "2dc4166e72b5f4e056bdf43da0da805a1552f1bd", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "2dc4166e72b5f4e056bdf43da0da805a1552f1bd", 
+                "branch": [
+                    {
+                        "SHA1": "2dc4166e72b5f4e056bdf43da0da805a1552f1bd", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Pretty nodes status logging after deployment completed\n\nChange-Id: Ie9ce5dba21e6d4459db24dee4eaee06b9e220293\nCloses-Bug: #1514452\n", 
+                "commitId": "3032d757a4fed617ee4b5890154ee599308d52b0", 
+                "date": "2015-11-11T00:15:54+0000 +0200", 
+                "id": "3032d757a4fed617ee4b5890154ee599308d52b0", 
+                "msg": "Pretty nodes status logging after deployment completed", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1447200954000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/settings.py", 
+                    "utils/jenkins/fuel_logs.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/tests/plugins/plugin_glusterfs/test_plugin_glusterfs.py", 
+                    "system_test/tests/actions_base.py", 
+                    "fuelweb_test/tests/test_ha_one_controller.py", 
+                    "fuelweb_test/tests/plugins/plugin_elasticsearch/test_plugin_elasticsearch.py", 
+                    "fuelweb_test/tests/gd_based_tests/test_neutron_vlan_ceph_mongo.py", 
+                    "fuelweb_test/helpers/replace_repos.py", 
+                    "fuelweb_test/tests/plugins/plugin_zabbix/test_plugin_zabbix.py", 
+                    "fuelweb_test/helpers/fuel_actions.py", 
+                    "utils/jenkins/system_tests.sh", 
+                    "fuelweb_test/helpers/granular_deployment_checkers.py", 
+                    "fuelweb_test/tests/tests_strength/test_master_node_failover.py", 
+                    "system_test/tests/test_deploy_check_rados.py", 
+                    "fuelweb_test/tests/test_cli.py", 
+                    "fuelweb_test/helpers/utils.py", 
+                    "fuelweb_test/helpers/http.py", 
+                    "fuelweb_test/tests/test_ceph.py", 
+                    "fuelweb_test/tests/test_vcenter.py", 
+                    "system_test/tests/base_actions_factory.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_db.py", 
+                    "system_test/tests/strength/strength_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron.py", 
+                    "fuelweb_test/tests/test_admin_node.py", 
+                    "fuelweb_test/helpers/checkers.py", 
+                    "fuelweb_test/tests/tests_strength/test_restart.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "fuelweb_test/helpers/regenerate_repo.py", 
+                    "fuelweb_test/helpers/ntp.py", 
+                    "system_test/tests/strength/destroy_controllers.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_horizon.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+                    "fullName": "astepanov"
+                }, 
+                "comment": "Fix mass mistypes at english verbs\n\nFix mistypes at commentaries, log outputs and LOCAL variables\n\nChange-Id: I1fb8eb4ae10be5c2f174336d3a8f124e61da5954\nCloses-Bug: #1513777\n", 
+                "commitId": "2c7951055b37b73e80e02c21197ce7122e90096f", 
+                "date": "2015-11-19T08:26:18+0000 +0300", 
+                "id": "2c7951055b37b73e80e02c21197ce7122e90096f", 
+                "msg": "Fix mass mistypes at english verbs", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_db.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "utils/jenkins/system_tests.sh"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "utils/jenkins/fuel_logs.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/gd_based_tests/test_neutron_vlan_ceph_mongo.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_elasticsearch/test_plugin_elasticsearch.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_horizon.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/base_actions_factory.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/http.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_zabbix/test_plugin_zabbix.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/ntp.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_restart.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/granular_deployment_checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/regenerate_repo.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_deploy_check_rados.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_vcenter.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ha_one_controller.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_glusterfs/test_plugin_glusterfs.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/replace_repos.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/settings.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_master_node_failover.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/strength_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_admin_node.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/destroy_controllers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }
+                ], 
+                "timestamp": 1447921578000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+                    "fullName": "vkhlyunev"
+                }, 
+                "comment": "Raise error when node was not found in nailgun\n\nFor improving logging and avoiding TypeError we should raise an error\nhere in case when a slave wasn't added to nailgun database.\n\nChange-Id: Iaff6e6844a1e76fe0f292ff82be1d4cf083e946a\nCloses-bug:#1517034\n", 
+                "commitId": "801e5225cd64f89080ef0f6fcbf14aef60896f93", 
+                "date": "2015-11-19T09:34:40+0000 +0300", 
+                "id": "801e5225cd64f89080ef0f6fcbf14aef60896f93", 
+                "msg": "Raise error when node was not found in nailgun", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1447925680000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py", 
+                    "fuelweb_test/helpers/decorators.py", 
+                    "fuelweb_test/tests/base_test_case.py", 
+                    "system_test/helpers/decorators.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/__init__.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "system_test/tests/actions_base.py", 
+                    "fuelweb_test/helpers/utils.py", 
+                    "fuelweb_test/models/environment.py", 
+                    "fuelweb_test/tests/test_neutron_tun.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Update class names from lowercase to CamelCase\n\nCloses-Bug: #1515962\nChange-Id: I72b7fb005b37fcf0f81d109230ece8699e681b91\n", 
+                "commitId": "c8ae05294d6ce1ebcc7a532f3457ef1a06493d53", 
+                "date": "2015-11-19T13:06:57+0000 +0000", 
+                "id": "c8ae05294d6ce1ebcc7a532f3457ef1a06493d53", 
+                "msg": "Update class names from lowercase to CamelCase", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/decorators.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/decorators.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/base_test_case.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_neutron_tun.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }
+                ], 
+                "timestamp": 1447938417000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Revert \"Raise error when node was not found in nailgun\"\n\nThis reverts commit 801e5225cd64f89080ef0f6fcbf14aef60896f93.\n\nChange-Id: Ib961b9e11fe886fd28fee753b56dbfbc6ddfda5b\n", 
+                "commitId": "56d025fc1956829e1206aae4d4af103e98cd21b0", 
+                "date": "2015-11-19T14:05:13+0000 +0000", 
+                "id": "56d025fc1956829e1206aae4d4af103e98cd21b0", 
+                "msg": "Revert \"Raise error when node was not found in nailgun\"", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1447941913000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+            "fullName": "vkhlyunev"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4617\">TestRail Report URL</a>", 
+    "displayName": "#42", 
+    "duration": 2414774, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #42", 
+    "id": "42", 
+    "keepLog": false, 
+    "number": 42, 
+    "queueId": 15033, 
+    "result": "SUCCESS", 
+    "timestamp": 1447965000542, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/42/"
+}

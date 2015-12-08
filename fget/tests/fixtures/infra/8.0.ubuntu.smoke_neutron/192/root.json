@@ -1,0 +1,225 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:034b9fc391814c54cf528392a8dc8ed7165c7cbb&dn=fuel-8.0-203-2015-11-24%5F07-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-203-2015-11-24%5F07-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-23-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 192", 
+                    "upstreamBuild": 192, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 192, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "44798ea149a40b515faf3c6d4088057bbe35a6ba", 
+                        "branch": [
+                            {
+                                "SHA1": "44798ea149a40b515faf3c6d4088057bbe35a6ba", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "44798ea149a40b515faf3c6d4088057bbe35a6ba", 
+                        "branch": [
+                            {
+                                "SHA1": "44798ea149a40b515faf3c6d4088057bbe35a6ba", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "44798ea149a40b515faf3c6d4088057bbe35a6ba", 
+                "branch": [
+                    {
+                        "SHA1": "44798ea149a40b515faf3c6d4088057bbe35a6ba", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-24_09-40-26.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-24_09-40-26.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-11-24_09-40-26.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-24_08-36-09.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-24_08-36-09.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-24_08-36-09.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-11-24_08-42-03.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-11-24_08-42-03.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-11-24_08-42-03.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-24_08-35-32.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-24_08-35-32.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-24_08-35-32.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151124.yaml", 
+            "fileName": "timestat_20151124.yaml", 
+            "relativePath": "logs/timestat_20151124.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv18-msk.msk.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Change logic of test and add new checks\n\nFix issue with test change_pacemaker_parameter_not_break_rabbitmq\nExpected code was changed for command 'rabbitmqctl cluster_status'\n\nCloses-Bug: #1515983\nChange-Id: I0c81989885a2ed657c5cd78dd8867b7912bf7525\n", 
+                "commitId": "70045e22956247b01c8c35080653675c23d50092", 
+                "date": "2015-11-24T05:37:26+0000 +0000", 
+                "id": "70045e22956247b01c8c35080653675c23d50092", 
+                "msg": "Change logic of test and add new checks", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1448343446000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_multiple_networks.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Change admin IP ranges in tests for node groups\n\nChange default IP addresses range for admin/pxe network\nin system test for multiple cluster networks feature.\nCheck that DHCP range is configured properly and Nailgun\ndoesn't allocate excluded from range IPs to nodes.\n\nChange-Id: I64069e287a6970b93931d93212efb0c1712af40a\nCloses-bug: #1513154\n", 
+                "commitId": "6e855eead1541878a3a35b7380c165c0c1f6519f", 
+                "date": "2015-11-24T05:37:49+0000 +0000", 
+                "id": "6e855eead1541878a3a35b7380c165c0c1f6519f", 
+                "msg": "Change admin IP ranges in tests for node groups", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }
+                ], 
+                "timestamp": 1448343469000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/fuel_actions.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Use YAML methods for changing Fuel 'astute.yaml'\n\nUse load/dump methods for changing content of 'astute.yaml'\nwhile deploying Fuel master node.\n\nChange-Id: I71cb042927b912dd7b610cbaadca48919dafc47c\nCloses-bug: #1455015\n", 
+                "commitId": "1b67512152518fe43bdb2124d5ff9d3c5bdac3b3", 
+                "date": "2015-11-24T05:37:57+0000 +0000", 
+                "id": "1b67512152518fe43bdb2124d5ff9d3c5bdac3b3", 
+                "msg": "Use YAML methods for changing Fuel 'astute.yaml'", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }
+                ], 
+                "timestamp": 1448343477000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#192", 
+    "duration": 5675413, 
+    "estimatedDuration": 5951722, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.smoke_neutron #192", 
+    "id": "192", 
+    "keepLog": false, 
+    "number": 192, 
+    "queueId": 16573, 
+    "result": "SUCCESS", 
+    "timestamp": 1448352447451, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.smoke_neutron/192/"
+}

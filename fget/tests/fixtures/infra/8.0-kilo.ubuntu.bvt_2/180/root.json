@@ -1,0 +1,208 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:458db5c141934dd45127c023778179087c6ca1ee&dn=fuel-kilo-8.0-197-2015-10-27%5F18-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-197-2015-10-27%5F18-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-10-27-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 178", 
+                    "upstreamBuild": 178, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 180, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "6379e5dc562a5fa1a52382c0ec13526bb99c75d3", 
+                        "branch": [
+                            {
+                                "SHA1": "6379e5dc562a5fa1a52382c0ec13526bb99c75d3", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "6379e5dc562a5fa1a52382c0ec13526bb99c75d3", 
+                        "branch": [
+                            {
+                                "SHA1": "6379e5dc562a5fa1a52382c0ec13526bb99c75d3", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "6379e5dc562a5fa1a52382c0ec13526bb99c75d3", 
+                "branch": [
+                    {
+                        "SHA1": "6379e5dc562a5fa1a52382c0ec13526bb99c75d3", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-10-27_21-12-05.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-10-27_21-12-05.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-10-27_21-12-05.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-10-27_19-25-08.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-10-27_19-25-08.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-10-27_19-25-08.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-10-27_19-24-29.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-10-27_19-24-29.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-10-27_19-24-29.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151027.yaml", 
+            "fileName": "timestat_20151027.yaml", 
+            "relativePath": "logs/timestat_20151027.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv28-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+                    "fullName": "vgorin"
+                }, 
+                "comment": "Add test change pacemaker parameter does not break RabbitMQ\n\nCloses-Bug: #1498160\nChange-Id: I7b62db419c34e83d3faa46dccc8f6d44bf4e16e4\n", 
+                "commitId": "dde73b2d9ebff4de8b98b8189786bc2d12ce68d7", 
+                "date": "2015-10-23T14:31:08+0000 +0000", 
+                "id": "dde73b2d9ebff4de8b98b8189786bc2d12ce68d7", 
+                "msg": "Add test change pacemaker parameter does not break RabbitMQ", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover.py"
+                    }
+                ], 
+                "timestamp": 1445610668000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add more logging to ha_neutron_virtual_router system test\n\nChange-Id: Ief1749215ab95e4af08bc62b578898b4ca261719\nRelated-Bug: #1464640\n", 
+                "commitId": "e300b273a943b6ba89fa3eac4630ccf20a0c17b8", 
+                "date": "2015-10-27T11:57:49+0000 +0000", 
+                "id": "e300b273a943b6ba89fa3eac4630ccf20a0c17b8", 
+                "msg": "Add more logging to ha_neutron_virtual_router system test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1445947069000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+            "fullName": "vgorin"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#180", 
+    "duration": 8569231, 
+    "estimatedDuration": 9999341, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.bvt_2 #180", 
+    "id": "180", 
+    "keepLog": false, 
+    "number": 180, 
+    "queueId": 5170, 
+    "result": "SUCCESS", 
+    "timestamp": 1445972010911, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/180/"
+}

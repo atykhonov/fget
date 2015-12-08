@@ -1,0 +1,127 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 34, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                        "branch": [
+                            {
+                                "SHA1": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                        "branch": [
+                            {
+                                "SHA1": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                "branch": [
+                    {
+                        "SHA1": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "system_test/tests/strength/destroy_controllers.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akostrikov", 
+                    "fullName": "akostrikov"
+                }, 
+                "comment": "Fix typo strenght\n\nRelated-Bug: #1515234\nCloses-Bug: #1515322\nChange-Id: I39bbb4ed97f409d522e174fc8655a47ffbfe5961\n", 
+                "commitId": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                "date": "2015-11-11T16:52:48+0000 +0300", 
+                "id": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                "msg": "Fix typo strenght", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/destroy_controllers.py"
+                    }
+                ], 
+                "timestamp": 1447260768000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akostrikov", 
+            "fullName": "akostrikov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "", 
+    "displayName": "#34", 
+    "duration": 115539, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #34", 
+    "id": "34", 
+    "keepLog": false, 
+    "number": 34, 
+    "queueId": 12058, 
+    "result": "FAILURE", 
+    "timestamp": 1447273800546, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/34/"
+}

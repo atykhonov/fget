@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "links.txt", 
+            "fileName": "links.txt", 
+            "relativePath": "links.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv71-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": null
+    }, 
+    "culprits": [], 
+    "description": "ISO <a href=\"https://product-ci.infra.mirantis.net/job/8.0.all/152/\">152/</a>", 
+    "displayName": "#40", 
+    "duration": 196, 
+    "estimatedDuration": 162, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.timer #40", 
+    "id": "40", 
+    "keepLog": false, 
+    "number": 40, 
+    "queueId": 12525, 
+    "result": "SUCCESS", 
+    "timestamp": 1447362000545, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/40/"
+}

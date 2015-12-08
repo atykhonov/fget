@@ -1,0 +1,157 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:ab40ca33c030f3db809d710f7ae5fba44a755fc1&dn=fuel-kilo-8.0-233-2015-11-05%5F18-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-233-2015-11-05%5F18-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-04-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 214", 
+                    "upstreamBuild": 214, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 216, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "branch": [
+                    {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "fail_error_ceph_rados_gw-fuel-snapshot-2015-11-05_21-39-07.tar.xz", 
+            "fileName": "fail_error_ceph_rados_gw-fuel-snapshot-2015-11-05_21-39-07.tar.xz", 
+            "relativePath": "logs/fail_error_ceph_rados_gw-fuel-snapshot-2015-11-05_21-39-07.tar.xz"
+        }, 
+        {
+            "displayPath": "fail_error_ceph_rados_gw-fuel-snapshot-2015-11-05_21-39-07.tar.xz.filtered.log", 
+            "fileName": "fail_error_ceph_rados_gw-fuel-snapshot-2015-11-05_21-39-07.tar.xz.filtered.log", 
+            "relativePath": "logs/fail_error_ceph_rados_gw-fuel-snapshot-2015-11-05_21-39-07.tar.xz.filtered.log"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-05_19-26-31.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-05_19-26-31.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-05_19-26-31.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-05_19-25-51.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-05_19-25-51.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-05_19-25-51.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151105.yaml", 
+            "fileName": "timestat_20151105.yaml", 
+            "relativePath": "logs/timestat_20151105.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv28-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#216", 
+    "duration": 10216883, 
+    "estimatedDuration": 9999341, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.bvt_2 #216", 
+    "id": "216", 
+    "keepLog": false, 
+    "number": 216, 
+    "queueId": 9527, 
+    "result": "FAILURE", 
+    "timestamp": 1446749623582, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/216/"
+}

@@ -1,0 +1,203 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:b092127d762486571a82f4e8b75056396e729047&dn=fuel-8.0-205-2015-11-24%5F19-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-205-2015-11-24%5F19-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-24-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 194", 
+                    "upstreamBuild": 194, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 194, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                        "branch": [
+                            {
+                                "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                        "branch": [
+                            {
+                                "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                "branch": [
+                    {
+                        "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-11-24_22-21-18.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-11-24_22-21-18.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-11-24_22-21-18.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-24_20-37-24.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-24_20-37-24.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-24_20-37-24.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-24_20-36-47.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-24_20-36-47.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-24_20-36-47.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151124.yaml", 
+            "fileName": "timestat_20151124.yaml", 
+            "relativePath": "logs/timestat_20151124.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv44-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/requirements.txt"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ddmitriev", 
+                    "fullName": "ddmitriev"
+                }, 
+                "comment": "Bump requirements for fuel-devops version to 2.9.13\n\nChange-Id: I0658f81190a245985f2650776776a86db32050aa\n", 
+                "commitId": "e9e6761ddcdde963a6e145e0d3cbebced47c15b5", 
+                "date": "2015-11-24T13:56:11+0000 +0200", 
+                "id": "e9e6761ddcdde963a6e145e0d3cbebced47c15b5", 
+                "msg": "Bump requirements for fuel-devops version to 2.9.13", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/requirements.txt"
+                    }
+                ], 
+                "timestamp": 1448373371000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+                    "fullName": "ykotko"
+                }, 
+                "comment": "Fix cli parameter\n\nRemove '--net' parameter from command in the test\ncreate_backup_reset_restore_and_deploy_via_cli\n\nChange-Id: I6c09db658f568b4b0b5b256144a56c29a127a275\nCloses-Bug: #1518906\n", 
+                "commitId": "37dff40cd06d2482fcba9ccf3942f2a207c589f2", 
+                "date": "2015-11-24T15:58:22+0000 +0100", 
+                "id": "37dff40cd06d2482fcba9ccf3942f2a207c589f2", 
+                "msg": "Fix cli parameter", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1448380702000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ddmitriev", 
+            "fullName": "ddmitriev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+            "fullName": "ykotko"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#194", 
+    "duration": 8312899, 
+    "estimatedDuration": 8594353, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.bvt_2 #194", 
+    "id": "194", 
+    "keepLog": false, 
+    "number": 194, 
+    "queueId": 16727, 
+    "result": "SUCCESS", 
+    "timestamp": 1448395582210, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/194/"
+}

@@ -1,0 +1,208 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "nessus"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "NEUTRON_ENABLE", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "VENV_PATH", 
+                    "value": "/home/jenkins/venv-nailgun-tests-2.9"
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "latest-stable"
+                }, 
+                {
+                    "name": "MIRROR_UBUNTU", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                    "value": "1052"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.nessus_security_scan"
+                }, 
+                {
+                    "name": "NESSUS_IMAGE_PATH", 
+                    "value": "/var/lib/libvirt/images/nessus.qcow2"
+                }, 
+                {
+                    "name": "NESSUS_USERNAME", 
+                    "value": "root"
+                }, 
+                {
+                    "name": "NESSUS_PASSWORD", 
+                    "value": "r00tme"
+                }, 
+                {
+                    "name": "SECURITY_TEST", 
+                    "value": "True"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by user ishamrai", 
+                    "userId": "ishamrai", 
+                    "userName": "ishamrai"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 2, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                        "branch": [
+                            {
+                                "SHA1": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                        "branch": [
+                            {
+                                "SHA1": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                "branch": [
+                    {
+                        "SHA1": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/stackforge/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 7, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "nessus_report_scan_7_master_wat.html", 
+            "fileName": "nessus_report_scan_7_master_wat.html", 
+            "relativePath": "logs/nessus_report_scan_7_master_wat.html"
+        }, 
+        {
+            "displayPath": "nessus_report_scan_8_controller_cpa.html", 
+            "fileName": "nessus_report_scan_8_controller_cpa.html", 
+            "relativePath": "logs/nessus_report_scan_8_controller_cpa.html"
+        }, 
+        {
+            "displayPath": "nessus_report_scan_8_master_cpa.html", 
+            "fileName": "nessus_report_scan_8_master_cpa.html", 
+            "relativePath": "logs/nessus_report_scan_8_master_cpa.html"
+        }, 
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151016.yaml", 
+            "fileName": "timestat_20151016.yaml", 
+            "relativePath": "logs/timestat_20151016.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv16-msk.msk.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_ceph.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Don't respect NEUTRON_ENABLE var in check_openstack_stat test\n\nHardcode neutron=true because parent test do it in same way\n\nChange-Id: If4f1401b319381d832276dbce2b011187386e3b4\nCloses-Bug: #1506554\n", 
+                "commitId": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                "date": "2015-10-15T16:54:44+0000 +0300", 
+                "id": "f0d34d93214b094248ab026757bbb8f8e04cdab3", 
+                "msg": "Don't respect NEUTRON_ENABLE var in check_openstack_stat test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }
+                ], 
+                "timestamp": 1444928084000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#2", 
+    "duration": 12720538, 
+    "estimatedDuration": 12326188, 
+    "executor": null, 
+    "fullDisplayName": "8.0.nessus_security_scan #2", 
+    "id": "2", 
+    "keepLog": false, 
+    "number": 2, 
+    "queueId": 1854, 
+    "result": "SUCCESS", 
+    "timestamp": 1444987678105, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/2/"
+}

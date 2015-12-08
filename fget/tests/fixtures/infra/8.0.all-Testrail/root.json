@@ -1,0 +1,39 @@
+{
+    "actions": [
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": true, 
+    "builds": [], 
+    "color": "notbuilt", 
+    "concurrentBuild": false, 
+    "description": "Do not edit this job through the web!<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0.all-Testrail", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [], 
+    "firstBuild": null, 
+    "healthReport": [], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": null, 
+    "lastCompletedBuild": null, 
+    "lastFailedBuild": null, 
+    "lastStableBuild": null, 
+    "lastSuccessfulBuild": null, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": null, 
+    "name": "8.0.all-Testrail", 
+    "nextBuildNumber": 1, 
+    "property": [], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [
+        {
+            "color": "blue", 
+            "name": "8.0-reporting.send_reports", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/"
+        }
+    ], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all-Testrail/"
+}

@@ -1,0 +1,80 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 28, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "branch": [
+                    {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [], 
+    "description": "", 
+    "displayName": "#28", 
+    "duration": 241061, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #28", 
+    "id": "28", 
+    "keepLog": false, 
+    "number": 28, 
+    "queueId": 10446, 
+    "result": "FAILURE", 
+    "timestamp": 1446928200618, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/28/"
+}

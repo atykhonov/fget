@@ -1,0 +1,158 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 241, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "da9e5722836d21bf4b93d591c6fddba9f3bcde5e", 
+                        "branch": [
+                            {
+                                "SHA1": "da9e5722836d21bf4b93d591c6fddba9f3bcde5e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "da9e5722836d21bf4b93d591c6fddba9f3bcde5e", 
+                        "branch": [
+                            {
+                                "SHA1": "da9e5722836d21bf4b93d591c6fddba9f3bcde5e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "da9e5722836d21bf4b93d591c6fddba9f3bcde5e", 
+                "branch": [
+                    {
+                        "SHA1": "da9e5722836d21bf4b93d591c6fddba9f3bcde5e", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "centos-packages.changelog", 
+            "fileName": "centos-packages.changelog", 
+            "relativePath": "artifacts/centos-packages.changelog"
+        }, 
+        {
+            "displayPath": "fuel-8.0-241-2015-12-02_13-42-00.iso.data.html", 
+            "fileName": "fuel-8.0-241-2015-12-02_13-42-00.iso.data.html", 
+            "relativePath": "artifacts/fuel-8.0-241-2015-12-02_13-42-00.iso.data.html"
+        }, 
+        {
+            "displayPath": "fuel-8.0-241-2015-12-02_13-42-00.iso.data.txt", 
+            "fileName": "fuel-8.0-241-2015-12-02_13-42-00.iso.data.txt", 
+            "relativePath": "artifacts/fuel-8.0-241-2015-12-02_13-42-00.iso.data.txt"
+        }, 
+        {
+            "displayPath": "ubuntu-packages.changelog", 
+            "fileName": "ubuntu-packages.changelog", 
+            "relativePath": "artifacts/ubuntu-packages.changelog"
+        }, 
+        {
+            "displayPath": "listing.txt", 
+            "fileName": "listing.txt", 
+            "relativePath": "listing.txt"
+        }, 
+        {
+            "displayPath": "magnet_link.txt", 
+            "fileName": "magnet_link.txt", 
+            "relativePath": "magnet_link.txt"
+        }, 
+        {
+            "displayPath": "version.yaml.txt", 
+            "fileName": "version.yaml.txt", 
+            "relativePath": "version.yaml.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "packages/module.mk"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/bgaifullin", 
+                    "fullName": "bgaifullin"
+                }, 
+                "comment": "Fixed fuel_mirror_commit uses for network_checker repo\n\nChange-Id: I7b3762c71ec4b0c40699dc4d97fdc3d3eda9b2f7\nPartial-Bug: #1487077\n", 
+                "commitId": "0d32e5472b1bcf56fbcdf7cc7eb2bab85031d1dd", 
+                "date": "2015-12-02T08:32:26+0000 +0300", 
+                "id": "0d32e5472b1bcf56fbcdf7cc7eb2bab85031d1dd", 
+                "msg": "Fixed fuel_mirror_commit uses for network_checker repo", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "packages/module.mk"
+                    }
+                ], 
+                "timestamp": 1449045146000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/bgaifullin", 
+            "fullName": "bgaifullin"
+        }
+    ], 
+    "description": "<a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-241-2015-12-02_13-42-00.iso>ISO download link</a> <a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-241-2015-12-02_13-42-00.iso.torrent>ISO torrent link</a><br>magnet:?xt=urn:btih:1807ee809b8b4e71413a23fd34f40cd553482ec0&dn=fuel-8.0-241-2015-12-02%5F13-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-241-2015-12-02%5F13-42-00.iso<br>", 
+    "displayName": "#241", 
+    "duration": 1476184, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #241", 
+    "id": "241", 
+    "keepLog": false, 
+    "number": 241, 
+    "queueId": 19557, 
+    "result": "SUCCESS", 
+    "timestamp": 1449063720535, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/241/"
+}

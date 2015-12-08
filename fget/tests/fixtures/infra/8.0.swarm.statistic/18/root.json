@@ -1,0 +1,231 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 18, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "35ad8a5e66f8204d1642d8afaf1e619312a9bfed", 
+                        "branch": [
+                            {
+                                "SHA1": "35ad8a5e66f8204d1642d8afaf1e619312a9bfed", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "35ad8a5e66f8204d1642d8afaf1e619312a9bfed", 
+                        "branch": [
+                            {
+                                "SHA1": "35ad8a5e66f8204d1642d8afaf1e619312a9bfed", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "35ad8a5e66f8204d1642d8afaf1e619312a9bfed", 
+                "branch": [
+                    {
+                        "SHA1": "35ad8a5e66f8204d1642d8afaf1e619312a9bfed", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Improve MAC comparison in system tests\n\nChange-Id: I78745dfbca1e850121bbfb8733f9cd355bf2c0c1\nCloses-bug: #1511003\nRelated-bug: #1508986\n", 
+                "commitId": "9356a1fa0cbc1bcf1be935d8eeb3a0707e605251", 
+                "date": "2015-10-28T16:06:24+0000 +0200", 
+                "id": "9356a1fa0cbc1bcf1be935d8eeb3a0707e605251", 
+                "msg": "Improve MAC comparison in system tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1446048384000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Fix MAC address comparison error\n\nChange-Id: Iaeb85505b84d37afa6de2472bd1c04126f1cf7e5\nPartial-bug: #1511003\n", 
+                "commitId": "9a1427b16fe8f957e3a37ba5993493c2fd4c520f", 
+                "date": "2015-10-29T11:27:34+0000 +0200", 
+                "id": "9a1427b16fe8f957e3a37ba5993493c2fd4c520f", 
+                "msg": "Fix MAC address comparison error", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1446118054000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Fix for Node is not iterable error\n\nChange-Id: Ib1c7dcd1efd22afda1979b22b4268ea0c3b0c49b\nRelated-Bug: #1510195\n", 
+                "commitId": "4d226403bd53c9e073138f7dd4ef602fd0bf2a96", 
+                "date": "2015-10-29T13:07:42+0000 +0200", 
+                "id": "4d226403bd53c9e073138f7dd4ef602fd0bf2a96", 
+                "msg": "Fix for Node is not iterable error", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1446124062000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/plugins/plugin_vip_reservation/test_plugin_vip_reservation.py", 
+                    "fuelweb_test/tests/plugins/plugin_reboot/test_plugin_reboot_task.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Fix path to plugin\n\nAdding full path for plugin creation\n\nChange-Id: Ife31ee10a76368405859e0f7041e1e1008301be6\nCloses-Bug: #1508527\n", 
+                "commitId": "33d0ce86737f04a2ada752b19bc9a6251baa2076", 
+                "date": "2015-10-29T14:59:32+0000 +0000", 
+                "id": "33d0ce86737f04a2ada752b19bc9a6251baa2076", 
+                "msg": "Fix path to plugin", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_vip_reservation/test_plugin_vip_reservation.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_reboot/test_plugin_reboot_task.py"
+                    }
+                ], 
+                "timestamp": 1446130772000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/upload_cases_description.py", 
+                    "fuelweb_test/testrail/testrail_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Get default case priority from project config\n\nRemove hardcoded default test case priority and\nuse TestRail API client to get ID of current\ndefault priority.\n\nChange-Id: I9921e01734405acaad39e8e2a20360f7c047d652\nCloses-bug: #1511317\n", 
+                "commitId": "7ddca0a827e0db97cbbe8506ee652c89d0dd780d", 
+                "date": "2015-10-29T15:40:56+0000 +0200", 
+                "id": "7ddca0a827e0db97cbbe8506ee652c89d0dd780d", 
+                "msg": "Get default case priority from project config", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/upload_cases_description.py"
+                    }
+                ], 
+                "timestamp": 1446133256000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_services.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "[Ceilometer] Add test for events in list of tests\n\nAdded Ceilometer test for events and traits to the list of tests\n\nCloses-bug: #1511338\n\nChange-Id: I492a09568aa94be1a6f932b7252ff1a4ca0fda40\n", 
+                "commitId": "7597ef8b24eb2d5286dbf46ed6795cd8302a3bae", 
+                "date": "2015-10-29T17:16:16+0000 +0000", 
+                "id": "7597ef8b24eb2d5286dbf46ed6795cd8302a3bae", 
+                "msg": "[Ceilometer] Add test for events in list of tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_services.py"
+                    }
+                ], 
+                "timestamp": 1446138976000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4277\">TestRail Report URL</a>", 
+    "displayName": "#18", 
+    "duration": 799574, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #18", 
+    "id": "18", 
+    "keepLog": false, 
+    "number": 18, 
+    "queueId": 6233, 
+    "result": "SUCCESS", 
+    "timestamp": 1446150600562, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/18/"
+}

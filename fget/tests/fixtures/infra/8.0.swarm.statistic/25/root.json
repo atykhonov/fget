@@ -1,0 +1,117 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 25, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "branch": [
+                    {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_neutron_tun.py", 
+                    "fuelweb_test/helpers/checkers.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add client check\n\nAdding additional check for client area\nin smoke_neutron test\n\nChange-Id: Iebd2f3970b1fb6eda49a8ab301cf56df99ba80c9\nCloses-bug: #1480224\n", 
+                "commitId": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "date": "2015-11-04T10:47:38+0000 +0000", 
+                "id": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "msg": "Add client check", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_neutron_tun.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }
+                ], 
+                "timestamp": 1446634058000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4364\">TestRail Report URL</a>", 
+    "displayName": "#25", 
+    "duration": 851414, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #25", 
+    "id": "25", 
+    "keepLog": false, 
+    "number": 25, 
+    "queueId": 9118, 
+    "result": "SUCCESS", 
+    "timestamp": 1446669000568, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/25/"
+}

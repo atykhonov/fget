@@ -1,0 +1,280 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by user afedorova", 
+                    "userId": "afedorova", 
+                    "userName": "afedorova"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 235, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "628b46bc73c1b156a14fc7cec54a4309bf1b0fb0", 
+                        "branch": [
+                            {
+                                "SHA1": "628b46bc73c1b156a14fc7cec54a4309bf1b0fb0", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "628b46bc73c1b156a14fc7cec54a4309bf1b0fb0", 
+                        "branch": [
+                            {
+                                "SHA1": "628b46bc73c1b156a14fc7cec54a4309bf1b0fb0", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "628b46bc73c1b156a14fc7cec54a4309bf1b0fb0", 
+                "branch": [
+                    {
+                        "SHA1": "628b46bc73c1b156a14fc7cec54a4309bf1b0fb0", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "requirements-fuel-rpm.txt"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/azvyagintsev", 
+                    "fullName": "azvyagintsev"
+                }, 
+                "comment": "Add fuel-bootstrap-cli.rpm package into iso\n\nImplements: blueprint bootstrap-images-support-in-cli\nChange-Id: I4cf76c544d24567e0a4b8657e60eece0e8561593\n", 
+                "commitId": "312406cfd22ee77841cfa7414dbbde0988f28e22", 
+                "date": "2015-11-27T14:28:39+0000 +0200", 
+                "id": "312406cfd22ee77841cfa7414dbbde0988f28e22", 
+                "msg": "Add fuel-bootstrap-cli.rpm package into iso", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "requirements-fuel-rpm.txt"
+                    }
+                ], 
+                "timestamp": 1448634519000
+            }, 
+            {
+                "affectedPaths": [
+                    "docker/nginx/Dockerfile", 
+                    "docker/keystone/Dockerfile", 
+                    "iso/module.mk", 
+                    "docker/ostf/Dockerfile", 
+                    "mirror/centos/mos-repo.mk", 
+                    "mirror/centos/module.mk", 
+                    "docker/fuel-centos-build/Dockerfile", 
+                    "docker/cobbler/Dockerfile", 
+                    "docker/module.mk", 
+                    "mirror/centos/extra-repos.mk", 
+                    "mirror/centos/repo.mk", 
+                    "docker/rsync/Dockerfile", 
+                    "docker/astute/Dockerfile", 
+                    "docker/rsyslog/Dockerfile", 
+                    "config.mk", 
+                    "iso/ks.template", 
+                    ".gitignore", 
+                    "mirror/centos/yum_repos.mk", 
+                    "packages/rpm/module.mk", 
+                    "docker/fuel-centos-build/start.sh", 
+                    "docker/mcollective/Dockerfile", 
+                    "sandbox.mk", 
+                    "docker/rabbitmq/Dockerfile", 
+                    "docker/fuel-centos-build/fuel-centos.ks", 
+                    "bootstrap/module.mk", 
+                    "docker/postgres/Dockerfile", 
+                    "docker/nailgun/Dockerfile"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mmosesohn", 
+                    "fullName": "mmosesohn"
+                }, 
+                "comment": "Revert \"Separate CentOS from MOS\"\n\nThe commit this patch reverts breaks Fuel CI\non docker container rebuilds.\n\nThis reverts commit bc9c3117c7e542db33206927a597695aa38ecc6f.\n\nChange-Id: I18fe16cf8f0be40e30fec6229606d1d69cbfe73d\nCloses-Bug: #1521551\n", 
+                "commitId": "32b136301591277dd87f3d367c1370a8a093fb02", 
+                "date": "2015-12-01T10:52:53+0000 +0000", 
+                "id": "32b136301591277dd87f3d367c1370a8a093fb02", 
+                "msg": "Revert \"Separate CentOS from MOS\"", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "docker/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/rsyslog/Dockerfile"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "mirror/centos/extra-repos.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/ostf/Dockerfile"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "mirror/centos/mos-repo.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/postgres/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/nailgun/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/fuel-centos-build/fuel-centos.ks"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "bootstrap/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/nginx/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/astute/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "iso/ks.template"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "packages/rpm/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "mirror/centos/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/rsync/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "mirror/centos/repo.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/fuel-centos-build/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "config.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/mcollective/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/fuel-centos-build/start.sh"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/rabbitmq/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "sandbox.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "mirror/centos/yum_repos.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/cobbler/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": ".gitignore"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/keystone/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "iso/module.mk"
+                    }
+                ], 
+                "timestamp": 1448967173000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/azvyagintsev", 
+            "fullName": "azvyagintsev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mmosesohn", 
+            "fullName": "mmosesohn"
+        }
+    ], 
+    "description": "<a href='https://bugs.launchpad.net/fuel/+bug/1521551'>LP#1521551</a>", 
+    "displayName": "#235", 
+    "duration": 711057, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #235", 
+    "id": "235", 
+    "keepLog": false, 
+    "number": 235, 
+    "queueId": 19195, 
+    "result": "FAILURE", 
+    "timestamp": 1448969631656, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/235/"
+}

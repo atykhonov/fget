@@ -1,0 +1,263 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 19, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                        "branch": [
+                            {
+                                "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                        "branch": [
+                            {
+                                "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                "branch": [
+                    {
+                        "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/nailgun_client.py", 
+                    "fuelweb_test/tests/base_test_case.py", 
+                    "fuelweb_test/tests/test_cli.py", 
+                    "system_test/tests/actions_base.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+                    "fullName": "vkhlyunev"
+                }, 
+                "comment": "Refactor configuring cluster network settings\n\nChange default values for networking accordingly\nto the existing networks\nApply defaults for new created cluster instead of\nreconfiguring all networks\n\nChange-Id: I3eb3c6bdd9128c4e35741884daf0793714ce3b7c\nCloses-Bug: 1476185\nCo-Authored-By: Vladimir Khlyunev <vkhlyunev@mirantis.com>\n", 
+                "commitId": "7ce54c7d16d8bf1297ac08accf00d08823b8130f", 
+                "date": "2015-10-29T13:42:49+0000 +0300", 
+                "id": "7ce54c7d16d8bf1297ac08accf00d08823b8130f", 
+                "msg": "Refactor configuring cluster network settings", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/nailgun_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/base_test_case.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }
+                ], 
+                "timestamp": 1446126169000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/common.py", 
+                    "fuelweb_test/helpers/conf_tempest.py", 
+                    "fuelweb_test/tests/test_jumbo_frames.py", 
+                    "fuelweb_test/tests/test_node_reinstallation.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/helpers/os_actions.py", 
+                    "fuelweb_test/tests/tests_strength/test_master_node_failover.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "fuelweb_test/tests/test_ceph.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Get predifened net name from nailgun\n\nNeutron predefined network names\nlike net04 and net04_ext can be modified,\nso we need get such data from nailgun\n\nChange-Id: Ia23ea08303d08abc9bcc31a7749ad23b34755997\nPartial-Bug: #1349702\n", 
+                "commitId": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                "date": "2015-10-30T11:14:36+0000 +0200", 
+                "id": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                "msg": "Get predifened net name from nailgun", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/os_actions.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_master_node_failover.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_node_reinstallation.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_jumbo_frames.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/conf_tempest.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/common.py"
+                    }
+                ], 
+                "timestamp": 1446203676000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py", 
+                    "fuelweb_test/tests/test_cli_base.py", 
+                    "doc/base_tests.rst", 
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Divide the test and the class with useful methods\n\nBecause CommandLine class used in\n    create_backup_reset_restore_and_deploy_via_cli it should not have test\n    decorator. Proboscis saves test function each time when module are\n    imported\n\nChange-Id: I30fd2596f03f10992b0d743c7e375325b45bf90c\nCloses-bug: #1507999\n", 
+                "commitId": "4e402e32e3c957492c25e8ff9d683ffb8da3c60c", 
+                "date": "2015-10-30T13:17:20+0000 +0200", 
+                "id": "4e402e32e3c957492c25e8ff9d683ffb8da3c60c", 
+                "msg": "Divide the test and the class with useful methods", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/tests/test_cli_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1446211040000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Allow to set custom label for testplan in TestRail\n\nAdd posibilty to set custom label for new testplan\nin TestRail while uploading tests results from CI.\n\nChange-Id: I3a640c58e5dde0f191358d483eb629ad174e1bfc\nPartial-bug: #1511467\n", 
+                "commitId": "8b2b162c5addc83143a0b049b85046c8123d23d5", 
+                "date": "2015-10-30T18:20:22+0000 +0000", 
+                "id": "8b2b162c5addc83143a0b049b85046c8123d23d5", 
+                "msg": "Allow to set custom label for testplan in TestRail", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1446229222000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+            "fullName": "vkhlyunev"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4288\">TestRail Report URL</a>", 
+    "displayName": "#19", 
+    "duration": 827495, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #19", 
+    "id": "19", 
+    "keepLog": false, 
+    "number": 19, 
+    "queueId": 6736, 
+    "result": "SUCCESS", 
+    "timestamp": 1446237000586, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/19/"
+}

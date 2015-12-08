@@ -1,0 +1,253 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:1807ee809b8b4e71413a23fd34f40cd553482ec0&dn=fuel-8.0-241-2015-12-02%5F13-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-241-2015-12-02%5F13-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-12-01-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 226", 
+                    "upstreamBuild": 226, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 226, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "90545811758a4dba9b6796c7a3eecef246c271be", 
+                        "branch": [
+                            {
+                                "SHA1": "90545811758a4dba9b6796c7a3eecef246c271be", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "90545811758a4dba9b6796c7a3eecef246c271be", 
+                        "branch": [
+                            {
+                                "SHA1": "90545811758a4dba9b6796c7a3eecef246c271be", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "90545811758a4dba9b6796c7a3eecef246c271be", 
+                "branch": [
+                    {
+                        "SHA1": "90545811758a4dba9b6796c7a3eecef246c271be", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-12-02_16-24-29.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-12-02_16-24-29.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-12-02_16-24-29.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-12-02_14-45-20.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-12-02_14-45-20.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-12-02_14-45-20.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-12-02_14-44-39.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-12-02_14-44-39.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-12-02_14-44-39.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151202.yaml", 
+            "fileName": "timestat_20151202.yaml", 
+            "relativePath": "logs/timestat_20151202.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv44-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "system_test/tests/plugins/plugin_example/test_plugin_example_v3.py", 
+                    "system_test/tests_templates/tests_configs/scale/1ctrl_1comp_1cndr_neutronTUN_scale_3ctrl.yaml", 
+                    "doc/system_tests.rst", 
+                    "system_test/tests/plugins_actions.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "system_test/tests/actions_base.py", 
+                    "system_test/tests/plugins/__init__.py", 
+                    "system_test/tests/plugins/plugin_example/__init__.py", 
+                    "system_test/tests/plugins/plugin_example/test_plugin_example.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+                    "fullName": "vkhlyunev"
+                }, 
+                "comment": "Add test for example plugins into system test\n\nAdd test cases for Example Plugin\n\nImplements blueprint template-based-testcases\nChange-Id: I4352dd895f7686445e1764cd3f026611265450e5\nCo-Authored-By: Vladimir Khlyunev <vkhlyunev@mirantis.com>\n", 
+                "commitId": "d698b2c2a0b4a32f43825fba0f5294af0547160f", 
+                "date": "2015-12-02T07:31:21+0000 +0100", 
+                "id": "d698b2c2a0b4a32f43825fba0f5294af0547160f", 
+                "msg": "Add test for example plugins into system test", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/plugin_example/__init__.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/scale/1ctrl_1comp_1cndr_neutronTUN_scale_3ctrl.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins_actions.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/plugin_example/test_plugin_example_v3.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/system_tests.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/plugin_example/test_plugin_example.py"
+                    }
+                ], 
+                "timestamp": 1449041481000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_2ctrl_1comp_1comp_ceph_neutronVLAN.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml", 
+                    "fuelweb_test/run_tests.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Fix for incorrect names of configurations\n\n\nCloses-Bug: #1521902\nChange-Id: If3553a495e0a4a33e7abcd92607ce2d69cd22292\n", 
+                "commitId": "aae328cea7de9bd5f7ff68d11d4d2f211a8ec85e", 
+                "date": "2015-12-02T08:52:12+0000 +0000", 
+                "id": "aae328cea7de9bd5f7ff68d11d4d2f211a8ec85e", 
+                "msg": "Fix for incorrect names of configurations", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_2ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                    }
+                ], 
+                "timestamp": 1449046332000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+            "fullName": "vkhlyunev"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#226", 
+    "duration": 8491291, 
+    "estimatedDuration": 8594353, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.bvt_2 #226", 
+    "id": "226", 
+    "keepLog": false, 
+    "number": 226, 
+    "queueId": 19569, 
+    "result": "SUCCESS", 
+    "timestamp": 1449065213553, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/226/"
+}

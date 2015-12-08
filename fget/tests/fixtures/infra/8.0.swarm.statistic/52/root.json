@@ -1,0 +1,79 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 52, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                        "branch": [
+                            {
+                                "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                        "branch": [
+                            {
+                                "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                "branch": [
+                    {
+                        "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4739\">TestRail Report URL</a>", 
+    "displayName": "#52", 
+    "duration": 1961756, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #52", 
+    "id": "52", 
+    "keepLog": false, 
+    "number": 52, 
+    "queueId": 18220, 
+    "result": "SUCCESS", 
+    "timestamp": 1448742600550, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/52/"
+}

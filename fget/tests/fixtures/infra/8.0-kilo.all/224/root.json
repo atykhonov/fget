@@ -1,0 +1,243 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 224, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "0fd50b9094830c41f61ceb0722296191f508b233", 
+                        "branch": [
+                            {
+                                "SHA1": "0fd50b9094830c41f61ceb0722296191f508b233", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "0fd50b9094830c41f61ceb0722296191f508b233", 
+                        "branch": [
+                            {
+                                "SHA1": "0fd50b9094830c41f61ceb0722296191f508b233", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "0fd50b9094830c41f61ceb0722296191f508b233", 
+                "branch": [
+                    {
+                        "SHA1": "0fd50b9094830c41f61ceb0722296191f508b233", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "centos-packages.changelog", 
+            "fileName": "centos-packages.changelog", 
+            "relativePath": "artifacts/centos-packages.changelog"
+        }, 
+        {
+            "displayPath": "fuel-kilo-8.0-224-2015-11-03_12-23-00.iso.data.html", 
+            "fileName": "fuel-kilo-8.0-224-2015-11-03_12-23-00.iso.data.html", 
+            "relativePath": "artifacts/fuel-kilo-8.0-224-2015-11-03_12-23-00.iso.data.html"
+        }, 
+        {
+            "displayPath": "fuel-kilo-8.0-224-2015-11-03_12-23-00.iso.data.txt", 
+            "fileName": "fuel-kilo-8.0-224-2015-11-03_12-23-00.iso.data.txt", 
+            "relativePath": "artifacts/fuel-kilo-8.0-224-2015-11-03_12-23-00.iso.data.txt"
+        }, 
+        {
+            "displayPath": "fuel-kilo-8.0-upgrade-224-2015-11-03_12-23-00.tar.lrz.data.html", 
+            "fileName": "fuel-kilo-8.0-upgrade-224-2015-11-03_12-23-00.tar.lrz.data.html", 
+            "relativePath": "artifacts/fuel-kilo-8.0-upgrade-224-2015-11-03_12-23-00.tar.lrz.data.html"
+        }, 
+        {
+            "displayPath": "fuel-kilo-8.0-upgrade-224-2015-11-03_12-23-00.tar.lrz.data.txt", 
+            "fileName": "fuel-kilo-8.0-upgrade-224-2015-11-03_12-23-00.tar.lrz.data.txt", 
+            "relativePath": "artifacts/fuel-kilo-8.0-upgrade-224-2015-11-03_12-23-00.tar.lrz.data.txt"
+        }, 
+        {
+            "displayPath": "ubuntu-packages.changelog", 
+            "fileName": "ubuntu-packages.changelog", 
+            "relativePath": "artifacts/ubuntu-packages.changelog"
+        }, 
+        {
+            "displayPath": "listing.txt", 
+            "fileName": "listing.txt", 
+            "relativePath": "listing.txt"
+        }, 
+        {
+            "displayPath": "magnet_link.txt", 
+            "fileName": "magnet_link.txt", 
+            "relativePath": "magnet_link.txt"
+        }, 
+        {
+            "displayPath": "upgrade_magnet_link.txt", 
+            "fileName": "upgrade_magnet_link.txt", 
+            "relativePath": "upgrade_magnet_link.txt"
+        }, 
+        {
+            "displayPath": "version.yaml.txt", 
+            "fileName": "version.yaml.txt", 
+            "relativePath": "version.yaml.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "packages/rpm/module.mk", 
+                    "packages/rpm/specs/extra_nets_from_cobbler.py", 
+                    "packages/rpm/specs/fuel-docker-images.spec"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/adidenko", 
+                    "fullName": "adidenko"
+                }, 
+                "comment": "Revert \"Move user-defined extra networks from dnsmasq.template to astute\"\n\nThis reverts commit b59f69257b043212522b3c4fff946bd68068879a.\n\nWe're implementing automatic configuration of DHCP ranges in\ndnsmasq so this workaround is no longer needed.\n\nCo-Authored-By: Aleksandr Didenko <adidenko@mirantis.com>\nBlueprint: dynamic-dnsmasq\nChange-Id: I9dc55ff18b6faac36ff7603dffe9de0dcd4ada22\n", 
+                "commitId": "cc882c990b491db18b10e7e91b3591889f3d4112", 
+                "date": "2015-10-23T13:08:29+0000 +0300", 
+                "id": "cc882c990b491db18b10e7e91b3591889f3d4112", 
+                "msg": "Revert \"Move user-defined extra networks from dnsmasq.template to astute\"", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "packages/rpm/specs/fuel-docker-images.spec"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "packages/rpm/specs/extra_nets_from_cobbler.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "packages/rpm/module.mk"
+                    }
+                ], 
+                "timestamp": 1445605709000
+            }, 
+            {
+                "affectedPaths": [
+                    "docker/mcollective/Dockerfile", 
+                    "docker/mcollective/start.sh", 
+                    "docker/cobbler/start.sh"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/adidenko", 
+                    "fullName": "adidenko"
+                }, 
+                "comment": "Dynamic dnsmasq for fuelweb_admin networks\n\nInstall 'daemonize' package in mcollective container for puppet\nmcollective agent. Also configure Hiera inside mcollective container.\n\nWe need this for puppet task which is being executed in 'mcollective'\ncontainer and which updates dnsmasq dhcp ip ranges when we change\nfuelweb_admin networks in any nodegroup.\n\nCo-Authored-By: Aleksandr Didenko <adidenko@mirantis.com>\n\nBlueprint: dynamic-dnsmasq\nPartial-bug: #1495593\n\nChange-Id: I3309b32e3ede4be2f6758ff756b4ed15e3b20d66\n", 
+                "commitId": "698acf125a1beb8d6b3b4439daa806f92ee6bab9", 
+                "date": "2015-10-23T13:57:38+0000 +0300", 
+                "id": "698acf125a1beb8d6b3b4439daa806f92ee6bab9", 
+                "msg": "Dynamic dnsmasq for fuelweb_admin networks", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "docker/cobbler/start.sh"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/mcollective/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/mcollective/start.sh"
+                    }
+                ], 
+                "timestamp": 1445608658000
+            }, 
+            {
+                "affectedPaths": [
+                    "iso/ks.template"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/skulanov", 
+                    "fullName": "skulanov"
+                }, 
+                "comment": "[kickstart] Install documentation together with packages\n\nRemove --excludedocs flag for packages in kickstart\n\nChange-Id: I92d8fbe3f6e1e077761fa9047f5b30913cdd5e2e\nRelated-bug: #1510860\n", 
+                "commitId": "2da9f556da9c4d469e86b956287d59703f7b15dc", 
+                "date": "2015-11-02T16:06:09+0000 +0200", 
+                "id": "2da9f556da9c4d469e86b956287d59703f7b15dc", 
+                "msg": "[kickstart] Install documentation together with packages", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "iso/ks.template"
+                    }
+                ], 
+                "timestamp": 1446480369000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/adidenko", 
+            "fullName": "adidenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/skulanov", 
+            "fullName": "skulanov"
+        }
+    ], 
+    "description": "<a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-kilo-8.0-224-2015-11-03_12-23-00.iso>ISO download link</a> <a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-kilo-8.0-224-2015-11-03_12-23-00.iso.torrent>ISO torrent link</a><br>magnet:?xt=urn:btih:2652c3af431e36ec1dc85f1440e133cb187388e5&dn=fuel-kilo-8.0-224-2015-11-03%5F12-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-224-2015-11-03%5F12-23-00.iso<br>", 
+    "displayName": "#224", 
+    "duration": 1925316, 
+    "estimatedDuration": 1719707, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.all #224", 
+    "id": "224", 
+    "keepLog": false, 
+    "number": 224, 
+    "queueId": 8445, 
+    "result": "SUCCESS", 
+    "timestamp": 1446553380540, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/224/"
+}

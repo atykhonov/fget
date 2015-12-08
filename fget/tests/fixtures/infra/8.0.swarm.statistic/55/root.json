@@ -1,0 +1,278 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 55, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                        "branch": [
+                            {
+                                "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                        "branch": [
+                            {
+                                "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                "branch": [
+                    {
+                        "SHA1": "77074bea73811498802d034af89d28b57a3d961b", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Fix incorrect parameter for restore_check_nailgun_api\n\nDue to changes in restore_check_nailgun_api, parameter remote\nwas deleted, but in test for backup-restore signature of method\nwasn't modified.\n\nCloses-Bug: #1520451\n\nChange-Id: I93df6736fb5331c13bd2cb606cc134da2323ad7e\n", 
+                "commitId": "1222a40603bd7ceccaa09457b90f33612386cc44", 
+                "date": "2015-11-27T07:31:26+0000 +0000", 
+                "id": "1222a40603bd7ceccaa09457b90f33612386cc44", 
+                "msg": "Fix incorrect parameter for restore_check_nailgun_api", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1448609486000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/nailgun_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/snovikov", 
+                    "fullName": "snovikov"
+                }, 
+                "comment": "Add base methods to work with new OpenStack configuration API\n\nChange-Id: Ie0d736b8b16e7d3bf32821d5f5bd49236409d16c\nImplements: blueprint test-openstack-config-change\n", 
+                "commitId": "952a7aefe61dd6e5227e68935055e536337b4417", 
+                "date": "2015-11-30T12:25:37+0000 +0300", 
+                "id": "952a7aefe61dd6e5227e68935055e536337b4417", 
+                "msg": "Add base methods to work with new OpenStack configuration API", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/nailgun_client.py"
+                    }
+                ], 
+                "timestamp": 1448886337000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/upload_cases_description.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Fix template based tests cases upload to TestRail\n\nSome changes were added to the tests framework (template\nbased) which broke cases generation during upload to TestRail.\nThis patch aligns TestRail script with current tests\nimplementation.\n\nChange-Id: I4ba879bb841faea21f219a19baa8ccb36491bcb9\nCloses-bug: #1521147\n", 
+                "commitId": "1d4bc8a050e4f697b4b73867462ea756d4b4c262", 
+                "date": "2015-11-30T14:33:31+0000 +0200", 
+                "id": "1d4bc8a050e4f697b4b73867462ea756d4b4c262", 
+                "msg": "Fix template based tests cases upload to TestRail", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/upload_cases_description.py"
+                    }
+                ], 
+                "timestamp": 1448894011000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Fix key error in string formatting\n\nChange-Id: Ib8ba3d69e9911db475a17e65623227dcb79e64fe\nCloses-bug: #1521516\n", 
+                "commitId": "91c39342ee25711e398b2132d01d4d27f59194aa", 
+                "date": "2015-12-01T08:38:06+0000 +0200", 
+                "id": "91c39342ee25711e398b2132d01d4d27f59194aa", 
+                "msg": "Fix key error in string formatting", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1448959086000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/tests_configs/scale/1ctrl_1comp_1cndr_neutronTUN_scale_3ctrl.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_2comp.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_wo_components.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_2comp_neutronVLAN.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+                    "fullName": "vkhlyunev"
+                }, 
+                "comment": "Add configuration files for plugins tests\n\nThis commit contains changes in yamls extracted from\nhttps://review.openstack.org/#/c/243225/\n\nAdd configs for example and example_v3 plugins\nFix typo for cinder_wo_components template\n\nChange-Id: Ic929f5c6eebe1f23754f1a0949ee8892fc5a0cb3\n", 
+                "commitId": "25f47c2777ef2119283f012cef4110c9c830286e", 
+                "date": "2015-12-01T09:40:10+0000 +0100", 
+                "id": "25f47c2777ef2119283f012cef4110c9c830286e", 
+                "msg": "Add configuration files for plugins tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_2comp.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_wo_components.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_2comp_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/scale/1ctrl_1comp_1cndr_neutronTUN_scale_3ctrl.yaml"
+                    }
+                ], 
+                "timestamp": 1448962810000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_node_reinstallation.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkrayneva", 
+                    "fullName": "vkrayneva"
+                }, 
+                "comment": "Add tests to verify stop reinstallation cases\n\nChange-Id: I864272bb4cdd79d7f20527b001b63b44b8c60389\nCloses-bug: #1520572\n", 
+                "commitId": "16a13155373412b7b1f9db4597b7e9b149ca3752", 
+                "date": "2015-12-01T12:00:59+0000 +0300", 
+                "id": "16a13155373412b7b1f9db4597b7e9b149ca3752", 
+                "msg": "Add tests to verify stop reinstallation cases", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_node_reinstallation.py"
+                    }
+                ], 
+                "timestamp": 1448971259000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_multiple_networks.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Revert some chages made by refactoring patch\n\nIn the method 'change_default_admin_range' we change\nIP range in 'networks' dictionary, which is uploaded\nto settings later.\nRevert appropriate code which was removed by this\ncommit: I68ffdc85c2d1289d7ab6ef6a7f4084c19e7afcf9\n\nChange-Id: I99dfed47ca0c6008cbe974a5bf7aa55c85eae7fa\nCloses-bug: #1521235\n", 
+                "commitId": "2445cc067aa76d74ff3511d739fe57da3981004a", 
+                "date": "2015-12-01T13:46:43+0000 +0200", 
+                "id": "2445cc067aa76d74ff3511d739fe57da3981004a", 
+                "msg": "Revert some chages made by refactoring patch", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }
+                ], 
+                "timestamp": 1448977603000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/snovikov", 
+            "fullName": "snovikov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+            "fullName": "vkhlyunev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkrayneva", 
+            "fullName": "vkrayneva"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4777\">TestRail Report URL</a>", 
+    "displayName": "#55", 
+    "duration": 1866745, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #55", 
+    "id": "55", 
+    "keepLog": false, 
+    "number": 55, 
+    "queueId": 19311, 
+    "result": "SUCCESS", 
+    "timestamp": 1449001800571, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/55/"
+}

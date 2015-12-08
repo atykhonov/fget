@@ -1,0 +1,163 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 243, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                        "branch": [
+                            {
+                                "SHA1": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                        "branch": [
+                            {
+                                "SHA1": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                "branch": [
+                    {
+                        "SHA1": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "centos-packages.changelog", 
+            "fileName": "centos-packages.changelog", 
+            "relativePath": "artifacts/centos-packages.changelog"
+        }, 
+        {
+            "displayPath": "fuel-8.0-243-2015-12-03_01-42-00.iso.data.html", 
+            "fileName": "fuel-8.0-243-2015-12-03_01-42-00.iso.data.html", 
+            "relativePath": "artifacts/fuel-8.0-243-2015-12-03_01-42-00.iso.data.html"
+        }, 
+        {
+            "displayPath": "fuel-8.0-243-2015-12-03_01-42-00.iso.data.txt", 
+            "fileName": "fuel-8.0-243-2015-12-03_01-42-00.iso.data.txt", 
+            "relativePath": "artifacts/fuel-8.0-243-2015-12-03_01-42-00.iso.data.txt"
+        }, 
+        {
+            "displayPath": "ubuntu-packages.changelog", 
+            "fileName": "ubuntu-packages.changelog", 
+            "relativePath": "artifacts/ubuntu-packages.changelog"
+        }, 
+        {
+            "displayPath": "listing.txt", 
+            "fileName": "listing.txt", 
+            "relativePath": "listing.txt"
+        }, 
+        {
+            "displayPath": "magnet_link.txt", 
+            "fileName": "magnet_link.txt", 
+            "relativePath": "magnet_link.txt"
+        }, 
+        {
+            "displayPath": "version.yaml.txt", 
+            "fileName": "version.yaml.txt", 
+            "relativePath": "version.yaml.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv88-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "iso/bootstrap_admin_node.sh", 
+                    "fuel-bootstrap-image-builder/bin/fuel-bootstrap-image-set"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/azvyagintsev", 
+                    "fullName": "azvyagintsev"
+                }, 
+                "comment": "Switch to new Ubuntu bootstrap image build script\n\n* Functional should be moved into fuel-bootstrap util\n\nPartially implements: blueprint dynamically-build-bootstrap\nChange-Id: If9289dbedd568f316d1731437ffa3ab82d7cf7c2\n", 
+                "commitId": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                "date": "2015-12-02T17:08:46+0000 +0200", 
+                "id": "ff6eec402830ea8aa9898249b5eeb928576962ff", 
+                "msg": "Switch to new Ubuntu bootstrap image build script", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuel-bootstrap-image-builder/bin/fuel-bootstrap-image-set"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "iso/bootstrap_admin_node.sh"
+                    }
+                ], 
+                "timestamp": 1449076126000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/azvyagintsev", 
+            "fullName": "azvyagintsev"
+        }
+    ], 
+    "description": "<a href=http://srv88-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-243-2015-12-03_01-42-00.iso>ISO download link</a> <a href=http://srv88-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-243-2015-12-03_01-42-00.iso.torrent>ISO torrent link</a><br>magnet:?xt=urn:btih:4686047bc074201f6d20708947b9fbab09b88a3e&dn=fuel-8.0-243-2015-12-03%5F01-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv88-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-243-2015-12-03%5F01-42-00.iso<br>", 
+    "displayName": "#243", 
+    "duration": 1477095, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #243", 
+    "id": "243", 
+    "keepLog": false, 
+    "number": 243, 
+    "queueId": 19774, 
+    "result": "SUCCESS", 
+    "timestamp": 1449106920539, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/243/"
+}

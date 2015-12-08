@@ -1,0 +1,245 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 40, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "642b5fba8d9788b970295617b8be3450f9430e17", 
+                        "branch": [
+                            {
+                                "SHA1": "642b5fba8d9788b970295617b8be3450f9430e17", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "642b5fba8d9788b970295617b8be3450f9430e17", 
+                        "branch": [
+                            {
+                                "SHA1": "642b5fba8d9788b970295617b8be3450f9430e17", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "642b5fba8d9788b970295617b8be3450f9430e17", 
+                "branch": [
+                    {
+                        "SHA1": "642b5fba8d9788b970295617b8be3450f9430e17", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/settings.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add stability rabbit test\n\nAdd stability tests with next scenario:\n* Get rabbit master\n* move it to other node\n* delete contraint for rabbit resource\n* Run OSTF\n* get new rabbit master\n* destroy it\n* run OSTF\n* power on destroyed node\n* run OSTF\n* repeat failover cases COUNT_REPEAT times,\n\nBy defaut COUNT_REPEAT is 2\nCloses-Bug: #1458830\n\nChange-Id: I6fb8d540e930c4d46ef73913e442100424e05047\n", 
+                "commitId": "7a28d9040ee7f6dc072f98d15cd32d77825f020c", 
+                "date": "2015-11-11T12:34:30+0000 +0200", 
+                "id": "7a28d9040ee7f6dc072f98d15cd32d77825f020c", 
+                "msg": "Add stability rabbit test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/settings.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1447245270000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/rally.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add SSL support for Rally deployment\n\nSet additional environment variable for HTTPS\nproxy and enable insecure mode for SSL, because\nin tests we use self-signed certificate.\n\nChange-Id: Ia70fd71c65dc5a265b80e1d87da2d33f50d341c6\nCloses-bug: #1516029\n", 
+                "commitId": "88245000f076fffb7e1705c675234da3c9bb2256", 
+                "date": "2015-11-17T10:07:03+0000 +0200", 
+                "id": "88245000f076fffb7e1705c675234da3c9bb2256", 
+                "msg": "Add SSL support for Rally deployment", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/rally.py"
+                    }
+                ], 
+                "timestamp": 1447754823000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/environment.py", 
+                    "fuelweb_test/tests/test_ha_one_controller.py", 
+                    "fuelweb_test/helpers/checkers.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Remove verify_network_configuration method\n\n- Remove verify_network_configuration from tests due\nto having advanced check 'check_ipconfig_for_template'\nthat is used in networking templates tests\n\nChange-Id: I441ed6b749c77ea81d07eaf192d34d00f7c78bf6\nCloses-Bug: #1516046\n", 
+                "commitId": "2bf6333eb04e65cbe5b5192eb6009b78dee1a7f5", 
+                "date": "2015-11-17T10:48:07+0000 +0200", 
+                "id": "2bf6333eb04e65cbe5b5192eb6009b78dee1a7f5", 
+                "msg": "Remove verify_network_configuration method", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ha_one_controller.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }
+                ], 
+                "timestamp": 1447757287000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_node_reinstallation.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Fix logical error in mongo_mysql_partition_preservation\n\nCheck IST on reinstalled node\n\nChange-Id: I8815f715810a262bdd81c91f94633ae254a41fe2\nCloses-Bug: #1514416\n", 
+                "commitId": "16fc7d2c9e7f345e799b3f7d3cd027b8e0de43d0", 
+                "date": "2015-11-17T13:33:36+0000 +0000", 
+                "id": "16fc7d2c9e7f345e799b3f7d3cd027b8e0de43d0", 
+                "msg": "Fix logical error in mongo_mysql_partition_preservation", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_node_reinstallation.py"
+                    }
+                ], 
+                "timestamp": 1447767216000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/settings.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Updating of image for sahara tests\n\nIn 8.0 will be using vanilla 2.7.1\n\nChange-Id: I29fb074e79a859c651c33d90ef2712000d61f751\n", 
+                "commitId": "bfd22648cbf2cec8bee25f7e637cd74c0efdaaa0", 
+                "date": "2015-11-17T13:34:35+0000 +0000", 
+                "id": "bfd22648cbf2cec8bee25f7e637cd74c0efdaaa0", 
+                "msg": "Updating of image for sahara tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/settings.py"
+                    }
+                ], 
+                "timestamp": 1447767275000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Increse timeout in 'prepare_ha_ceph_neutron' test\n\nAdd 20 minutes to the deployment timeout in\n'prepare_ha_ceph_neutron' test, because deployment\nof nodes with few roles takes more time.\n\nChange-Id: I3bb67c0e86284b8e59d00c8868baa17c06f42191\nCloses-bug: #1517071\n", 
+                "commitId": "37080ba0749adb2ffa9068f05221c26e432c2ed3", 
+                "date": "2015-11-17T14:42:25+0000 +0200", 
+                "id": "37080ba0749adb2ffa9068f05221c26e432c2ed3", 
+                "msg": "Increse timeout in 'prepare_ha_ceph_neutron' test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1447771345000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4587\">TestRail Report URL</a>", 
+    "displayName": "#40", 
+    "duration": 2017668, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #40", 
+    "id": "40", 
+    "keepLog": false, 
+    "number": 40, 
+    "queueId": 14325, 
+    "result": "SUCCESS", 
+    "timestamp": 1447792200542, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/40/"
+}

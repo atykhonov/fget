@@ -1,0 +1,147 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 24, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                        "branch": [
+                            {
+                                "SHA1": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                        "branch": [
+                            {
+                                "SHA1": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                "branch": [
+                    {
+                        "SHA1": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_cli_base.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/sand8080", 
+                    "fullName": "sand8080"
+                }, 
+                "comment": "Task status 'pending' handled in tests\n\nStatus 'pending' introduced for proper tasks as intermediate status\nfor tasks ready for sending or already sent to astute, but not\nacknoledged by astute. After task is acknoledged by astute it\nchanges status to 'running'.\n\nChange-Id: Idedb061b7b5c4dca4a0ca7adcaa570cecbb691af\nPartial-Bug: #1498827\n", 
+                "commitId": "8e8f21fed9787781b02f46a72e82b04ee5523241", 
+                "date": "2015-11-02T14:29:09+0000 +0300", 
+                "id": "8e8f21fed9787781b02f46a72e82b04ee5523241", 
+                "msg": "Task status 'pending' handled in tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1446474549000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/os_actions.py", 
+                    "fuelweb_test/tests/test_ceph.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add wait for active image status\n\nTo be sure that image is ready to create volume with it,\nadd wait for image status.\nAlso make image public and set name to it.\n\nCloses-Bug: #1507987\n\nChange-Id: Ibb87e692a2b0ee36d220d107e2ae9ba500485eab\n", 
+                "commitId": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                "date": "2015-11-03T16:08:52+0000 +0000", 
+                "id": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                "msg": "Add wait for active image status", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/os_actions.py"
+                    }
+                ], 
+                "timestamp": 1446566932000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/sand8080", 
+            "fullName": "sand8080"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4330\">TestRail Report URL</a>", 
+    "displayName": "#24", 
+    "duration": 850937, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #24", 
+    "id": "24", 
+    "keepLog": false, 
+    "number": 24, 
+    "queueId": 8636, 
+    "result": "SUCCESS", 
+    "timestamp": 1446582600542, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/24/"
+}

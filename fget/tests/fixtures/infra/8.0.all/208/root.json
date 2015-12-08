@@ -1,0 +1,313 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 208, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                        "branch": [
+                            {
+                                "SHA1": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                        "branch": [
+                            {
+                                "SHA1": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                "branch": [
+                    {
+                        "SHA1": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "centos-packages.changelog", 
+            "fileName": "centos-packages.changelog", 
+            "relativePath": "artifacts/centos-packages.changelog"
+        }, 
+        {
+            "displayPath": "fuel-8.0-208-2015-11-25_13-42-00.iso.data.html", 
+            "fileName": "fuel-8.0-208-2015-11-25_13-42-00.iso.data.html", 
+            "relativePath": "artifacts/fuel-8.0-208-2015-11-25_13-42-00.iso.data.html"
+        }, 
+        {
+            "displayPath": "fuel-8.0-208-2015-11-25_13-42-00.iso.data.txt", 
+            "fileName": "fuel-8.0-208-2015-11-25_13-42-00.iso.data.txt", 
+            "relativePath": "artifacts/fuel-8.0-208-2015-11-25_13-42-00.iso.data.txt"
+        }, 
+        {
+            "displayPath": "ubuntu-packages.changelog", 
+            "fileName": "ubuntu-packages.changelog", 
+            "relativePath": "artifacts/ubuntu-packages.changelog"
+        }, 
+        {
+            "displayPath": "listing.txt", 
+            "fileName": "listing.txt", 
+            "relativePath": "listing.txt"
+        }, 
+        {
+            "displayPath": "magnet_link.txt", 
+            "fileName": "magnet_link.txt", 
+            "relativePath": "magnet_link.txt"
+        }, 
+        {
+            "displayPath": "version.yaml.txt", 
+            "fileName": "version.yaml.txt", 
+            "relativePath": "version.yaml.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "docker/nginx/Dockerfile", 
+                    "docker/keystone/Dockerfile", 
+                    "iso/module.mk", 
+                    "docker/ostf/Dockerfile", 
+                    "mirror/centos/mos-repo.mk", 
+                    "mirror/centos/module.mk", 
+                    "docker/fuel-centos-build/Dockerfile", 
+                    "docker/cobbler/Dockerfile", 
+                    "docker/module.mk", 
+                    "mirror/centos/extra-repos.mk", 
+                    "mirror/centos/repo.mk", 
+                    "docker/rsync/Dockerfile", 
+                    "docker/astute/Dockerfile", 
+                    "docker/rsyslog/Dockerfile", 
+                    "config.mk", 
+                    "iso/ks.template", 
+                    ".gitignore", 
+                    "mirror/centos/yum_repos.mk", 
+                    "packages/rpm/module.mk", 
+                    "docker/fuel-centos-build/start.sh", 
+                    "sandbox.mk", 
+                    "docker/mcollective/Dockerfile", 
+                    "docker/rabbitmq/Dockerfile", 
+                    "bootstrap/module.mk", 
+                    "docker/fuel-centos-build/fuel-centos.ks", 
+                    "docker/postgres/Dockerfile", 
+                    "docker/nailgun/Dockerfile"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vparakhin", 
+                    "fullName": "vparakhin"
+                }, 
+                "comment": "Separate CentOS from MOS\n\nRelease ISO must contain only packages that are\nmodified by MOS team, and CentOS upstream packages\nfor Fuel node deployment.\n\nMOS repo, as well as the ones specified in the\nEXTRA_RPM_REPOS variable, are downloaded and\nplaced on the ISO as-is.\n\nBlueprint: separate-mos-from-centos\n\nChange-Id: I983f37371a70d2901bdf0ebef122ba1a2f2e44b9\n", 
+                "commitId": "bc9c3117c7e542db33206927a597695aa38ecc6f", 
+                "date": "2015-11-24T11:22:10+0000 +0200", 
+                "id": "bc9c3117c7e542db33206927a597695aa38ecc6f", 
+                "msg": "Separate CentOS from MOS", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "mirror/centos/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "bootstrap/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": ".gitignore"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/fuel-centos-build/fuel-centos.ks"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/cobbler/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "config.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "iso/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "iso/ks.template"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/rabbitmq/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/keystone/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "packages/rpm/module.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/ostf/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/fuel-centos-build/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/rsyslog/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "mirror/centos/repo.mk"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "mirror/centos/extra-repos.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/fuel-centos-build/start.sh"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "mirror/centos/mos-repo.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/postgres/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/nailgun/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/mcollective/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "mirror/centos/yum_repos.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/rsync/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/nginx/Dockerfile"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "sandbox.mk"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "docker/astute/Dockerfile"
+                    }
+                ], 
+                "timestamp": 1448364130000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuel-bootstrap-image-builder/bin/fuel-bootstrap-image"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dteselkin", 
+                    "fullName": "dteselkin"
+                }, 
+                "comment": "Fix PATH variable for Ubuntu based bootstrap\n\nCentOS 7 has $PATH variable which is different from Ubuntu one.\nIn particular, CentOS does not export /sbin or /bin. This leads\nto inability to find basic commands like rm, ln or MAKEDEV\n(even though they are present in environment) when executing\nsimple chroot() from CentOS to Ubuntu-based environment.\n\nBlueprint: master-on-centos7\n\nCompatible with CentOS6 master node\n\nChange-Id: I2ce18598bcd84a328b149a135ed8579ffb8b5200\n", 
+                "commitId": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                "date": "2015-11-25T12:23:16+0000 +0000", 
+                "id": "3872df84eaa957818b603c22abb52de53e2f4a68", 
+                "msg": "Fix PATH variable for Ubuntu based bootstrap", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuel-bootstrap-image-builder/bin/fuel-bootstrap-image"
+                    }
+                ], 
+                "timestamp": 1448454196000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dteselkin", 
+            "fullName": "dteselkin"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vparakhin", 
+            "fullName": "vparakhin"
+        }
+    ], 
+    "description": "<a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-208-2015-11-25_13-42-00.iso>ISO download link</a> <a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-208-2015-11-25_13-42-00.iso.torrent>ISO torrent link</a><br>magnet:?xt=urn:btih:66a0cb725598f15964ec3e9a32947939b1af39c4&dn=fuel-8.0-208-2015-11-25%5F13-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-208-2015-11-25%5F13-42-00.iso<br>", 
+    "displayName": "#208", 
+    "duration": 1752981, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #208", 
+    "id": "208", 
+    "keepLog": false, 
+    "number": 208, 
+    "queueId": 16975, 
+    "result": "SUCCESS", 
+    "timestamp": 1448458920535, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/208/"
+}

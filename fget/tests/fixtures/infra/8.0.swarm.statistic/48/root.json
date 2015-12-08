@@ -1,0 +1,302 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 48, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "37c05e38a672529f47a22af50dede6e40d46da6e", 
+                        "branch": [
+                            {
+                                "SHA1": "37c05e38a672529f47a22af50dede6e40d46da6e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "37c05e38a672529f47a22af50dede6e40d46da6e", 
+                        "branch": [
+                            {
+                                "SHA1": "37c05e38a672529f47a22af50dede6e40d46da6e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "37c05e38a672529f47a22af50dede6e40d46da6e", 
+                "branch": [
+                    {
+                        "SHA1": "37c05e38a672529f47a22af50dede6e40d46da6e", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+                    "fullName": "vgorin"
+                }, 
+                "comment": "Change used parameter to check api is runing\n\nChange-Id: I77bf2a42f89ac29523694f3a6221e5ef8a34b5e1\nCloses-Bug: #1518243\n", 
+                "commitId": "52a184d137e7e284cfb89b9a49798aac12293250", 
+                "date": "2015-11-24T10:12:05+0000 +0300", 
+                "id": "52a184d137e7e284cfb89b9a49798aac12293250", 
+                "msg": "Change used parameter to check api is runing", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1448359925000
+            }, 
+            {
+                "affectedPaths": [
+                    "doc/helpers.rst", 
+                    "system_test/tests/strength/strength_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_master_node_failover.py", 
+                    "system_test/tests/strength/destroy_controllers.py", 
+                    "utils/jenkins/system_tests.sh", 
+                    "doc/base_tests.rst"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/eprohoda", 
+                    "fullName": "eprohoda"
+                }, 
+                "comment": "Misprints in English words\n\nFix misprints in class, method names, comments, etc.\n\nCloses-Bug: #1516044\nChange-Id: I9ed73165a06976bc1bfa8630615527fc97dd9fda\n", 
+                "commitId": "81f817890674df55323704c6bbeba4bd086a47d3", 
+                "date": "2015-11-24T12:57:42+0000 +0200", 
+                "id": "81f817890674df55323704c6bbeba4bd086a47d3", 
+                "msg": "Misprints in English words", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "doc/helpers.rst"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/destroy_controllers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_master_node_failover.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/strength_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "utils/jenkins/system_tests.sh"
+                    }
+                ], 
+                "timestamp": 1448369862000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_multiple_networks.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Add test with removing multirack cluster\n\n* Remove deployed environment\n* Check that nodes from custom nodegroup have 'ERROR' status after discovering\n* Reset slaves from custom nodegroup and make sure they aren't discovered again\n\nChange-Id: I9ae3a81a0125cfed9c8f9b9cfd971ebbec640428\nImplements: blueprint test-custom-nodegroup-controllers\n", 
+                "commitId": "07a1bc60f54c33921bf741e3372a006713863e2c", 
+                "date": "2015-11-24T17:21:54+0000 +0200", 
+                "id": "07a1bc60f54c33921bf741e3372a006713863e2c", 
+                "msg": "Add test with removing multirack cluster", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }
+                ], 
+                "timestamp": 1448385714000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/run_tests.py", 
+                    "fuelweb_test/tests/test_admin_node.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+                    "fullName": "dkruglov"
+                }, 
+                "comment": "Define custom groups for fuel master migration test\n\nDefine custom groups for running fuel master\nmigration test using template based approach.\n\nChange-Id: I8bfc36107ef86051e24273ef848d9b0ee29d3eab\nPartial-bug: #1512677\n", 
+                "commitId": "caecd4052b939770d559fbd84db70582f8528f1c", 
+                "date": "2015-11-24T21:53:28+0000 +0000", 
+                "id": "caecd4052b939770d559fbd84db70582f8528f1c", 
+                "msg": "Define custom groups for fuel master migration test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_admin_node.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }
+                ], 
+                "timestamp": 1448402008000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_bond_offloading.py", 
+                    "fuelweb_test/tests/test_offloading_types.py", 
+                    "fuelweb_test/tests/test_bonding_base.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "fuelweb_test/helpers/checkers.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "doc/base_tests.rst"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add tests of offloading single bond interface\n\nCloses-Bug: #1518236\n\nChange-Id: I3283695bbd9b98cb19706daa5343931987167181\n", 
+                "commitId": "8f6472dc475a4686ea5ef7d668b14ecb6497413b", 
+                "date": "2015-11-25T08:26:33+0000 +0000", 
+                "id": "8f6472dc475a4686ea5ef7d668b14ecb6497413b", 
+                "msg": "Add tests of offloading single bond interface", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/tests/test_bond_offloading.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_offloading_types.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_bonding_base.py"
+                    }
+                ], 
+                "timestamp": 1448439993000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Fix issue with incorrect reports for skipped tests\n\nChange-Id: I15793e7e966e7b3cb2e722cf0d7a968b31743e16\nCloses-bug: #1519788\n", 
+                "commitId": "f04c277064e565a152590f3caa2da699b8c70535", 
+                "date": "2015-11-25T11:58:35+0000 +0000", 
+                "id": "f04c277064e565a152590f3caa2da699b8c70535", 
+                "msg": "Fix issue with incorrect reports for skipped tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1448452715000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+            "fullName": "dkruglov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/eprohoda", 
+            "fullName": "eprohoda"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+            "fullName": "vgorin"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4691\">TestRail Report URL</a>", 
+    "displayName": "#48", 
+    "duration": 2217105, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #48", 
+    "id": "48", 
+    "keepLog": false, 
+    "number": 48, 
+    "queueId": 17085, 
+    "result": "SUCCESS", 
+    "timestamp": 1448483400537, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/48/"
+}

@@ -1,0 +1,188 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:a1c9fcd04ac0f36eda166b29db3c51e2cf047c88&dn=fuel-kilo-8.0-228-2015-11-04%5F12-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-228-2015-11-04%5F12-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-03-170157"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 209", 
+                    "upstreamBuild": 209, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 209, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "branch": [
+                            {
+                                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "branch": [
+                    {
+                        "SHA1": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-04_14-25-27.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-04_14-25-27.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-11-04_14-25-27.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-04_13-21-32.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-04_13-21-32.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-04_13-21-32.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-11-04_13-27-42.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-11-04_13-27-42.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-11-04_13-27-42.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-04_13-20-52.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-04_13-20-52.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-04_13-20-52.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151104.yaml", 
+            "fileName": "timestat_20151104.yaml", 
+            "relativePath": "logs/timestat_20151104.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_neutron_tun.py", 
+                    "fuelweb_test/helpers/checkers.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add client check\n\nAdding additional check for client area\nin smoke_neutron test\n\nChange-Id: Iebd2f3970b1fb6eda49a8ab301cf56df99ba80c9\nCloses-bug: #1480224\n", 
+                "commitId": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "date": "2015-11-04T10:47:38+0000 +0000", 
+                "id": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "msg": "Add client check", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_neutron_tun.py"
+                    }
+                ], 
+                "timestamp": 1446634058000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#209", 
+    "duration": 5566533, 
+    "estimatedDuration": 5467640, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.smoke_neutron #209", 
+    "id": "209", 
+    "keepLog": false, 
+    "number": 209, 
+    "queueId": 8980, 
+    "result": "SUCCESS", 
+    "timestamp": 1446641622472, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/209/"
+}

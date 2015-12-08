@@ -1,0 +1,137 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 41, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "2782ecbd1f07e93ac224553e626687e55e160b78", 
+                        "branch": [
+                            {
+                                "SHA1": "2782ecbd1f07e93ac224553e626687e55e160b78", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "2782ecbd1f07e93ac224553e626687e55e160b78", 
+                        "branch": [
+                            {
+                                "SHA1": "2782ecbd1f07e93ac224553e626687e55e160b78", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "2782ecbd1f07e93ac224553e626687e55e160b78", 
+                "branch": [
+                    {
+                        "SHA1": "2782ecbd1f07e93ac224553e626687e55e160b78", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/plugins/plugin_zabbix/test_plugin_zabbix.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Use https to check Zabbix UI\n\nCloses-bug: #1515644\n\nChange-Id: I8e839e5b778c7b5ee029eeedb12ff47d7ecf4e14\n", 
+                "commitId": "ca55b3734ba31792e0ee5889bc2f82362f759ab3", 
+                "date": "2015-11-13T14:13:47+0000 +0000", 
+                "id": "ca55b3734ba31792e0ee5889bc2f82362f759ab3", 
+                "msg": "Use https to check Zabbix UI", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_zabbix/test_plugin_zabbix.py"
+                    }
+                ], 
+                "timestamp": 1447424027000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Increate timeout for 3-1 test\n\nChange suspend action to\ndestroy and start and increase timeout\n\nChange-Id: I1b528ec50417ce8ef845a57ce814487306c386a4\nCloses-Bug: #1512735\n", 
+                "commitId": "9b2b40ade967be2fe1e0056cb0c9394b166cca92", 
+                "date": "2015-11-17T15:39:36+0000 +0000", 
+                "id": "9b2b40ade967be2fe1e0056cb0c9394b166cca92", 
+                "msg": "Increate timeout for 3-1 test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1447774776000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4598\">TestRail Report URL</a>", 
+    "displayName": "#41", 
+    "duration": 2585888, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #41", 
+    "id": "41", 
+    "keepLog": false, 
+    "number": 41, 
+    "queueId": 14708, 
+    "result": "SUCCESS", 
+    "timestamp": 1447878600566, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/41/"
+}

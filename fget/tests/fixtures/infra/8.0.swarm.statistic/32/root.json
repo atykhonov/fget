@@ -1,0 +1,234 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 32, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                        "branch": [
+                            {
+                                "SHA1": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                        "branch": [
+                            {
+                                "SHA1": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                "branch": [
+                    {
+                        "SHA1": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/builds.py", 
+                    "fuelweb_test/tests/test_net_templates.py", 
+                    "system_test/tests/test_deploy_check_rados.py", 
+                    "fuelweb_test/helpers/utils.py", 
+                    "fuelweb_test/models/environment.py", 
+                    "fuelweb_test/tests/tests_strength/test_cic_maintenance_mode.py", 
+                    "fuelweb_test/tests/test_ceph.py", 
+                    "fuelweb_test/testrail/testrail_client.py", 
+                    "fuelweb_test/tests/test_vcenter.py", 
+                    "fuelweb_test/tests/tests_security/test_run_nessus.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/tests/test_offloading_types.py", 
+                    "fuelweb_test/helpers/checkers.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "fuelweb_test/helpers/patching.py", 
+                    "fuelweb_test/helpers/regenerate_repo.py", 
+                    "fuelweb_test/testrail/testrail.py", 
+                    "fuelweb_test/tests/test_ha_one_controller.py", 
+                    "fuelweb_test/tests/test_net_templates_base.py", 
+                    "fuelweb_test/tests/test_bonding_base.py", 
+                    "fuelweb_test/helpers/fuel_actions.py", 
+                    "fuelweb_test/tests/plugins/plugin_contrail/test_fuel_plugin_contrail.py", 
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+                    "fullName": "astepanov"
+                }, 
+                "comment": "Refactor & fix incorrect default args\n\nFix:\n  1. Default arguments should not be mutable\n  2. Set could be created without set() call (little faster)\n  3. Redundant parenthesis (readability)\n  4. lambdas is strictly not recommended by PEP8, especially as class variables\n  5. fix old style classes (not inherited from object)\nUpdate-reason: rebase\n\nCloses-Bug: #1512671\n\nChange-Id: Id8314b76848278b67da898600240b59cf76a7328\n", 
+                "commitId": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                "date": "2015-11-09T11:52:15+0000 +0300", 
+                "id": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                "msg": "Refactor & fix incorrect default args", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_contrail/test_fuel_plugin_contrail.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/regenerate_repo.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/patching.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_net_templates.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/builds.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_bonding_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_offloading_types.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_net_templates_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_deploy_check_rados.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_security/test_run_nessus.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_vcenter.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_cic_maintenance_mode.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ha_one_controller.py"
+                    }
+                ], 
+                "timestamp": 1447069935000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "", 
+    "displayName": "#32", 
+    "duration": 85501, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #32", 
+    "id": "32", 
+    "keepLog": false, 
+    "number": 32, 
+    "queueId": 11625, 
+    "result": "FAILURE", 
+    "timestamp": 1447187400542, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/32/"
+}

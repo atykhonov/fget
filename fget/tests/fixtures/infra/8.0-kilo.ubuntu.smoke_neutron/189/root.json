@@ -1,0 +1,228 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:21c61e57fb55f85f5a9830c49a8f1103cd32285d&dn=fuel-kilo-8.0-208-2015-10-30%5F12-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-208-2015-10-30%5F12-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-10-29-170159"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 189", 
+                    "upstreamBuild": 189, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 189, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                        "branch": [
+                            {
+                                "SHA1": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                        "branch": [
+                            {
+                                "SHA1": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                "branch": [
+                    {
+                        "SHA1": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-10-30_14-20-15.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-10-30_14-20-15.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-10-30_14-20-15.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-10-30_13-17-49.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-10-30_13-17-49.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-10-30_13-17-49.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-10-30_13-23-41.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-10-30_13-23-41.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-10-30_13-23-41.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-10-30_13-17-09.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-10-30_13-17-09.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-10-30_13-17-09.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151030.yaml", 
+            "fileName": "timestat_20151030.yaml", 
+            "relativePath": "logs/timestat_20151030.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/conf_tempest.py", 
+                    "fuelweb_test/helpers/common.py", 
+                    "fuelweb_test/tests/test_jumbo_frames.py", 
+                    "fuelweb_test/tests/test_node_reinstallation.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "fuelweb_test/helpers/os_actions.py", 
+                    "fuelweb_test/tests/tests_strength/test_master_node_failover.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "fuelweb_test/tests/test_ceph.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Get predifened net name from nailgun\n\nNeutron predefined network names\nlike net04 and net04_ext can be modified,\nso we need get such data from nailgun\n\nChange-Id: Ia23ea08303d08abc9bcc31a7749ad23b34755997\nPartial-Bug: #1349702\n", 
+                "commitId": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                "date": "2015-10-30T11:14:36+0000 +0200", 
+                "id": "c1ab3a2d0bc4c06225742f02e9840f0ca7a61f87", 
+                "msg": "Get predifened net name from nailgun", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/common.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/conf_tempest.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_node_reinstallation.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_jumbo_frames.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/os_actions.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_master_node_failover.py"
+                    }
+                ], 
+                "timestamp": 1446203676000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#189", 
+    "duration": 5124767, 
+    "estimatedDuration": 5467640, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.smoke_neutron #189", 
+    "id": "189", 
+    "keepLog": false, 
+    "number": 189, 
+    "queueId": 6572, 
+    "result": "SUCCESS", 
+    "timestamp": 1446209751764, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/189/"
+}

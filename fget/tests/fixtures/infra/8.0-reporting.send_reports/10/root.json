@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "REPORTED_JOB_URL", 
+                    "value": "https://product-ci.infra.mirantis.net/job/8.0.all/210/"
+                }, 
+                {
+                    "name": "STAGE", 
+                    "value": "build"
+                }, 
+                {
+                    "name": "RELEASE", 
+                    "value": "8.0"
+                }, 
+                {
+                    "name": "VALUE", 
+                    "value": "ok"
+                }, 
+                {
+                    "name": "ISO_VERSION", 
+                    "value": "8.0"
+                }, 
+                {
+                    "name": "BUILD", 
+                    "value": "fuel-8.0-210"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.all\" build number 210", 
+                    "upstreamBuild": 210, 
+                    "upstreamProject": "8.0.all", 
+                    "upstreamUrl": "job/8.0.all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv71-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": null
+    }, 
+    "culprits": [], 
+    "description": null, 
+    "displayName": "#10", 
+    "duration": 51, 
+    "estimatedDuration": 52, 
+    "executor": null, 
+    "fullDisplayName": "8.0-reporting.send_reports #10", 
+    "id": "10", 
+    "keepLog": false, 
+    "number": 10, 
+    "queueId": 17204, 
+    "result": "SUCCESS", 
+    "timestamp": 1448503761603, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/10/"
+}

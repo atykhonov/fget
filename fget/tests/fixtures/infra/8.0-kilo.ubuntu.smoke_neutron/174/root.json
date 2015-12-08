@@ -1,0 +1,184 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:4e66d16f27de750e3fd90f1ebcba73a3849f3477&dn=fuel-kilo-8.0-193-2015-10-26%5F18-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-193-2015-10-26%5F18-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-10-26-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 174", 
+                    "upstreamBuild": 174, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 174, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                        "branch": [
+                            {
+                                "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                        "branch": [
+                            {
+                                "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                "branch": [
+                    {
+                        "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-10-26_20-07-56.tar.xz", 
+            "fileName": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-10-26_20-07-56.tar.xz", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun-fuel-snapshot-2015-10-26_20-07-56.tar.xz"
+        }, 
+        {
+            "displayPath": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-10-26_20-07-56.tar.xz.filtered.log", 
+            "fileName": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-10-26_20-07-56.tar.xz.filtered.log", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun-fuel-snapshot-2015-10-26_20-07-56.tar.xz.filtered.log"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-10-26_19-21-25.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-10-26_19-21-25.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-10-26_19-21-25.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-10-26_19-27-52.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-10-26_19-27-52.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-10-26_19-27-52.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-10-26_19-20-47.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-10-26_19-20-47.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-10-26_19-20-47.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151026.yaml", 
+            "fileName": "timestat_20151026.yaml", 
+            "relativePath": "logs/timestat_20151026.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Get vips data from network roles\n\nThe format of VIPs description in 7.0 was changed.\nSpecial API serializer for compatiblity with system\ntests was added\n(https://review.openstack.org/201103) in 7.0 but plan to be romoved in 8.0.\nIt is required to fix VIPs format in system tests.\n\nChange-Id: I1b4a3da69590c9ce45cfed2d460ce84056b5588a\nCloses-Bug: #1476174\n", 
+                "commitId": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                "date": "2015-10-26T15:26:33+0000 +0000", 
+                "id": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                "msg": "Get vips data from network roles", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1445873193000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#174", 
+    "duration": 4519527, 
+    "estimatedDuration": 5467640, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.smoke_neutron #174", 
+    "id": "174", 
+    "keepLog": false, 
+    "number": 174, 
+    "queueId": 4687, 
+    "result": "FAILURE", 
+    "timestamp": 1445885649328, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/174/"
+}

@@ -1,0 +1,173 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 54, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                        "branch": [
+                            {
+                                "SHA1": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                        "branch": [
+                            {
+                                "SHA1": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                "branch": [
+                    {
+                        "SHA1": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/run_tests.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+                    "fullName": "agrechanichenko"
+                }, 
+                "comment": "Alias for system_test.failover.filling_root\n\nCreate system_test.failover.filling_root alias for\nsystem_test.failover.filling_root.3ctrl_2comp_1cndr_neutronVLAN\n\nChange-Id: Ieeb36ceaae9cd4ac995d2a522af39b8e8e8767ab\nCloses-Bug: #1521137\n", 
+                "commitId": "4c58d91f24cca43569a202d671dc78afa9238eeb", 
+                "date": "2015-11-30T10:56:38+0000 +0000", 
+                "id": "4c58d91f24cca43569a202d671dc78afa9238eeb", 
+                "msg": "Alias for system_test.failover.filling_root", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }
+                ], 
+                "timestamp": 1448880998000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/upload_cases_description.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Fix for uploading template cases to test suite\n\n\nCloses-Bug: #1521147\n\nChange-Id: Ic170cc1366dc23d5d62bb865edd48c0adbd74f96\n", 
+                "commitId": "6e9e2aa08d42b11798354e8b4b21fb71957a1e1e", 
+                "date": "2015-11-30T11:13:28+0000 +0000", 
+                "id": "6e9e2aa08d42b11798354e8b4b21fb71957a1e1e", 
+                "msg": "Fix for uploading template cases to test suite", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/upload_cases_description.py"
+                    }
+                ], 
+                "timestamp": 1448882008000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/upload_cases_description.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Revert \"Fix for uploading template cases to test suite\"\n\nThis reverts commit 6e9e2aa08d42b11798354e8b4b21fb71957a1e1e.\n\nChange-Id: I20fb40f20f17ef1c9caed18049212d57196fb148\n", 
+                "commitId": "dc77e88f8640f5f8ffe9f4ee80b1087672596298", 
+                "date": "2015-11-30T12:29:36+0000 +0000", 
+                "id": "dc77e88f8640f5f8ffe9f4ee80b1087672596298", 
+                "msg": "Revert \"Fix for uploading template cases to test suite\"", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/upload_cases_description.py"
+                    }
+                ], 
+                "timestamp": 1448886576000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/run_tests.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+                    "fullName": "agrechanichenko"
+                }, 
+                "comment": "Alias for filling_root\n\nCreate filling_root alias for\nsystem_test.failover.filling_root.3ctrl_2comp_1cndr_neutronVLAN\n\nChange-Id: Iae27a49e1f29259b73b6df3520e747d33900e282\nCloses-Bug: #1521137\n", 
+                "commitId": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                "date": "2015-11-30T14:50:18+0000 +0200", 
+                "id": "1cdaca33ebf6723b43844fd3dda138d98d565b46", 
+                "msg": "Alias for filling_root", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }
+                ], 
+                "timestamp": 1448895018000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+            "fullName": "agrechanichenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4764\">TestRail Report URL</a>", 
+    "displayName": "#54", 
+    "duration": 1789255, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #54", 
+    "id": "54", 
+    "keepLog": false, 
+    "number": 54, 
+    "queueId": 18945, 
+    "result": "SUCCESS", 
+    "timestamp": 1448915400546, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/54/"
+}

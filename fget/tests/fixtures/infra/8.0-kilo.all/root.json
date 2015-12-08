@@ -1,0 +1,564 @@
+{
+    "actions": [
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "value": "true"
+                    }, 
+                    "description": "Perform deep_clean or not. Default is \"true\". Set any other value to disable it.", 
+                    "name": "deep_clean", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "Additional make arguments", 
+                    "name": "make_args", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "If set to \"true\" will trigger community build with the same commits", 
+                    "name": "trigger_community_build", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "http://jenkins-product.srt.mirantis.net:8080/job/8.0.build_staging_mirror/123/", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": false, 
+    "builds": [
+        {
+            "number": 247, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/247/"
+        }, 
+        {
+            "number": 246, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/246/"
+        }, 
+        {
+            "number": 245, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/245/"
+        }, 
+        {
+            "number": 244, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/244/"
+        }, 
+        {
+            "number": 243, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/243/"
+        }, 
+        {
+            "number": 242, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/242/"
+        }, 
+        {
+            "number": 241, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/241/"
+        }, 
+        {
+            "number": 240, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/240/"
+        }, 
+        {
+            "number": 239, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/239/"
+        }, 
+        {
+            "number": 238, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/238/"
+        }, 
+        {
+            "number": 237, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/237/"
+        }, 
+        {
+            "number": 236, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/236/"
+        }, 
+        {
+            "number": 235, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/235/"
+        }, 
+        {
+            "number": 234, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/234/"
+        }, 
+        {
+            "number": 233, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/233/"
+        }, 
+        {
+            "number": 232, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/232/"
+        }, 
+        {
+            "number": 231, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/231/"
+        }, 
+        {
+            "number": 230, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/230/"
+        }, 
+        {
+            "number": 229, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/229/"
+        }, 
+        {
+            "number": 228, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/228/"
+        }, 
+        {
+            "number": 227, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/227/"
+        }, 
+        {
+            "number": 226, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/226/"
+        }, 
+        {
+            "number": 225, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/225/"
+        }, 
+        {
+            "number": 224, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/224/"
+        }, 
+        {
+            "number": 223, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/223/"
+        }, 
+        {
+            "number": 222, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/222/"
+        }, 
+        {
+            "number": 221, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/221/"
+        }, 
+        {
+            "number": 220, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/220/"
+        }, 
+        {
+            "number": 219, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/219/"
+        }, 
+        {
+            "number": 218, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/218/"
+        }, 
+        {
+            "number": 217, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/217/"
+        }, 
+        {
+            "number": 216, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/216/"
+        }, 
+        {
+            "number": 215, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/215/"
+        }, 
+        {
+            "number": 214, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/214/"
+        }, 
+        {
+            "number": 213, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/213/"
+        }, 
+        {
+            "number": 212, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/212/"
+        }, 
+        {
+            "number": 211, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/211/"
+        }, 
+        {
+            "number": 210, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/210/"
+        }, 
+        {
+            "number": 209, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/209/"
+        }, 
+        {
+            "number": 208, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/208/"
+        }, 
+        {
+            "number": 207, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/207/"
+        }, 
+        {
+            "number": 206, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/206/"
+        }, 
+        {
+            "number": 205, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/205/"
+        }, 
+        {
+            "number": 204, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/204/"
+        }, 
+        {
+            "number": 203, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/203/"
+        }, 
+        {
+            "number": 202, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/202/"
+        }, 
+        {
+            "number": 201, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/201/"
+        }, 
+        {
+            "number": 200, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/200/"
+        }, 
+        {
+            "number": 199, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/199/"
+        }, 
+        {
+            "number": 198, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/198/"
+        }, 
+        {
+            "number": 197, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/197/"
+        }, 
+        {
+            "number": 196, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/196/"
+        }, 
+        {
+            "number": 195, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/195/"
+        }, 
+        {
+            "number": 194, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/194/"
+        }, 
+        {
+            "number": 193, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/193/"
+        }, 
+        {
+            "number": 192, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/192/"
+        }, 
+        {
+            "number": 191, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/191/"
+        }, 
+        {
+            "number": 190, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/190/"
+        }, 
+        {
+            "number": 189, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/189/"
+        }, 
+        {
+            "number": 188, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/188/"
+        }, 
+        {
+            "number": 187, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/187/"
+        }, 
+        {
+            "number": 186, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/186/"
+        }, 
+        {
+            "number": 185, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/185/"
+        }, 
+        {
+            "number": 184, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/184/"
+        }, 
+        {
+            "number": 183, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/183/"
+        }, 
+        {
+            "number": 182, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/182/"
+        }, 
+        {
+            "number": 181, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/181/"
+        }, 
+        {
+            "number": 180, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/180/"
+        }, 
+        {
+            "number": 179, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/179/"
+        }, 
+        {
+            "number": 178, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/178/"
+        }, 
+        {
+            "number": 177, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/177/"
+        }, 
+        {
+            "number": 176, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/176/"
+        }, 
+        {
+            "number": 175, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/175/"
+        }, 
+        {
+            "number": 174, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/174/"
+        }, 
+        {
+            "number": 173, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/173/"
+        }, 
+        {
+            "number": 172, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/172/"
+        }, 
+        {
+            "number": 171, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/171/"
+        }, 
+        {
+            "number": 170, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/170/"
+        }, 
+        {
+            "number": 169, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/169/"
+        }, 
+        {
+            "number": 168, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/168/"
+        }, 
+        {
+            "number": 167, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/167/"
+        }, 
+        {
+            "number": 166, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/166/"
+        }, 
+        {
+            "number": 165, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/165/"
+        }, 
+        {
+            "number": 164, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/164/"
+        }, 
+        {
+            "number": 163, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/163/"
+        }, 
+        {
+            "number": 162, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/162/"
+        }, 
+        {
+            "number": 161, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/161/"
+        }, 
+        {
+            "number": 160, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/160/"
+        }, 
+        {
+            "number": 159, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/159/"
+        }, 
+        {
+            "number": 158, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/158/"
+        }, 
+        {
+            "number": 157, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/157/"
+        }, 
+        {
+            "number": 156, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/156/"
+        }, 
+        {
+            "number": 155, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/155/"
+        }, 
+        {
+            "number": 154, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/154/"
+        }, 
+        {
+            "number": 153, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/153/"
+        }, 
+        {
+            "number": 152, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/152/"
+        }, 
+        {
+            "number": 151, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/151/"
+        }, 
+        {
+            "number": 150, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/150/"
+        }, 
+        {
+            "number": 149, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/149/"
+        }, 
+        {
+            "number": 148, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/148/"
+        }
+    ], 
+    "color": "disabled", 
+    "concurrentBuild": false, 
+    "description": "Build artifacts: iso and upgrade tarball\n\n<p>\n  Owned by: Fuel Build Team<br/>\n  Job owner is responsible for keeping builds green.<br/>\n  Maintenance contacts: #infra<br/>\n</p>\n<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0-kilo.all", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [
+        {
+            "color": "disabled", 
+            "name": "8.0-kilo.test_all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.test_all/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "deploy_iso_on_cachers", 
+            "url": "https://product-ci.infra.mirantis.net/job/deploy_iso_on_cachers/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "fuel_ci-status_reports", 
+            "url": "https://product-ci.infra.mirantis.net/job/fuel_ci-status_reports/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "trigger-external-events", 
+            "url": "https://product-ci.infra.mirantis.net/job/trigger-external-events/"
+        }
+    ], 
+    "firstBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/1/"
+    }, 
+    "healthReport": [
+        {
+            "description": "Build stability: No recent builds failed.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }
+    ], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": {
+        "number": 247, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/247/"
+    }, 
+    "lastCompletedBuild": {
+        "number": 247, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/247/"
+    }, 
+    "lastFailedBuild": {
+        "number": 235, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/235/"
+    }, 
+    "lastStableBuild": {
+        "number": 247, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/247/"
+    }, 
+    "lastSuccessfulBuild": {
+        "number": 247, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/247/"
+    }, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": {
+        "number": 235, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/235/"
+    }, 
+    "name": "8.0-kilo.all", 
+    "nextBuildNumber": 248, 
+    "property": [
+        {}, 
+        {}, 
+        {}, 
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "name": "deep_clean", 
+                        "value": "true"
+                    }, 
+                    "description": "Perform deep_clean or not. Default is \"true\". Set any other value to disable it.", 
+                    "name": "deep_clean", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "make_args", 
+                        "value": ""
+                    }, 
+                    "description": "Additional make arguments", 
+                    "name": "make_args", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "trigger_community_build", 
+                        "value": ""
+                    }, 
+                    "description": "If set to \"true\" will trigger community build with the same commits", 
+                    "name": "trigger_community_build", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "BUILD_MIRROR_URL", 
+                        "value": ""
+                    }, 
+                    "description": "http://jenkins-product.srt.mirantis.net:8080/job/8.0.build_staging_mirror/123/", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }
+    ], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/"
+}

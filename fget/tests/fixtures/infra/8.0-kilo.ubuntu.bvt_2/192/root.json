@@ -1,0 +1,219 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:af3edeffdff8c63551e404facf3d0522f15318cd&dn=fuel-kilo-8.0-209-2015-10-30%5F18-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-209-2015-10-30%5F18-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-10-30-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 190", 
+                    "upstreamBuild": 190, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 192, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                        "branch": [
+                            {
+                                "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                        "branch": [
+                            {
+                                "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                "branch": [
+                    {
+                        "SHA1": "66427e1a87a7abc17880de44b813ade355295e06", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-10-30_21-30-12.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-10-30_21-30-12.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-10-30_21-30-12.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-10-30_19-30-44.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-10-30_19-30-44.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-10-30_19-30-44.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-10-30_19-30-04.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-10-30_19-30-04.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-10-30_19-30-04.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151030.yaml", 
+            "fileName": "timestat_20151030.yaml", 
+            "relativePath": "logs/timestat_20151030.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv28-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py", 
+                    "fuelweb_test/tests/test_cli_base.py", 
+                    "doc/base_tests.rst", 
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Divide the test and the class with useful methods\n\nBecause CommandLine class used in\n    create_backup_reset_restore_and_deploy_via_cli it should not have test\n    decorator. Proboscis saves test function each time when module are\n    imported\n\nChange-Id: I30fd2596f03f10992b0d743c7e375325b45bf90c\nCloses-bug: #1507999\n", 
+                "commitId": "4e402e32e3c957492c25e8ff9d683ffb8da3c60c", 
+                "date": "2015-10-30T13:17:20+0000 +0200", 
+                "id": "4e402e32e3c957492c25e8ff9d683ffb8da3c60c", 
+                "msg": "Divide the test and the class with useful methods", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/tests/test_cli_base.py"
+                    }
+                ], 
+                "timestamp": 1446211040000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Allow to set custom label for testplan in TestRail\n\nAdd posibilty to set custom label for new testplan\nin TestRail while uploading tests results from CI.\n\nChange-Id: I3a640c58e5dde0f191358d483eb629ad174e1bfc\nPartial-bug: #1511467\n", 
+                "commitId": "8b2b162c5addc83143a0b049b85046c8123d23d5", 
+                "date": "2015-10-30T18:20:22+0000 +0000", 
+                "id": "8b2b162c5addc83143a0b049b85046c8123d23d5", 
+                "msg": "Allow to set custom label for testplan in TestRail", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1446229222000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#192", 
+    "duration": 9632549, 
+    "estimatedDuration": 9999341, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.bvt_2 #192", 
+    "id": "192", 
+    "keepLog": false, 
+    "number": 192, 
+    "queueId": 6672, 
+    "result": "SUCCESS", 
+    "timestamp": 1446231199750, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/192/"
+}

@@ -1,0 +1,276 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 47, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                        "branch": [
+                            {
+                                "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                        "branch": [
+                            {
+                                "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                "branch": [
+                    {
+                        "SHA1": "a179380d35eac0dd7bb3d1adf11afd5039de84b0", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Change logic of test and add new checks\n\nFix issue with test change_pacemaker_parameter_not_break_rabbitmq\nExpected code was changed for command 'rabbitmqctl cluster_status'\n\nCloses-Bug: #1515983\nChange-Id: I0c81989885a2ed657c5cd78dd8867b7912bf7525\n", 
+                "commitId": "70045e22956247b01c8c35080653675c23d50092", 
+                "date": "2015-11-24T05:37:26+0000 +0000", 
+                "id": "70045e22956247b01c8c35080653675c23d50092", 
+                "msg": "Change logic of test and add new checks", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1448343446000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_multiple_networks.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Change admin IP ranges in tests for node groups\n\nChange default IP addresses range for admin/pxe network\nin system test for multiple cluster networks feature.\nCheck that DHCP range is configured properly and Nailgun\ndoesn't allocate excluded from range IPs to nodes.\n\nChange-Id: I64069e287a6970b93931d93212efb0c1712af40a\nCloses-bug: #1513154\n", 
+                "commitId": "6e855eead1541878a3a35b7380c165c0c1f6519f", 
+                "date": "2015-11-24T05:37:49+0000 +0000", 
+                "id": "6e855eead1541878a3a35b7380c165c0c1f6519f", 
+                "msg": "Change admin IP ranges in tests for node groups", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }
+                ], 
+                "timestamp": 1448343469000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/fuel_actions.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Use YAML methods for changing Fuel 'astute.yaml'\n\nUse load/dump methods for changing content of 'astute.yaml'\nwhile deploying Fuel master node.\n\nChange-Id: I71cb042927b912dd7b610cbaadca48919dafc47c\nCloses-bug: #1455015\n", 
+                "commitId": "1b67512152518fe43bdb2124d5ff9d3c5bdac3b3", 
+                "date": "2015-11-24T05:37:57+0000 +0000", 
+                "id": "1b67512152518fe43bdb2124d5ff9d3c5bdac3b3", 
+                "msg": "Use YAML methods for changing Fuel 'astute.yaml'", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }
+                ], 
+                "timestamp": 1448343477000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/decorators.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Change revert message according to LP#1461079\n\nChange-Id: I5ee0092b261d48c42036f57ea63f73bb11b1d689\nRelated-Bug: #1461079\n", 
+                "commitId": "e590ba9562fb4fe512bf4006576def70136e94f5", 
+                "date": "2015-11-24T12:30:10+0000 +0000", 
+                "id": "e590ba9562fb4fe512bf4006576def70136e94f5", 
+                "msg": "Change revert message according to LP#1461079", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/decorators.py"
+                    }
+                ], 
+                "timestamp": 1448368210000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests/test_fuel_migration.py", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml", 
+                    "doc/system_tests.rst", 
+                    "fuelweb_test/run_tests.py", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml", 
+                    "system_test/tests/actions_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Refactor the test for Fuel Master migration\n\nRefactor the test to use template based approach:\n- refactor the test to use template driven engine;\n- add a new nodes config - 1 controller + 1 compute;\n- add 2 new test configs - for VLAN and VXLAN net. providers\nthat use the new '1 controller + 1 compute' nodes config.\n\nChange-Id: I586103f144bab73aa69b4239944ddf128919202b\nCloses-bug: #1512677\n", 
+                "commitId": "1dc44a08a75542d9dc8f97c25892400786197532", 
+                "date": "2015-11-24T12:53:53+0000 +0000", 
+                "id": "1dc44a08a75542d9dc8f97c25892400786197532", 
+                "msg": "Refactor the test for Fuel Master migration", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/system_tests.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/test_fuel_migration.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }
+                ], 
+                "timestamp": 1448369633000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/requirements.txt"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ddmitriev", 
+                    "fullName": "ddmitriev"
+                }, 
+                "comment": "Bump requirements for fuel-devops version to 2.9.13\n\nChange-Id: I0658f81190a245985f2650776776a86db32050aa\n", 
+                "commitId": "e9e6761ddcdde963a6e145e0d3cbebced47c15b5", 
+                "date": "2015-11-24T13:56:11+0000 +0200", 
+                "id": "e9e6761ddcdde963a6e145e0d3cbebced47c15b5", 
+                "msg": "Bump requirements for fuel-devops version to 2.9.13", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/requirements.txt"
+                    }
+                ], 
+                "timestamp": 1448373371000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+                    "fullName": "ykotko"
+                }, 
+                "comment": "Fix cli parameter\n\nRemove '--net' parameter from command in the test\ncreate_backup_reset_restore_and_deploy_via_cli\n\nChange-Id: I6c09db658f568b4b0b5b256144a56c29a127a275\nCloses-Bug: #1518906\n", 
+                "commitId": "37dff40cd06d2482fcba9ccf3942f2a207c589f2", 
+                "date": "2015-11-24T15:58:22+0000 +0100", 
+                "id": "37dff40cd06d2482fcba9ccf3942f2a207c589f2", 
+                "msg": "Fix cli parameter", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1448380702000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ddmitriev", 
+            "fullName": "ddmitriev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+            "fullName": "ykotko"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4679\">TestRail Report URL</a>", 
+    "displayName": "#47", 
+    "duration": 2391684, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #47", 
+    "id": "47", 
+    "keepLog": false, 
+    "number": 47, 
+    "queueId": 16735, 
+    "result": "SUCCESS", 
+    "timestamp": 1448397000546, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/47/"
+}

@@ -1,0 +1,173 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 46, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "1e1d740012be4bc7b83326cab508f7bdea1fb541", 
+                        "branch": [
+                            {
+                                "SHA1": "1e1d740012be4bc7b83326cab508f7bdea1fb541", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "1e1d740012be4bc7b83326cab508f7bdea1fb541", 
+                        "branch": [
+                            {
+                                "SHA1": "1e1d740012be4bc7b83326cab508f7bdea1fb541", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "1e1d740012be4bc7b83326cab508f7bdea1fb541", 
+                "branch": [
+                    {
+                        "SHA1": "1e1d740012be4bc7b83326cab508f7bdea1fb541", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "system_test/helpers/decorators.py", 
+                    "system_test/tests/base_actions_factory.py", 
+                    "system_test/tests/test_create_deploy_ostf.py", 
+                    "system_test/tests/actions_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Add nested action to template tests\n\nAdd @nested_action decorator\n\nTo combine some actions into one use @nested_action for method\n    which returns list of sub actions.\n\nImplement blueprint template-based-testcases\nChange-Id: Iac85df6ddaaa83ae2966d3a4e0963aa534c38877\n", 
+                "commitId": "f5adbdfbde1747ecf92cc3201485ae49b05605b6", 
+                "date": "2015-11-23T13:38:20+0000 +0200", 
+                "id": "f5adbdfbde1747ecf92cc3201485ae49b05605b6", 
+                "msg": "Add nested action to template tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/base_actions_factory.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/decorators.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_create_deploy_ostf.py"
+                    }
+                ], 
+                "timestamp": 1448285900000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/upload_cases_description.py", 
+                    "fuelweb_test/testrail/builds.py", 
+                    "fuelweb_test/testrail/testrail_client.py", 
+                    "fuelweb_test/testrail/report.py", 
+                    "system_test/tests/base_actions_factory.py", 
+                    "system_test/tests/actions_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Improvements of TestRail reporter for system_tests\n\nImprove behavior of upload_cases_description.py and report.py for new\ntype of system test\n\nImplements blueprint template-based-testcases\n\nChange-Id: I965ce7159a1497840775219db4c601821f5a66b1\n", 
+                "commitId": "9c4d87e76bfd115c4b29980b3c85ffb897d3e023", 
+                "date": "2015-11-23T15:02:50+0000 +0000", 
+                "id": "9c4d87e76bfd115c4b29980b3c85ffb897d3e023", 
+                "msg": "Improvements of TestRail reporter for system_tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/base_actions_factory.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/upload_cases_description.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/builds.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1448290970000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4665\">TestRail Report URL</a>", 
+    "displayName": "#46", 
+    "duration": 2351251, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #46", 
+    "id": "46", 
+    "keepLog": false, 
+    "number": 46, 
+    "queueId": 16374, 
+    "result": "SUCCESS", 
+    "timestamp": 1448310600550, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/46/"
+}

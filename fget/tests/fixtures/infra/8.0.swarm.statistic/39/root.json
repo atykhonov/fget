@@ -1,0 +1,239 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 39, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                        "branch": [
+                            {
+                                "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                        "branch": [
+                            {
+                                "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                "branch": [
+                    {
+                        "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add 'blocked' status to TestRail test results\n\nMark result as blocked if test was skipped due to\nfailure of another dependent test.\n\nChange-Id: I05713ead653b2dc4bb1a4021cef6404abc079036\nCloses-bug: #1515529\n", 
+                "commitId": "facef2e74e08e3a9c10f8b5fe46909fc3e2a9602", 
+                "date": "2015-11-12T11:14:14+0000 +0200", 
+                "id": "facef2e74e08e3a9c10f8b5fe46909fc3e2a9602", 
+                "msg": "Add 'blocked' status to TestRail test results", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1447326854000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py", 
+                    "fuelweb_test/testrail/testrail_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add skip message to result comments\n\nChange-Id: I38e12f4735bb83977e19a1eee75fe905fce0a3fc\nRelated-bug: #1515601\n", 
+                "commitId": "c6e10735e5b8078342414891d8500ad56b63388a", 
+                "date": "2015-11-12T18:03:21+0000 +0200", 
+                "id": "c6e10735e5b8078342414891d8500ad56b63388a", 
+                "msg": "Add skip message to result comments", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }
+                ], 
+                "timestamp": 1447351401000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/fuel_actions.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+                    "fullName": "vkhlyunev"
+                }, 
+                "comment": "Install dpkg-dev package to docker\n\nWe need this package for \"dpkg-scanpackages\" utility\n\nCloses-bug:#1516550\nChange-Id: Icd9699a4d7d13af3224965f187539e6b14c82d07\n", 
+                "commitId": "c022bd132944f281364525eee89c0cb4fb4c1bf0", 
+                "date": "2015-11-16T09:58:14+0000 +0300", 
+                "id": "c022bd132944f281364525eee89c0cb4fb4c1bf0", 
+                "msg": "Install dpkg-dev package to docker", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }
+                ], 
+                "timestamp": 1447667894000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/regenerate_repo.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Install 'dpkg-dev' before regenerating repository\n\nCurrently 'dpkg-scanpackages' tool is provided by 'dpkg-dev'\npackage (see bug #1515563), so it must be installed for\ntests which regenerate Ubuntu repository on master node.\n\nChange-Id: Ieb2968d428b098bdd5457dd298aebe0131562f26\nCloses-bug: #1516662\n", 
+                "commitId": "c131fda8eb33b10e74acfe204aa4e91e92230f98", 
+                "date": "2015-11-16T15:27:43+0000 +0200", 
+                "id": "c131fda8eb33b10e74acfe204aa4e91e92230f98", 
+                "msg": "Install 'dpkg-dev' before regenerating repository", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/regenerate_repo.py"
+                    }
+                ], 
+                "timestamp": 1447687663000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report_tempest_results.py", 
+                    "fuelweb_test/testrail/testrail_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tnurlygayanov", 
+                    "fullName": "tnurlygayanov"
+                }, 
+                "comment": "Fixed issue with 429 code for Tempest results\n\nWe fixed issue with TestRail API 429 errors for\nSWARM tests, but for Tempest results we need to\nuse minimum API requests and upload all results\nwith only one bulk API request.\n\nI sent support request to TestRail support team\nand they provided me the information how we can\nchange our API calls to TestRail to avoid any\nissues in the future.\n\nChange-Id: I7d8ffc3238eefe186f9ec904d8dca153527261ab\nRelated-Bug: #1514797\n", 
+                "commitId": "ad12ece81e5249a26e0647c17bbfcfe3da26276d", 
+                "date": "2015-11-16T15:31:13+0000 +0300", 
+                "id": "ad12ece81e5249a26e0647c17bbfcfe3da26276d", 
+                "msg": "Fixed issue with 429 code for Tempest results", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report_tempest_results.py"
+                    }
+                ], 
+                "timestamp": 1447687873000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+                    "fullName": "ykotko"
+                }, 
+                "comment": "Fix cli parameter\n\nDelete '--net' parameter,\ndue to existing only single net provider type\nand removing '--net' parameter from the fuel-client\n\nChange-Id: I61d48cfa9d715b0162536f50c372646d89783667\nCloses-Bug: #1516051\n", 
+                "commitId": "ae8208eb78a8e0e475741b60229903b01cbfec0f", 
+                "date": "2015-11-16T17:36:52+0000 +0000", 
+                "id": "ae8208eb78a8e0e475741b60229903b01cbfec0f", 
+                "msg": "Fix cli parameter", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }
+                ], 
+                "timestamp": 1447695412000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tnurlygayanov", 
+            "fullName": "tnurlygayanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+            "fullName": "vkhlyunev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+            "fullName": "ykotko"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4567\">TestRail Report URL</a>", 
+    "displayName": "#39", 
+    "duration": 2130803, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #39", 
+    "id": "39", 
+    "keepLog": false, 
+    "number": 39, 
+    "queueId": 13959, 
+    "result": "SUCCESS", 
+    "timestamp": 1447705800550, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/39/"
+}

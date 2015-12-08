@@ -1,0 +1,319 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:cadff413214f80df642c76c0f3e568895ab15370&dn=fuel-8.0-245-2015-12-03%5F13-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-245-2015-12-03%5F13-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-12-02-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 230", 
+                    "upstreamBuild": 230, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 230, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "7ad2dedc603299466b2f12b3545ccf74ebcaa626", 
+                        "branch": [
+                            {
+                                "SHA1": "7ad2dedc603299466b2f12b3545ccf74ebcaa626", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "7ad2dedc603299466b2f12b3545ccf74ebcaa626", 
+                        "branch": [
+                            {
+                                "SHA1": "7ad2dedc603299466b2f12b3545ccf74ebcaa626", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "7ad2dedc603299466b2f12b3545ccf74ebcaa626", 
+                "branch": [
+                    {
+                        "SHA1": "7ad2dedc603299466b2f12b3545ccf74ebcaa626", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-12-03_15-47-10.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-12-03_15-47-10.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-12-03_15-47-10.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-12-03_14-39-56.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-12-03_14-39-56.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-12-03_14-39-56.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-12-03_14-46-16.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-12-03_14-46-16.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-12-03_14-46-16.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-12-03_14-39-16.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-12-03_14-39-16.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-12-03_14-39-16.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151203.yaml", 
+            "fileName": "timestat_20151203.yaml", 
+            "relativePath": "logs/timestat_20151203.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv44-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_multiple_networks.py", 
+                    "fuelweb_test/helpers/checkers.py", 
+                    "fuelweb_test/helpers/utils.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Update networks over cli\n\nAdd nexts steps:\n* download net config over cli\n* upload it\n* check that it is successfully applied\n\nCloses-Bug: #1512314\nChange-Id: I4b93289aacf78a5e02f0c830a822ad2ba048b010\n", 
+                "commitId": "a2816af6b77326786d72f20a038e6d03f284d81f", 
+                "date": "2015-11-30T18:25:33+0000 +0200", 
+                "id": "a2816af6b77326786d72f20a038e6d03f284d81f", 
+                "msg": "Update networks over cli", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }
+                ], 
+                "timestamp": 1448907933000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/nailgun_client.py", 
+                    "fuelweb_test/tests/tests_strength/test_restart.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Remove ceph nodes from cluster after destroy\n\n- After https://review.openstack.org/#/c/234657/ merged\nwe have to delete offline node from cluster before re-deployment\n\nChange-Id: I5b627b1ad36b8725d8333b0238e6ca202e4ee8cd\nCloses-Bug: #1518984\n", 
+                "commitId": "1499f5cbe6794a83aae4033dbe7ee81d72d2ad57", 
+                "date": "2015-12-02T13:32:33+0000 +0200", 
+                "id": "1499f5cbe6794a83aae4033dbe7ee81d72d2ad57", 
+                "msg": "Remove ceph nodes from cluster after destroy", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_restart.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/nailgun_client.py"
+                    }
+                ], 
+                "timestamp": 1449063153000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/nailgun_client.py", 
+                    "fuelweb_test/tests/test_multiple_networks.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add test with nodegroup removal after cluster reset\n\nCreate test which removes nodegroup from new environment\nand checks its nodes are marked as 'error'.\nAlso change 'assign_nodegroup' method to use PUT request\nto '/api/nodes/' URL for assigning nodes to nodegroup,\nbecause old handler was removed from Nailgun here:\nI88b7d4c550f87fe9620467f4c3212a7034c89999.\n\nChange-Id: Iae0abac3af1d126facf2045763c4fe1b1b9e940e\nRelated-bug: #1521682\n", 
+                "commitId": "2a97f51ba9c6d99fe918cf75639c655e8d4bd0b9", 
+                "date": "2015-12-02T23:51:57+0000 +0200", 
+                "id": "2a97f51ba9c6d99fe918cf75639c655e8d4bd0b9", 
+                "msg": "Add test with nodegroup removal after cluster reset", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/nailgun_client.py"
+                    }
+                ], 
+                "timestamp": 1449100317000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_neutron.py", 
+                    "fuelweb_test/tests/tests_strength/test_image_based.py", 
+                    "fuelweb_test/tests/test_pullrequest.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Remove tests with 'gre' network\n\n- Remove 'gre' tests from tests_strength/test_neutron.py\n- Change 'gre' to 'tun' in test_image_based.py\n- Change 'gre' to 'tun' in test_pullrequest.py\n\nChange-Id: Ic1467e40be58782fed1ace51784b946c1d823153\nCloses-Bug: #1512285\n", 
+                "commitId": "0a61b2a16edef3acd2cb3971bff2bb99e9479bd1", 
+                "date": "2015-12-03T09:33:29+0000 +0000", 
+                "id": "0a61b2a16edef3acd2cb3971bff2bb99e9479bd1", 
+                "msg": "Remove tests with 'gre' network", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_image_based.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_pullrequest.py"
+                    }
+                ], 
+                "timestamp": 1449135209000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_services.py", 
+                    "fuelweb_test/settings.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/esikachev", 
+                    "fullName": "esikachev"
+                }, 
+                "comment": "Adding sahara tests for nightly job\n\nAdding sahara scenario tests for testing 8.0 on\nSahara/Murano jobs\ncloses-bug: #1521667\n\nChange-Id: I16452cc00a35588447abf0d4dd260bd19320a3b5\n", 
+                "commitId": "0ecaa44a078f80bf9ab387638c7a13ac34e7630a", 
+                "date": "2015-12-03T10:21:21+0000 +0300", 
+                "id": "0ecaa44a078f80bf9ab387638c7a13ac34e7630a", 
+                "msg": "Adding sahara tests for nightly job", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_services.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/settings.py"
+                    }
+                ], 
+                "timestamp": 1449138081000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/esikachev", 
+            "fullName": "esikachev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#230", 
+    "duration": 6041046, 
+    "estimatedDuration": 5951722, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.smoke_neutron #230", 
+    "id": "230", 
+    "keepLog": false, 
+    "number": 230, 
+    "queueId": 19919, 
+    "result": "SUCCESS", 
+    "timestamp": 1449151677494, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.smoke_neutron/230/"
+}

@@ -1,0 +1,163 @@
+{
+    "actions": [
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "iso magnet link", 
+                    "name": "MAGNET_LINK", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "Centos"
+                    }, 
+                    "description": "Base distribution", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "8.0.main.Centos.bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": true, 
+    "builds": [
+        {
+            "number": 1, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/1/"
+        }
+    ], 
+    "color": "red", 
+    "concurrentBuild": true, 
+    "description": "<p>Build verification test for Centos</p>\n<pre style=\"font-size: 10px\">\n    Deploy ceph HA with RadosGW for objects\n\n    Scenario:\n\n            Create cluster with Neutron\n            Add 3 nodes with controller role\n            Add 3 nodes with compute and ceph-osd role\n            Deploy the cluster\n            Check ceph status\n            Run OSTF tests\n            Check the radosqw daemon is started\n\n    Duration 90m Snapshot ceph_rados_gw\n</pre>\n\n<p>\n  <b>Ownership:</b> Issues with this job are tracked by QA team.\n<p>\n  <b>Contacts:</b> #fuel-qa\n<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0.centos.bvt_2", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [], 
+    "firstBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/1/"
+    }, 
+    "healthReport": [
+        {
+            "description": "Build stability: All recent builds failed.", 
+            "iconClassName": "icon-health-00to19", 
+            "iconUrl": "health-00to19.png", 
+            "score": 0
+        }, 
+        {
+            "description": "Test Result: 1 test failing out of a total of 3 tests.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }
+    ], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/1/"
+    }, 
+    "lastCompletedBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/1/"
+    }, 
+    "lastFailedBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/1/"
+    }, 
+    "lastStableBuild": null, 
+    "lastSuccessfulBuild": null, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/1/"
+    }, 
+    "name": "8.0.centos.bvt_2", 
+    "nextBuildNumber": 2, 
+    "property": [
+        {}, 
+        {}, 
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "name": "MAGNET_LINK", 
+                        "value": ""
+                    }, 
+                    "description": "iso magnet link", 
+                    "name": "MAGNET_LINK", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "OPENSTACK_RELEASE", 
+                        "value": "Centos"
+                    }, 
+                    "description": "Base distribution", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "TEST_GROUP", 
+                        "value": "bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "ENV_PREFIX", 
+                        "value": "8.0.main.Centos.bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "BUILD_MIRROR_URL", 
+                        "value": ""
+                    }, 
+                    "description": "", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }
+    ], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/"
+}

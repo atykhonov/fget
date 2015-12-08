@@ -1,0 +1,213 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 35, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "56f80160c7af56a13275d9bfc3d5af03b58aa472", 
+                        "branch": [
+                            {
+                                "SHA1": "56f80160c7af56a13275d9bfc3d5af03b58aa472", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "56f80160c7af56a13275d9bfc3d5af03b58aa472", 
+                        "branch": [
+                            {
+                                "SHA1": "56f80160c7af56a13275d9bfc3d5af03b58aa472", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "56f80160c7af56a13275d9bfc3d5af03b58aa472", 
+                "branch": [
+                    {
+                        "SHA1": "56f80160c7af56a13275d9bfc3d5af03b58aa472", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py", 
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/msamoylov", 
+                    "fullName": "msamoylov"
+                }, 
+                "comment": "Remove deprecated option \"--mode ha\" for cli tests.\n\nChange-Id: I2b57da3cd3d23d5a5672019f84ca39ddd75f1efd\nCloses-Bug: #1515202\n", 
+                "commitId": "197aa8471ddddae01c32202a2398764cdaf02ad4", 
+                "date": "2015-11-11T14:16:28+0000 +0300", 
+                "id": "197aa8471ddddae01c32202a2398764cdaf02ad4", 
+                "msg": "Remove deprecated option \"--mode ha\" for cli tests.", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1447251388000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/testrail.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add retries to TestRail client\n\nIn order to workaround API limitations (such as\nrequests rate), adding mechanism of requests\nretries based on predefined error codes.\n\nTry to resend request 3 times if '429' code is\nreceived from API.\n\nCloses-bug: #1514797\nChange-Id: I723ef7886c86b7e418627962a1ff8aa7a4281c0a\n", 
+                "commitId": "0debb2816160b27660449cf16561191e75539d82", 
+                "date": "2015-11-11T19:52:01+0000 +0200", 
+                "id": "0debb2816160b27660449cf16561191e75539d82", 
+                "msg": "Add retries to TestRail client", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail.py"
+                    }
+                ], 
+                "timestamp": 1447271521000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_multiple_networks.py", 
+                    "fuelweb_test/helpers/multiple_networks_hacks.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Add test with assigning controllers to non-default nodegroup\n\nScenario:\n1. Revert snapshot with ready master node\n2. Create environment with Neutron VXLAN and custom nodegroup\n3. Configure network floating ranges to use public network\n   from custom nodegroup\n4. Bootstrap slaves from custom nodegroup\n5. Bootstrap slave nodes from default nodegroup\n6. Add 3 nodes from 'custom' nodegroup as controllers\n   Add 2 nodes from 'default' nodegroup as compute and cinder\n7. Run network verification\n8. Check addresses allocated for VIPs belong to networks\n   from custom nodegroup\n9. Deploy environment\n10. Run network verification\n11. Run OSTF\n\nChange-Id: I3b6db9a1ca0c98444998ad05353a03efc8243c71\nImplements: blueprint test-custom-nodegroup-controllers\n", 
+                "commitId": "42aadc4c537a385f5c0a3d34b86df63f0912a6ee", 
+                "date": "2015-11-12T05:17:51+0000 +0200", 
+                "id": "42aadc4c537a385f5c0a3d34b86df63f0912a6ee", 
+                "msg": "Add test with assigning controllers to non-default nodegroup", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/multiple_networks_hacks.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }
+                ], 
+                "timestamp": 1447305471000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_os_upgrade.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Split os upgrade tests into two classes\n\n- Split os upgrade tests into 2 separate\nclasses: one to prepare env for upgrade and\none to do upgrade itself\n\nChange-Id: I98abab4bfb589bb6d39395f1b7b618ac30ba1bdc\nCloses-Bug: #1515629\n", 
+                "commitId": "3b120bec3d0505153f862dd36d7d2704ed99083a", 
+                "date": "2015-11-12T14:28:15+0000 +0200", 
+                "id": "3b120bec3d0505153f862dd36d7d2704ed99083a", 
+                "msg": "Split os upgrade tests into two classes", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_os_upgrade.py"
+                    }
+                ], 
+                "timestamp": 1447338495000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akostrikov", 
+            "fullName": "akostrikov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/msamoylov", 
+            "fullName": "msamoylov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4505\">TestRail Report URL</a>", 
+    "displayName": "#35", 
+    "duration": 724723, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #35", 
+    "id": "35", 
+    "keepLog": false, 
+    "number": 35, 
+    "queueId": 12518, 
+    "result": "SUCCESS", 
+    "timestamp": 1447360200546, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/35/"
+}

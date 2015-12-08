@@ -1,0 +1,498 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:e873f5b3e636c5d11f72ae926f6a7aa09a9eca80&dn=fuel-8.0-218-2015-11-27%5F13-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-218-2015-11-27%5F13-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-26-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 205", 
+                    "upstreamBuild": 205, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 205, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                        "branch": [
+                            {
+                                "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                        "branch": [
+                            {
+                                "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                "branch": [
+                    {
+                        "SHA1": "58ae9a57aff964a4d911d5a00619118308709337", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-11-27_16-07-49.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-11-27_16-07-49.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-11-27_16-07-49.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-27_14-35-44.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-27_14-35-44.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-27_14-35-44.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-27_14-35-04.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-27_14-35-04.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-27_14-35-04.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151127.yaml", 
+            "fileName": "timestat_20151127.yaml", 
+            "relativePath": "logs/timestat_20151127.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/cluster_configs/nodes/_default_ifaces.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_3ceph_1mongo_neutronTUN_CephImgVol_ceilometer_sahara.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImg_ceilometer.yaml", 
+                    "fuelweb_test/models/environment.py", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_2comp_1cndr_3ceph_1mongo.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImgRados.yaml", 
+                    "system_test/tests_templates/devops_configs/default.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/mixed/1ctrl_1comp_1cndr_mongo_2ceph.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_cephImg_ceilometer.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/mixed/3ctrl_3comp_ceph.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr.yaml", 
+                    "system_test/tests/actions_base.py", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_3ceph_1mongo.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_3ceph_neutronVLAN_cephImgRados.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/pairwise/1ctrl_1comp_1cndr_mongo_2ceph_neutronVLAN_CephImgRados_ceilometer.yaml", 
+                    "system_test/tests_templates/tests_configs/ceph_all_on_neutron_vlan.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/3ctrl_1comp_1cndr.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_wo_components.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_wo_componets.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/mixed/3ctrl_mongo_3comp_ceph.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImg_wo_components.yaml", 
+                    "system_test/tests/test_deploy_check_rados.py", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_2comp_1cndr_3ceph_1mongo_neutronVLAN_CephImg_ceilometer.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/3ctrl_2comp_1cndr.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_neutronTUN_sahara.yaml", 
+                    "system_test/helpers/utils.py", 
+                    "system_test/tests_templates/tests_configs/ceph_all_ceilo_on_neutron_tun.yaml", 
+                    "system_test/tests/base_actions_factory.py", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImg_ceilometer_sahara.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr_3ceph.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_ceilometer.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_ceilometer.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_sahara.yaml", 
+                    "system_test/tests_templates/tests_configs/example_test_environment.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImgRados_ceilometer.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Extends system tests to use devops template\n\nRuntime changing of yaml config via environment variable use !os_env\n\nAdd validator for unique file name of yaml config file. We should have\n    unique file names in system_test/tests_templates/tests_configs\n\nYaml configuration compiled only when test started, than increase\n    creation speed of test plan and improve isolation of config files\n\nUsing name of yaml file for link config and test case instead of the\n    test-group node in yaml file before\n\nAdd several types of group names:\n    case_group.CONFIG\n    case_gorup(CONFIG)\n    case_gorup[CONFIG]\n    case_gorup{CONFIG}\n\nAdd default devops template\n    system_test/tests_templates/devops_configs/default.yaml\n\nUse devops config in ceph_all_on_neutron_vlan.yaml\n\nImplements blueprint template-based-testcases\nChange-Id: Ib5ae4126041b2aad059199e93d0c78457125b1fe\n", 
+                "commitId": "06a6405c0003d31056d9c94655e8fa0f16abd917", 
+                "date": "2015-11-25T14:35:46+0000 +0200", 
+                "id": "06a6405c0003d31056d9c94655e8fa0f16abd917", 
+                "msg": "Extends system tests to use devops template", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_3ceph_neutronVLAN_cephImgRados.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/pairwise/1ctrl_1comp_1cndr_mongo_2ceph_neutronVLAN_CephImgRados_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr_3ceph.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/example_test_environment.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_wo_componets.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_3ceph_1mongo.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/3ctrl_1comp_1cndr.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_3ceph_1mongo_neutronTUN_CephImgVol_ceilometer_sahara.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImg_wo_components.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/mixed/1ctrl_1comp_1cndr_mongo_2ceph.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImgRados_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/mixed/3ctrl_mongo_3comp_ceph.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_neutronTUN_sahara.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/3ctrl_2comp_1cndr.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/ceph_all_on_neutron_vlan.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImgRados.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/base_actions_factory.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_2comp_1cndr_3ceph_1mongo_neutronVLAN_CephImg_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_sahara.yaml"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/_default_ifaces.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_cephImg_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/ceph_all_ceilo_on_neutron_tun.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/devops_configs/default.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/mixed/3ctrl_3comp_ceph.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_wo_components.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_deploy_check_rados.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_2comp_1cndr_3ceph_1mongo.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImg_ceilometer_sahara.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImg_ceilometer.yaml"
+                    }
+                ], 
+                "timestamp": 1448462146000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/rally/scenarios/nova.json", 
+                    "fuelweb_test/helpers/rally.py", 
+                    "system_test/helpers/decorators.py", 
+                    "fuelweb_test/tests/plugins/plugin_lbaas/test_plugin_lbaas.py", 
+                    "fuelweb_test/tests/test_multiple_networks.py", 
+                    "fuelweb_test/rally/screnarios/scenarios.yaml", 
+                    "fuelweb_test/helpers/utils.py", 
+                    "fuelweb_test/models/environment.py", 
+                    "fuelweb_test/testrail/testrail_client.py", 
+                    "fuelweb_test/tests/test_vcenter.py", 
+                    "fuelweb_test/rally/screnarios/nova.json", 
+                    "fuelweb_test/rally/scenarios/scenarios.yaml", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "system_test/tests/strength/filling_root.py", 
+                    "fuelweb_test/helpers/replace_repos.py", 
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+                    "fullName": "astepanov"
+                }, 
+                "comment": "Fis mistypes with affect on API\n\n1. screnarios -> scenarios\n2. spended_time -> spent time (used only at 1 place)\n3. rename few test methods (not groups)\n4. removed unused code (\n      assign element of dictionary before return of this element only,\n      redundant parenthesis - again,\n      comeback of mutable defaults - again,\n      variable, which redefined on the next line in if-else)\n\nChange-Id: I68ffdc85c2d1289d7ab6ef6a7f4084c19e7afcf9\nRelated-Bug: #1513777\n", 
+                "commitId": "6cae33f50a5d4b3decf7e128687732d813846015", 
+                "date": "2015-11-27T08:59:47+0000 +0300", 
+                "id": "6cae33f50a5d4b3decf7e128687732d813846015", 
+                "msg": "Fis mistypes with affect on API", 
+                "paths": [
+                    {
+                        "editType": "delete", 
+                        "file": "fuelweb_test/rally/screnarios/nova.json"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_vcenter.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/rally/scenarios/nova.json"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "fuelweb_test/rally/screnarios/scenarios.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/rally.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/rally/scenarios/scenarios.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/filling_root.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/decorators.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/replace_repos.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_lbaas/test_plugin_lbaas.py"
+                    }
+                ], 
+                "timestamp": 1448614787000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Fix swarm statistic reporter\n\n- In case we don't have linked bugs in suite\nwe need to return empty string\n\nChange-Id: I5ca2adf3450e82ccb4784b3eebd8f62e7a44f2f8\nCloses-Bug: #1520503\n", 
+                "commitId": "b422dcc3c93fe850274164384f759f82105d8583", 
+                "date": "2015-11-27T10:00:21+0000 +0200", 
+                "id": "b422dcc3c93fe850274164384f759f82105d8583", 
+                "msg": "Fix swarm statistic reporter", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1448618421000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#205", 
+    "duration": 7400143, 
+    "estimatedDuration": 8594353, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.bvt_2 #205", 
+    "id": "205", 
+    "keepLog": false, 
+    "number": 205, 
+    "queueId": 17751, 
+    "result": "SUCCESS", 
+    "timestamp": 1448633269878, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/205/"
+}

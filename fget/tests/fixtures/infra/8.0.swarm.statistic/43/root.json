@@ -1,0 +1,137 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 43, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "631b19054da865726856b11b02c994be2fecceae", 
+                        "branch": [
+                            {
+                                "SHA1": "631b19054da865726856b11b02c994be2fecceae", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "631b19054da865726856b11b02c994be2fecceae", 
+                        "branch": [
+                            {
+                                "SHA1": "631b19054da865726856b11b02c994be2fecceae", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "631b19054da865726856b11b02c994be2fecceae", 
+                "branch": [
+                    {
+                        "SHA1": "631b19054da865726856b11b02c994be2fecceae", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_bonding.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+                    "fullName": "dkruglov"
+                }, 
+                "comment": "Add a negative test to bonding suite\n\nAdd a test that verifies bond config consistency\nafter deployment failure.\n\nChange-Id: I1b06a81dbb99bec03f5a7de1d0c461c5ddbc7c5b\nCloses-bug: #1516658\n", 
+                "commitId": "4632e96a720b9d548e6650928b58d2904f083e04", 
+                "date": "2015-11-19T14:20:43+0000 +0000", 
+                "id": "4632e96a720b9d548e6650928b58d2904f083e04", 
+                "msg": "Add a negative test to bonding suite", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_bonding.py"
+                    }
+                ], 
+                "timestamp": 1447942843000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Add support to api changes in /api/nodegroups/ in fuel-qa\n\nChange was provided by:\nhttps://review.openstack.org/#/c/240234/\nfield 'cluster' was changed to 'cluster_id'\n\nRelated to blueprint multirack-in-fuel-ui\nCloses-Bug: #1518057\n\nChange-Id: I4da51ea2f1d2ec4159de28ed47213b4e3109255a\n", 
+                "commitId": "cccdae2b4d9c1e76eb1f542bc2fb1876a70cad60", 
+                "date": "2015-11-19T20:14:12+0000 +0000", 
+                "id": "cccdae2b4d9c1e76eb1f542bc2fb1876a70cad60", 
+                "msg": "Add support to api changes in /api/nodegroups/ in fuel-qa", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1447964052000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+            "fullName": "dkruglov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4626\">TestRail Report URL</a>", 
+    "displayName": "#43", 
+    "duration": 2570355, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #43", 
+    "id": "43", 
+    "keepLog": false, 
+    "number": 43, 
+    "queueId": 15371, 
+    "result": "SUCCESS", 
+    "timestamp": 1448051400544, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/43/"
+}

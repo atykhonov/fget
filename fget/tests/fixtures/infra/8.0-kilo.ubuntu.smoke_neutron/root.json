@@ -1,0 +1,372 @@
+{
+    "actions": [
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "iso magnet link", 
+                    "name": "MAGNET_LINK", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "ubuntu"
+                    }, 
+                    "description": "Base distribution", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "smoke_neutron"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                    }, 
+                    "description": "", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": true, 
+    "builds": [
+        {
+            "number": 214, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/214/"
+        }, 
+        {
+            "number": 213, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/213/"
+        }, 
+        {
+            "number": 212, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/212/"
+        }, 
+        {
+            "number": 211, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/211/"
+        }, 
+        {
+            "number": 210, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/210/"
+        }, 
+        {
+            "number": 209, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/209/"
+        }, 
+        {
+            "number": 208, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/208/"
+        }, 
+        {
+            "number": 207, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/207/"
+        }, 
+        {
+            "number": 206, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/206/"
+        }, 
+        {
+            "number": 205, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/205/"
+        }, 
+        {
+            "number": 204, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/204/"
+        }, 
+        {
+            "number": 203, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/203/"
+        }, 
+        {
+            "number": 202, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/202/"
+        }, 
+        {
+            "number": 201, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/201/"
+        }, 
+        {
+            "number": 200, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/200/"
+        }, 
+        {
+            "number": 199, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/199/"
+        }, 
+        {
+            "number": 198, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/198/"
+        }, 
+        {
+            "number": 197, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/197/"
+        }, 
+        {
+            "number": 196, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/196/"
+        }, 
+        {
+            "number": 195, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/195/"
+        }, 
+        {
+            "number": 194, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/194/"
+        }, 
+        {
+            "number": 193, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/193/"
+        }, 
+        {
+            "number": 192, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/192/"
+        }, 
+        {
+            "number": 191, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/191/"
+        }, 
+        {
+            "number": 190, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/190/"
+        }, 
+        {
+            "number": 189, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/189/"
+        }, 
+        {
+            "number": 188, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/188/"
+        }, 
+        {
+            "number": 187, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/187/"
+        }, 
+        {
+            "number": 186, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/186/"
+        }, 
+        {
+            "number": 185, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/185/"
+        }, 
+        {
+            "number": 184, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/184/"
+        }, 
+        {
+            "number": 183, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/183/"
+        }, 
+        {
+            "number": 182, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/182/"
+        }, 
+        {
+            "number": 181, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/181/"
+        }, 
+        {
+            "number": 180, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/180/"
+        }, 
+        {
+            "number": 179, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/179/"
+        }, 
+        {
+            "number": 178, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/178/"
+        }, 
+        {
+            "number": 177, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/177/"
+        }, 
+        {
+            "number": 176, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/176/"
+        }, 
+        {
+            "number": 175, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/175/"
+        }, 
+        {
+            "number": 174, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/174/"
+        }, 
+        {
+            "number": 173, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/173/"
+        }, 
+        {
+            "number": 172, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/172/"
+        }, 
+        {
+            "number": 171, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/171/"
+        }, 
+        {
+            "number": 170, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/170/"
+        }, 
+        {
+            "number": 169, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/169/"
+        }, 
+        {
+            "number": 168, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/168/"
+        }, 
+        {
+            "number": 167, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/167/"
+        }, 
+        {
+            "number": 166, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/166/"
+        }, 
+        {
+            "number": 165, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/165/"
+        }
+    ], 
+    "color": "blue", 
+    "concurrentBuild": true, 
+    "description": "Run tests with smoke_neutron test group.\n\n<p>\n  Owned by: Fuel QA Team<br/>\n  Job owner is responsible for keeping builds green.<br/>\n  Maintenance contacts: #fuel-qa<br/>\n</p>\n<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0-kilo.ubuntu.smoke_neutron", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [], 
+    "firstBuild": {
+        "number": 165, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/165/"
+    }, 
+    "healthReport": [
+        {
+            "description": "Test Result: 0 tests failing out of a total of 4 tests.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }, 
+        {
+            "description": "Build stability: No recent builds failed.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }
+    ], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": {
+        "number": 214, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/214/"
+    }, 
+    "lastCompletedBuild": {
+        "number": 214, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/214/"
+    }, 
+    "lastFailedBuild": {
+        "number": 175, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/175/"
+    }, 
+    "lastStableBuild": {
+        "number": 214, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/214/"
+    }, 
+    "lastSuccessfulBuild": {
+        "number": 214, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/214/"
+    }, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": {
+        "number": 175, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/175/"
+    }, 
+    "name": "8.0-kilo.ubuntu.smoke_neutron", 
+    "nextBuildNumber": 215, 
+    "property": [
+        {}, 
+        {}, 
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "name": "MAGNET_LINK", 
+                        "value": ""
+                    }, 
+                    "description": "iso magnet link", 
+                    "name": "MAGNET_LINK", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "OPENSTACK_RELEASE", 
+                        "value": "ubuntu"
+                    }, 
+                    "description": "Base distribution", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "TEST_GROUP", 
+                        "value": "smoke_neutron"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "ENV_PREFIX", 
+                        "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                    }, 
+                    "description": "", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "BUILD_MIRROR_URL", 
+                        "value": ""
+                    }, 
+                    "description": "", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }
+    ], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [
+        {
+            "color": "disabled", 
+            "name": "8.0-kilo.test_all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.test_all/"
+        }
+    ], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/"
+}

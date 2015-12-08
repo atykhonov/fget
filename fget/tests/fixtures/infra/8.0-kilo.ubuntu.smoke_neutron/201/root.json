@@ -1,0 +1,208 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:ddae1a0b8d5b3fa17acd8fed1658f668b6023e6c&dn=fuel-kilo-8.0-220-2015-11-02%5F12-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-220-2015-11-02%5F12-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-01-170157"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 201", 
+                    "upstreamBuild": 201, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 201, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                        "branch": [
+                            {
+                                "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                        "branch": [
+                            {
+                                "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                "branch": [
+                    {
+                        "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-02_14-23-10.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-11-02_14-23-10.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-11-02_14-23-10.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-02_13-20-17.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-02_13-20-17.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-02_13-20-17.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-11-02_13-26-39.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-11-02_13-26-39.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-11-02_13-26-39.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-02_13-19-37.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-02_13-19-37.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-02_13-19-37.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151102.yaml", 
+            "fileName": "timestat_20151102.yaml", 
+            "relativePath": "logs/timestat_20151102.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Increase timeout for env deletion over cli\n\nIn test delete cluster over cli we use\nrevert mechanism, but do not check if all the nodes\nbecome online after revert. This lead to the situation\nwhen cluster deletion takes a little bit more time.\nSo In this patch delete timeout was increased.\nAlso add check for node statuses after revert\nand log with error level if some of them is offline.\nWe don't interrupt tests here according to cluster should be deleted,even all the nodes are offline\n\nChange-Id: I769e5a17875595b632d111d6b5f1a782989e3a37\nCloses-Bug: #1508007\n", 
+                "commitId": "4509b95152f85f919e345ef7a088f6763a4f9b50", 
+                "date": "2015-10-30T18:44:49+0000 +0000", 
+                "id": "4509b95152f85f919e345ef7a088f6763a4f9b50", 
+                "msg": "Increase timeout for env deletion over cli", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }
+                ], 
+                "timestamp": 1446230689000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Fix usage of get_nailgun_cluster_nodes_by_roles()\n\nmethod get_nailgun_cluster_nodes_by_roles() expects\nlist not string.\n\nChange-Id: Ifcca579b7969599f1cf6cb51ed70b8c6fb0434fb\nCloses-Bug: #1512244\n", 
+                "commitId": "11aadbadb44594f52c8730feebca3efb85d04f79", 
+                "date": "2015-11-02T08:53:58+0000 +0200", 
+                "id": "11aadbadb44594f52c8730feebca3efb85d04f79", 
+                "msg": "Fix usage of get_nailgun_cluster_nodes_by_roles()", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1446454438000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#201", 
+    "duration": 5445794, 
+    "estimatedDuration": 5467640, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.smoke_neutron #201", 
+    "id": "201", 
+    "keepLog": false, 
+    "number": 201, 
+    "queueId": 8006, 
+    "result": "SUCCESS", 
+    "timestamp": 1446468805886, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/201/"
+}

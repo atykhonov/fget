@@ -1,0 +1,617 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "nessus"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "NEUTRON_ENABLE", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "VENV_PATH", 
+                    "value": "/home/jenkins/venv-nailgun-tests-2.9"
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "latest-stable"
+                }, 
+                {
+                    "name": "MIRROR_UBUNTU", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                    "value": "1052"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.nessus_security_scan"
+                }, 
+                {
+                    "name": "NESSUS_IMAGE_PATH", 
+                    "value": "/var/lib/libvirt/images/nessus.qcow2"
+                }, 
+                {
+                    "name": "NESSUS_USERNAME", 
+                    "value": "root"
+                }, 
+                {
+                    "name": "NESSUS_PASSWORD", 
+                    "value": "r00tme"
+                }, 
+                {
+                    "name": "SECURITY_TEST", 
+                    "value": "True"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 4, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                        "branch": [
+                            {
+                                "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                        "branch": [
+                            {
+                                "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                "branch": [
+                    {
+                        "SHA1": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 3, 
+            "totalCount": 7, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-10-27_00-31-07.tar.xz", 
+            "fileName": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-10-27_00-31-07.tar.xz", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-10-27_00-31-07.tar.xz"
+        }, 
+        {
+            "displayPath": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-10-27_00-31-07.tar.xz.filtered.log", 
+            "fileName": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-10-27_00-31-07.tar.xz.filtered.log", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-10-27_00-31-07.tar.xz.filtered.log"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151026.yaml", 
+            "fileName": "timestat_20151026.yaml", 
+            "relativePath": "logs/timestat_20151026.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv16-msk.msk.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_wo_components.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_3ceph_1mongo_neutronTUN_CephImgVol_ceilometer_sahara.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/storages/cinder_cephImgRados.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_2comp_1cndr_3ceph_1mongo_neutronVLAN_CephImg_ceilometer.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_neutronTUN_sahara.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_2comp_1cndr_3ceph_1mongo.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/mixed/1ctrl_1comp_1cndr_mongo_2ceph.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_cephImg_ceilometer.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImg_ceilometer_sahara.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr_3ceph.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_ceilometer.yaml", 
+                    "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_3ceph_1mongo.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_3ceph_neutronVLAN_cephImgRados.yaml", 
+                    "system_test/tests_templates/tests_configs/simple/pairwise/1ctrl_1comp_1cndr_mongo_2ceph_neutronVLAN_CephImgRados_ceilometer.yaml", 
+                    "system_test/tests_templates/cluster_configs/settings/cinder_sahara.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Add environments from manual cases in system tests\n\nEnvironments configurations:\n    - 1 Controller, 1 Compute, 1 Cinder on Neutron/TUN with Sahara\n    - 1 Controller, 1 Compute, 3 Ceph, 1 Mongo on Neutron/TUN use Ceph\n        Volume and Image with Ceilometer and Sahara\n    - 1 Controller, 2 Compute, 1 Cinder, 3 Ceph, 1 Mongo on Neutron/VLAN\n        use Ceph Image with Ceilometer\n    - 1 Controller, 1 Compute, 1 Cinder, 3 Ceph on Neutron/VLAN use Ceph\n        Image and Rados\n    - 1 Controller, 1 Compute, 1 Cinder and Mongo, 2 Ceph on Neutron/VLAN\n    use Ceph Image and Rados with Ceilometer\n\nChange-Id: Ie60f8fafdc7580a621649e71823f611d97b6807d\n", 
+                "commitId": "a6414807fe968480c83cbc864e62c92cfc241a0c", 
+                "date": "2015-10-19T09:58:31+0000 +0300", 
+                "id": "a6414807fe968480c83cbc864e62c92cfc241a0c", 
+                "msg": "Add environments from manual cases in system tests", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_sahara.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_3ceph_1mongo.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/storages/cinder_cephImgRados.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/pairwise/1ctrl_1comp_1cndr_mongo_2ceph_neutronVLAN_CephImgRados_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_3ceph_neutronVLAN_cephImgRados.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_1comp_1cndr_3ceph.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_3ceph_1mongo_neutronTUN_CephImgVol_ceilometer_sahara.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/single/1ctrl_2comp_1cndr_3ceph_1mongo.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_cephImg_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cinder_cephImgRados_wo_components.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/nodes/mixed/1ctrl_1comp_1cndr_mongo_2ceph.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_2comp_1cndr_3ceph_1mongo_neutronVLAN_CephImg_ceilometer.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_1cndr_neutronTUN_sahara.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImg_ceilometer_sahara.yaml"
+                    }
+                ], 
+                "timestamp": 1445248711000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/fuel_actions.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akurenyshev", 
+                    "fullName": "akurenyshev"
+                }, 
+                "comment": "Fix call to setup.py for Fuel Plugin Builder\nRecently FPB repository was restructured\nThis change fix system tests to use right path\n\nChange-Id: I7da7b87f61b9e79280edcdc2d76977f66dca58df\nCloses-Bug:1508033\n", 
+                "commitId": "b0f5e99b1c057dae8750be80a9de550c69eeb239", 
+                "date": "2015-10-20T13:31:47+0000 +0300", 
+                "id": "b0f5e99b1c057dae8750be80a9de550c69eeb239", 
+                "msg": "Fix call to setup.py for Fuel Plugin Builder", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }
+                ], 
+                "timestamp": 1445347907000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/utils.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+                    "fullName": "vgorin"
+                }, 
+                "comment": "Improving readability of OSTF results in system-tests output.\n\nCreate function pretty_log which makes log in table format.\nUse this function instead of json.dumps() in fuel_web_client.py\n\nChange-Id: I299ec5f26c888d18bbf525c075cb391beeff1950\nCloses-Bug: #1506506\n", 
+                "commitId": "9e1d5f38d51e350b159392c34c116886d04fabf0", 
+                "date": "2015-10-20T14:03:32+0000 +0300", 
+                "id": "9e1d5f38d51e350b159392c34c116886d04fabf0", 
+                "msg": "Improving readability of OSTF results in system-tests output.", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }
+                ], 
+                "timestamp": 1445349812000
+            }, 
+            {
+                "affectedPaths": [
+                    "doc/helpers.rst", 
+                    "fuelweb_test/helpers/pacemaker.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+                    "fullName": "agrechanichenko"
+                }, 
+                "comment": "Getting pacemaker node attribures and node status as dict.\n\ndef get_pacemaker_nodes_attributes(cibadmin_status_xml)\nAdding possibility to parse 'cibadmin --query --scope status'.\nFunction return nested dictionary with node-fqdn and attribute name as keys.\n\ndef get_pcs_nodes(pcs_status_xml)\nAdding possibility to parse 'pcs status xml'.\nand return nested dictionary with node-fqdn and attribute name as keys.\nThey will be used in test for pacemaker resources when disk is full\n\nChange-Id: Ieabef9eca1eff79ac504ae6df1e1a1409ed276ff\nCloses-Bug: #1507721\nRelated-Bug: #1500446\n", 
+                "commitId": "87abc7b6a2e0a4167cb838b1c385a7a949f38150", 
+                "date": "2015-10-20T19:57:49+0000 +0300", 
+                "id": "87abc7b6a2e0a4167cb838b1c385a7a949f38150", 
+                "msg": "Getting pacemaker node attribures and node status as dict.", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/helpers/pacemaker.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/helpers.rst"
+                    }
+                ], 
+                "timestamp": 1445371069000
+            }, 
+            {
+                "affectedPaths": [
+                    "MAINTAINERS"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/spasquier", 
+                    "fullName": "spasquier"
+                }, 
+                "comment": "Fix the format of the MAINTAINERS file\n\nAs discussed on the openstack-dev mailing list [0], the MAINTAINERS\nfile didn't comply with the specification.\n\n[0] http://bit.ly/1jTePT2\n\nChange-Id: I006baebf4aede0c2dadbc554c3a18b6d3e3e6502\nCloses-Bug: #1508449\n", 
+                "commitId": "45df473525f70dfe5bf1eee179ca3555673b42f6", 
+                "date": "2015-10-21T12:48:30+0000 +0200", 
+                "id": "45df473525f70dfe5bf1eee179ca3555673b42f6", 
+                "msg": "Fix the format of the MAINTAINERS file", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "MAINTAINERS"
+                    }
+                ], 
+                "timestamp": 1445431710000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/gd_based_tests/test_neutron.py", 
+                    "tox.ini"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Compatibility with openstack-gate PEP8\n\nChange-Id: I2b5374d79daa6ac95f7534e266db4524c6c3b29a\n", 
+                "commitId": "6c5c8ff99ba2ae44754fb7b9ca2a6d72fbef79b0", 
+                "date": "2015-10-22T06:12:01+0000 +0000", 
+                "id": "6c5c8ff99ba2ae44754fb7b9ca2a6d72fbef79b0", 
+                "msg": "Compatibility with openstack-gate PEP8", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "tox.ini"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/gd_based_tests/test_neutron.py"
+                    }
+                ], 
+                "timestamp": 1445494321000
+            }, 
+            {
+                "affectedPaths": [
+                    "MAINTAINERS"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/spasquier", 
+                    "fullName": "spasquier"
+                }, 
+                "comment": "Update the link to the Team structure spec\n\nChange-Id: Iec4bebeb5805b356f87eadbe1fa3713a9bfba965\n", 
+                "commitId": "555728c49ba173230e34e1bf84370b54652b0f09", 
+                "date": "2015-10-22T07:50:25+0000 +0200", 
+                "id": "555728c49ba173230e34e1bf84370b54652b0f09", 
+                "msg": "Update the link to the Team structure spec", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "MAINTAINERS"
+                    }
+                ], 
+                "timestamp": 1445500225000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report_tempest_results.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tnurlygayanov", 
+                    "fullName": "tnurlygayanov"
+                }, 
+                "comment": "Fixed name for test run for Tempest results\n\nWe are going to use new name pattern for test runs,\nneed to use 'kilo' prefix for reports.\n\nChange-Id: I5a91546ab6c77bc53267bb2a12dafc2bf1bb5a50\nCloses-Bug: #1506779\n", 
+                "commitId": "198571d0335c2dd840584f30e440f15bff93d982", 
+                "date": "2015-10-22T14:17:37+0000 +0300", 
+                "id": "198571d0335c2dd840584f30e440f15bff93d982", 
+                "msg": "Fixed name for test run for Tempest results", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report_tempest_results.py"
+                    }
+                ], 
+                "timestamp": 1445523457000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cndr_neutronVLAN.yaml", 
+                    "system_test/tests/actions_base.py", 
+                    "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cnrd_neutronVLAN.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Remove using NODES_COUNT from action\n\nRemove absolete NODES_COUNT environment varible from _action_add_nodes\n\nChange-Id: I5b823676844215abeadc4683bd5dd42006a5fed2\nCloses-bug: #1508861\n", 
+                "commitId": "952bae6afd976deedba223c2c2319faf02c820e2", 
+                "date": "2015-10-22T15:22:31+0000 +0300", 
+                "id": "952bae6afd976deedba223c2c2319faf02c820e2", 
+                "msg": "Remove using NODES_COUNT from action", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cndr_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cnrd_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }
+                ], 
+                "timestamp": 1445527351000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Improve MAC comparasion for node lookup\n\nChange-Id: I60666959c92b30c04c0e70745f66dac53458f0df\nRelated-bug: #1508986\n", 
+                "commitId": "bd5e806553a89b41b97eae71b703d97b66623214", 
+                "date": "2015-10-22T15:51:45+0000 +0300", 
+                "id": "bd5e806553a89b41b97eae71b703d97b66623214", 
+                "msg": "Improve MAC comparasion for node lookup", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1445529105000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add assertion for length of active_slaves list\n\nWe should  assert that active_slaves list is not empty\nbefore try tp get some data from\nit by index in test 3_in_1_rabbit_failover\n\nChange-Id: I0aae748bbd76da9acc81709e38d34c43d5e06a94\nCloses-Bug: #1509244\n", 
+                "commitId": "974c95ca1516e2809b2ea53259a15415a5fbc9e5", 
+                "date": "2015-10-23T08:33:45+0000 +0300", 
+                "id": "974c95ca1516e2809b2ea53259a15415a5fbc9e5", 
+                "msg": "Add assertion for length of active_slaves list", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1445589225000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Fix type error in neutron_check_alive_rabbit\n\nWrap in list condition (set(a) - set(b))\nto get possibility use data access by iondex\n\nChange-Id: Ie0571349cf686e267cdda76baa680055e0fda681\nCloses-Bug: #1509248\n", 
+                "commitId": "22a9ee6fcd5448393c3b33e66e044b185663c16a", 
+                "date": "2015-10-23T08:51:26+0000 +0300", 
+                "id": "22a9ee6fcd5448393c3b33e66e044b185663c16a", 
+                "msg": "Fix type error in neutron_check_alive_rabbit", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1445590286000
+            }, 
+            {
+                "affectedPaths": [
+                    "MAINTAINERS"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/spasquier", 
+                    "fullName": "spasquier"
+                }, 
+                "comment": "Add the LMA experts to MAINTAINERS\n\nChange-Id: I42781562b579471c2551260524a1072b60e29747\n", 
+                "commitId": "6594e2d366bd4101f29783902e9916855dfc1646", 
+                "date": "2015-10-23T15:03:57+0000 +0000", 
+                "id": "6594e2d366bd4101f29783902e9916855dfc1646", 
+                "msg": "Add the LMA experts to MAINTAINERS", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "MAINTAINERS"
+                    }
+                ], 
+                "timestamp": 1445612637000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Fix  ceph destructive test\n\nAfter 71314d71cc184bcd2492ddad5808b5e3b932fc6c\nwrong method is using in failover-base.py L742,\nshould be self.fuel_web.get_nailgun_cluster_nodes_by_roles\n\nChange-Id: Id4610e7c56da099f1b558783ee7ee74877bb9c26\nCloses-Bug: #1509234\n", 
+                "commitId": "527d7a414acf045aaf49f4504215b1771d773e0e", 
+                "date": "2015-10-26T09:16:21+0000 +0000", 
+                "id": "527d7a414acf045aaf49f4504215b1771d773e0e", 
+                "msg": "Fix  ceph destructive test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1445850981000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Get vips data from network roles\n\nThe format of VIPs description in 7.0 was changed.\nSpecial API serializer for compatiblity with system\ntests was added\n(https://review.openstack.org/201103) in 7.0 but plan to be romoved in 8.0.\nIt is required to fix VIPs format in system tests.\n\nChange-Id: I1b4a3da69590c9ce45cfed2d460ce84056b5588a\nCloses-Bug: #1476174\n", 
+                "commitId": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                "date": "2015-10-26T15:26:33+0000 +0000", 
+                "id": "dff6f6cec47b128e9e9d52cbbbfea54779bb731f", 
+                "msg": "Get vips data from network roles", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1445873193000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+            "fullName": "agrechanichenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akurenyshev", 
+            "fullName": "akurenyshev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/spasquier", 
+            "fullName": "spasquier"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tnurlygayanov", 
+            "fullName": "tnurlygayanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+            "fullName": "vgorin"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#4", 
+    "duration": 5790502, 
+    "estimatedDuration": 12326188, 
+    "executor": null, 
+    "fullDisplayName": "8.0.nessus_security_scan #4", 
+    "id": "4", 
+    "keepLog": false, 
+    "number": 4, 
+    "queueId": 4827, 
+    "result": "FAILURE", 
+    "timestamp": 1445900400561, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/4/"
+}

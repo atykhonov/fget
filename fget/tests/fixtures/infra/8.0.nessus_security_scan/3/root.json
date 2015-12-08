@@ -1,0 +1,179 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "nessus"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "NEUTRON_ENABLE", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "VENV_PATH", 
+                    "value": "/home/jenkins/venv-nailgun-tests-2.9"
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "latest-stable"
+                }, 
+                {
+                    "name": "MIRROR_UBUNTU", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                    "value": "1052"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.nessus_security_scan"
+                }, 
+                {
+                    "name": "NESSUS_IMAGE_PATH", 
+                    "value": "/var/lib/libvirt/images/nessus.qcow2"
+                }, 
+                {
+                    "name": "NESSUS_USERNAME", 
+                    "value": "root"
+                }, 
+                {
+                    "name": "NESSUS_PASSWORD", 
+                    "value": "r00tme"
+                }, 
+                {
+                    "name": "SECURITY_TEST", 
+                    "value": "True"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 3, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "e2e9b4b73c05e31d6f7c180789c6df97a85c1314", 
+                        "branch": [
+                            {
+                                "SHA1": "e2e9b4b73c05e31d6f7c180789c6df97a85c1314", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "e2e9b4b73c05e31d6f7c180789c6df97a85c1314", 
+                        "branch": [
+                            {
+                                "SHA1": "e2e9b4b73c05e31d6f7c180789c6df97a85c1314", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "e2e9b4b73c05e31d6f7c180789c6df97a85c1314", 
+                "branch": [
+                    {
+                        "SHA1": "e2e9b4b73c05e31d6f7c180789c6df97a85c1314", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 0, 
+            "totalCount": 1, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "nessus_report_scan_7_master_wat.html", 
+            "fileName": "nessus_report_scan_7_master_wat.html", 
+            "relativePath": "logs/nessus_report_scan_7_master_wat.html"
+        }, 
+        {
+            "displayPath": "nessus_report_scan_8_controller_cpa.html", 
+            "fileName": "nessus_report_scan_8_controller_cpa.html", 
+            "relativePath": "logs/nessus_report_scan_8_controller_cpa.html"
+        }, 
+        {
+            "displayPath": "nessus_report_scan_8_master_cpa.html", 
+            "fileName": "nessus_report_scan_8_master_cpa.html", 
+            "relativePath": "logs/nessus_report_scan_8_master_cpa.html"
+        }, 
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151019.yaml", 
+            "fileName": "timestat_20151019.yaml", 
+            "relativePath": "logs/timestat_20151019.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv16-msk.msk.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [], 
+    "description": null, 
+    "displayName": "#3", 
+    "duration": 12624222, 
+    "estimatedDuration": 12326188, 
+    "executor": null, 
+    "fullDisplayName": "8.0.nessus_security_scan #3", 
+    "id": "3", 
+    "keepLog": false, 
+    "number": 3, 
+    "queueId": 1319, 
+    "result": "FAILURE", 
+    "timestamp": 1445295600587, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/3/"
+}

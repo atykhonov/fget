@@ -1,0 +1,372 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "nessus"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "NEUTRON_ENABLE", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "VENV_PATH", 
+                    "value": "/home/jenkins/venv-nailgun-tests-2.9"
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "latest-stable"
+                }, 
+                {
+                    "name": "MIRROR_UBUNTU", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                    "value": "1052"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.nessus_security_scan"
+                }, 
+                {
+                    "name": "NESSUS_IMAGE_PATH", 
+                    "value": "/var/lib/libvirt/images/nessus.qcow2"
+                }, 
+                {
+                    "name": "NESSUS_USERNAME", 
+                    "value": "root"
+                }, 
+                {
+                    "name": "NESSUS_PASSWORD", 
+                    "value": "r00tme"
+                }, 
+                {
+                    "name": "SECURITY_TEST", 
+                    "value": "True"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 6, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                        "branch": [
+                            {
+                                "SHA1": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                        "branch": [
+                            {
+                                "SHA1": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                "branch": [
+                    {
+                        "SHA1": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 3, 
+            "totalCount": 7, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-11-10_01-47-22.tar.xz", 
+            "fileName": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-11-10_01-47-22.tar.xz", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-11-10_01-47-22.tar.xz"
+        }, 
+        {
+            "displayPath": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-11-10_01-47-22.tar.xz.filtered.log", 
+            "fileName": "fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-11-10_01-47-22.tar.xz.filtered.log", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun_ha_nessus-fuel-snapshot-2015-11-10_01-47-22.tar.xz.filtered.log"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151109.yaml", 
+            "fileName": "timestat_20151109.yaml", 
+            "relativePath": "logs/timestat_20151109.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv16-msk.msk.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_cli_base.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/sand8080", 
+                    "fullName": "sand8080"
+                }, 
+                "comment": "Task status 'pending' handled in tests\n\nStatus 'pending' introduced for proper tasks as intermediate status\nfor tasks ready for sending or already sent to astute, but not\nacknoledged by astute. After task is acknoledged by astute it\nchanges status to 'running'.\n\nChange-Id: Idedb061b7b5c4dca4a0ca7adcaa570cecbb691af\nPartial-Bug: #1498827\n", 
+                "commitId": "8e8f21fed9787781b02f46a72e82b04ee5523241", 
+                "date": "2015-11-02T14:29:09+0000 +0300", 
+                "id": "8e8f21fed9787781b02f46a72e82b04ee5523241", 
+                "msg": "Task status 'pending' handled in tests", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli_base.py"
+                    }
+                ], 
+                "timestamp": 1446474549000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/os_actions.py", 
+                    "fuelweb_test/tests/test_ceph.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add wait for active image status\n\nTo be sure that image is ready to create volume with it,\nadd wait for image status.\nAlso make image public and set name to it.\n\nCloses-Bug: #1507987\n\nChange-Id: Ibb87e692a2b0ee36d220d107e2ae9ba500485eab\n", 
+                "commitId": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                "date": "2015-11-03T16:08:52+0000 +0000", 
+                "id": "d5c1aad12fc5f62a58dcabccf892370276d0190a", 
+                "msg": "Add wait for active image status", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/os_actions.py"
+                    }
+                ], 
+                "timestamp": 1446566932000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_neutron_tun.py", 
+                    "fuelweb_test/helpers/checkers.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Add client check\n\nAdding additional check for client area\nin smoke_neutron test\n\nChange-Id: Iebd2f3970b1fb6eda49a8ab301cf56df99ba80c9\nCloses-bug: #1480224\n", 
+                "commitId": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "date": "2015-11-04T10:47:38+0000 +0000", 
+                "id": "8b7634bfce6dfdbf07486f2ed42d5e1e68d6bfac", 
+                "msg": "Add client check", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_neutron_tun.py"
+                    }
+                ], 
+                "timestamp": 1446634058000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/helpers/decorators.py", 
+                    "system_test/tests/test_deploy_check_rados.py", 
+                    "system_test/tests/strength/strenght_base.py", 
+                    "system_test/tests/actions_base.py", 
+                    "system_test/tests/strength/destroy_controllers.py", 
+                    "system_test/tests/base_actions_factory.py", 
+                    "system_test/tests/test_create_deploy_ostf.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Add decorator @action\n\nUse decorator @action for method which used as step.\n\nPrefix _action_ still work.\n\nImplements blueprint template-based-testcases\n\nChange-Id: I802d79071c313528a29d6f63abf2db5f6cebbe7f\n", 
+                "commitId": "ab466cb0f58d7fd575431263f3ff7802866117f5", 
+                "date": "2015-11-06T17:33:32+0000 +0200", 
+                "id": "ab466cb0f58d7fd575431263f3ff7802866117f5", 
+                "msg": "Add decorator @action", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/decorators.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/strenght_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/destroy_controllers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_deploy_check_rados.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/base_actions_factory.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_create_deploy_ostf.py"
+                    }
+                ], 
+                "timestamp": 1446831212000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/environment.py", 
+                    "fuelweb_test/helpers/multiple_networks_hacks.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Don't configure Cobbler while using nodegroups\n\nSince automatic Cobbler (DHCP) configuration is\nimplemented for nodegroups we don't need to do\nthat in tests anymore.\n\nChange-Id: I53798807489b7db421af446ce37e203ea04e1e48\nImplements: blueprint align-nodegroups-tests\nRelated-bug: #1495593\n", 
+                "commitId": "56247644780110d42ad8f2008498d507e80689e6", 
+                "date": "2015-11-09T09:38:24+0000 +0000", 
+                "id": "56247644780110d42ad8f2008498d507e80689e6", 
+                "msg": "Don't configure Cobbler while using nodegroups", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/multiple_networks_hacks.py"
+                    }
+                ], 
+                "timestamp": 1447061904000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/environment.py", 
+                    "fuelweb_test/tests/test_multiple_networks.py", 
+                    "fuelweb_test/helpers/multiple_networks_hacks.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Boot slaves after creation of custom nodegroup\n\nSince DHCP server for additional admin/pxe networks\nis configured after nodegroup creation, we can't\nbootstrap slaves until we created cluster and setup\nits networks.\nAlso align 'hacks' for multiple cluster networks\ntests with dynamic dnsmasq feature.\n\nChange-Id: I46b203d65a2fe2f0bb41288aaf8fb738d2bda495\nImplements: blueprint align-nodegroups-tests\nRelated-bug: #1495593\n", 
+                "commitId": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                "date": "2015-11-09T10:12:22+0000 +0200", 
+                "id": "672ce759ed0da4b9fa24febc2d4983da2254d9ef", 
+                "msg": "Boot slaves after creation of custom nodegroup", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/multiple_networks_hacks.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }
+                ], 
+                "timestamp": 1447063942000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/sand8080", 
+            "fullName": "sand8080"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#6", 
+    "duration": 10541662, 
+    "estimatedDuration": 12326188, 
+    "executor": null, 
+    "fullDisplayName": "8.0.nessus_security_scan #6", 
+    "id": "6", 
+    "keepLog": false, 
+    "number": 6, 
+    "queueId": 11223, 
+    "result": "FAILURE", 
+    "timestamp": 1447110000541, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/6/"
+}

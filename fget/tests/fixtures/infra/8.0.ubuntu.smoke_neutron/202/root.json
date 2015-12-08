@@ -1,0 +1,571 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:d4bf7c8f3b47b39aa09996585c9fee5a409e281d&dn=fuel-8.0-214-2015-11-26%5F18-25-16.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-214-2015-11-26%5F18-25-16.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-26-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 202", 
+                    "upstreamBuild": 202, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 202, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                        "branch": [
+                            {
+                                "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                        "branch": [
+                            {
+                                "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                "branch": [
+                    {
+                        "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-11-26_20-31-29.tar.xz", 
+            "fileName": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-11-26_20-31-29.tar.xz", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun-fuel-snapshot-2015-11-26_20-31-29.tar.xz"
+        }, 
+        {
+            "displayPath": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-11-26_20-31-29.tar.xz.filtered.log", 
+            "fileName": "fail_error_deploy_neutron_tun-fuel-snapshot-2015-11-26_20-31-29.tar.xz.filtered.log", 
+            "relativePath": "logs/fail_error_deploy_neutron_tun-fuel-snapshot-2015-11-26_20-31-29.tar.xz.filtered.log"
+        }, 
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-26_19-34-02.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-26_19-34-02.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-26_19-34-02.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-11-26_19-40-12.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-11-26_19-40-12.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-11-26_19-40-12.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-26_19-33-25.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-26_19-33-25.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-26_19-33-25.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151126.yaml", 
+            "fileName": "timestat_20151126.yaml", 
+            "relativePath": "logs/timestat_20151126.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv18-msk.msk.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_mirrors/__init__.py", 
+                    "fuelweb_test/tests/tests_mirrors/test_create_mirror.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "doc/base_tests.rst", 
+                    "fuelweb_test/tests/tests_mirrors/test_use_mirror.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akostrikov", 
+                    "fullName": "akostrikov"
+                }, 
+                "comment": "Tests to cover create mirror\n\nThis is a tests to run on ci to\nverify fuel-createmirror behaviour.\nTests to check network issues are skipped\nbecause of need to choose right network\ntool.\n\nChange-Id: I50179570b215dd26eaa5a5b0db339f69ad405716\nPartial-bug: #1487077\n", 
+                "commitId": "70db939a91e6569731b84433b87775550073e6d3", 
+                "date": "2015-11-12T12:09:15+0000 +0300", 
+                "id": "70db939a91e6569731b84433b87775550073e6d3", 
+                "msg": "Tests to cover create mirror", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/tests/tests_mirrors/test_use_mirror.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/tests/tests_mirrors/test_create_mirror.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/tests/tests_mirrors/__init__.py"
+                    }
+                ], 
+                "timestamp": 1447330155000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/settings.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Change tests suite name format for Swarm\n\nChange-Id: I1143df3669129f364de936ee448baf424d7cb194\nPartial-bug: #1519797\n", 
+                "commitId": "556b529f5f12efb04f733ffe627a118494415600", 
+                "date": "2015-11-25T12:19:56+0000 +0200", 
+                "id": "556b529f5f12efb04f733ffe627a118494415600", 
+                "msg": "Change tests suite name format for Swarm", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/settings.py"
+                    }
+                ], 
+                "timestamp": 1448453996000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_net_templates.py", 
+                    "fuelweb_test/network_templates/default_ovs.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+                    "fullName": "dkruglov"
+                }, 
+                "comment": "Add a test to network templates tests suite\n\nAdd a test that verifies template based network\nconfig consistency after node reboot.\n\nChange-Id: I7ebe1d70355a3cc18b793c371036adb194bf94a5\nCloses-bug: #1517890\n", 
+                "commitId": "04ad1a5e479d4d2b724c8b0ec8189598133288db", 
+                "date": "2015-11-25T18:04:50+0000 +0000", 
+                "id": "04ad1a5e479d4d2b724c8b0ec8189598133288db", 
+                "msg": "Add a test to network templates tests suite", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/network_templates/default_ovs.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_net_templates.py"
+                    }
+                ], 
+                "timestamp": 1448474690000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests/ostf_base_actions.py", 
+                    "system_test/tests/strength/filling_root.py", 
+                    "system_test/tests/strength/strength_base.py", 
+                    "doc/system_tests.rst", 
+                    "fuelweb_test/helpers/pacemaker.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "system_test/tests/actions_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+                    "fullName": "agrechanichenko"
+                }, 
+                "comment": " Test for pacemaker resources when disk is full\n\n Adding test case for covering filling root situation on primary controller.\n Add health_check_all, health_check_ha to ostf_base_actions.py.\n Move health_check to ostf_base_actions.py\n\n Closes-Bug: #1500446\n\nChange-Id: I17055527e99c72b790544e7baef997eab20258e0\n", 
+                "commitId": "a88049c1820eb66f6952db5a57718ffc4b7df7ff", 
+                "date": "2015-11-26T08:52:52+0000 +0200", 
+                "id": "a88049c1820eb66f6952db5a57718ffc4b7df7ff", 
+                "msg": " Test for pacemaker resources when disk is full", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/strength_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/pacemaker.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/strength/filling_root.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/system_tests.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/ostf_base_actions.py"
+                    }
+                ], 
+                "timestamp": 1448527972000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/yyekovenko", 
+                    "fullName": "yyekovenko"
+                }, 
+                "comment": "Modify baremetal network settings\n\nAfter recent network configuration updates in Fuel,the location of\nbaremetal gateway and baremetal range parameterswas changed\nso these changes should be reflected in fuel-qa.\nAlso, the line added to avoid using tagged VLAN for baremetal network.\n\nChange-Id: I7be88e4dbff97576e609d36cb5cc8311aeddb328\nCloses-Bug: #1519802\n", 
+                "commitId": "4d4a69f56b30880936b5a6e655535e4238a18a3d", 
+                "date": "2015-11-26T09:15:14+0000 +0200", 
+                "id": "4d4a69f56b30880936b5a6e655535e4238a18a3d", 
+                "msg": "Modify baremetal network settings", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1448529314000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/decorators.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+                    "fullName": "vgorin"
+                }, 
+                "comment": "Delete unused parameter\n\nCloses-Bug: #1479987\nChange-Id: I9fc1188afb40a21e1f02f73a604ed3eb7a3e17ba\n", 
+                "commitId": "a9f34005d04ec1fe06e1fb8a673a288f140e8e30", 
+                "date": "2015-11-26T09:41:36+0000 +0000", 
+                "id": "a9f34005d04ec1fe06e1fb8a673a288f140e8e30", 
+                "msg": "Delete unused parameter", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/decorators.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1448530896000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+                    "fullName": "vgorin"
+                }, 
+                "comment": "Delete unused parameter 'remote'\n\nChange-Id: Ia57fb4f5455e2dd8bbe515db71215598f958632f\nCloses-Bug: #1479991\n", 
+                "commitId": "55851e6ec24b9d38c4dcd7067edca14b6a50ea74", 
+                "date": "2015-11-26T09:49:41+0000 +0300", 
+                "id": "55851e6ec24b9d38c4dcd7067edca14b6a50ea74", 
+                "msg": "Delete unused parameter 'remote'", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1448531381000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/settings.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+                    "fullName": "vgorin"
+                }, 
+                "comment": "Add environment variable DEPLOYMENT_TIMEOUT\nIt is hardcoded now so it is necessary to manage timeout of deploy.\n\nCloses-Bug: #1461887\nChange-Id: Ifb3423ad5070612cd3cb9ededc07b825cdeb6f31\n", 
+                "commitId": "598dae2ae3a481cf8c46981550a5982d1f9fc256", 
+                "date": "2015-11-26T10:51:11+0000 +0000", 
+                "id": "598dae2ae3a481cf8c46981550a5982d1f9fc256", 
+                "msg": "Add environment variable DEPLOYMENT_TIMEOUT", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/settings.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1448535071000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/os_actions.py", 
+                    "fuelweb_test/tests/test_bonding.py", 
+                    "fuelweb_test/helpers/utils.py", 
+                    "fuelweb_test/tests/test_clone_env.py", 
+                    "fuelweb_test/tests/test_neutron_tun.py", 
+                    "fuelweb_test/tests/test_node_reassignment.py", 
+                    "fuelweb_test/tests/tests_upgrade/test_upgrade_chains.py", 
+                    "fuelweb_test/helpers/http.py", 
+                    "fuelweb_test/tests/test_backup_restore.py", 
+                    "fuelweb_test/helpers/common.py", 
+                    "fuelweb_test/helpers/decorators.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/helpers/checkers.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "fuelweb_test/tests/tests_patching/test_patching.py", 
+                    "fuelweb_test/tests/test_net_templates_base.py", 
+                    "fuelweb_test/tests/gd_based_tests/test_neutron_vlan_ceph_mongo.py", 
+                    "fuelweb_test/tests/tests_upgrade/test_upgrade.py", 
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+                    "fullName": "astepanov"
+                }, 
+                "comment": "Code style changes\n\nMass fix:\n1. shadow builtins in locals\n2. binary operators on new line\n3. import class as lowercase (not readable type of object in namespace)\n\nAPI not changed.\n\nChange-Id: Ia171e466b502d95aa96ff4801eb37d528d659b64\n", 
+                "commitId": "81f1c0d739678e70c479b222601b27c2a40a62e0", 
+                "date": "2015-11-26T11:50:21+0000 +0300", 
+                "id": "81f1c0d739678e70c479b222601b27c2a40a62e0", 
+                "msg": "Code style changes", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_patching/test_patching.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_neutron_tun.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/os_actions.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_clone_env.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/common.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/decorators.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/http.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/gd_based_tests/test_neutron_vlan_ceph_mongo.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_bonding.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_upgrade/test_upgrade_chains.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_node_reassignment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_upgrade/test_upgrade.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_net_templates_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }
+                ], 
+                "timestamp": 1448538621000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py", 
+                    "fuelweb_test/testrail/testrail_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Update test plan with bug statistics\n\n- make_bug_statistics method was re-worked to get\nlatest list of bugs from provided test run\n- update test plan method was added to testrail_client\n\nChange-Id: I738be767c5dc11a098f7cce7eb122f475f9dfd08\nCloses-Bug: #1516950\n", 
+                "commitId": "d8afc76bc965c0629f48d1c67425cb687cff9e46", 
+                "date": "2015-11-26T12:36:18+0000 +0200", 
+                "id": "d8afc76bc965c0629f48d1c67425cb687cff9e46", 
+                "msg": "Update test plan with bug statistics", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1448541378000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+            "fullName": "agrechanichenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akostrikov", 
+            "fullName": "akostrikov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+            "fullName": "dkruglov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vgorin", 
+            "fullName": "vgorin"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/yyekovenko", 
+            "fullName": "yyekovenko"
+        }
+    ], 
+    "description": "<a href='https://bugs.launchpad.net/fuel/+bug/1520495'>LP#1520495</a>\r\n", 
+    "displayName": "#202", 
+    "duration": 6111610, 
+    "estimatedDuration": 5951722, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.smoke_neutron #202", 
+    "id": "202", 
+    "keepLog": false, 
+    "number": 202, 
+    "queueId": 17442, 
+    "result": "FAILURE", 
+    "timestamp": 1448563931352, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.smoke_neutron/202/"
+}

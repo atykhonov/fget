@@ -1,0 +1,158 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 245, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "fda7c87dea9fb54c08bd3844d277b2e4778924e4", 
+                        "branch": [
+                            {
+                                "SHA1": "fda7c87dea9fb54c08bd3844d277b2e4778924e4", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "fda7c87dea9fb54c08bd3844d277b2e4778924e4", 
+                        "branch": [
+                            {
+                                "SHA1": "fda7c87dea9fb54c08bd3844d277b2e4778924e4", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "fda7c87dea9fb54c08bd3844d277b2e4778924e4", 
+                "branch": [
+                    {
+                        "SHA1": "fda7c87dea9fb54c08bd3844d277b2e4778924e4", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "centos-packages.changelog", 
+            "fileName": "centos-packages.changelog", 
+            "relativePath": "artifacts/centos-packages.changelog"
+        }, 
+        {
+            "displayPath": "fuel-8.0-245-2015-12-03_13-42-00.iso.data.html", 
+            "fileName": "fuel-8.0-245-2015-12-03_13-42-00.iso.data.html", 
+            "relativePath": "artifacts/fuel-8.0-245-2015-12-03_13-42-00.iso.data.html"
+        }, 
+        {
+            "displayPath": "fuel-8.0-245-2015-12-03_13-42-00.iso.data.txt", 
+            "fileName": "fuel-8.0-245-2015-12-03_13-42-00.iso.data.txt", 
+            "relativePath": "artifacts/fuel-8.0-245-2015-12-03_13-42-00.iso.data.txt"
+        }, 
+        {
+            "displayPath": "ubuntu-packages.changelog", 
+            "fileName": "ubuntu-packages.changelog", 
+            "relativePath": "artifacts/ubuntu-packages.changelog"
+        }, 
+        {
+            "displayPath": "listing.txt", 
+            "fileName": "listing.txt", 
+            "relativePath": "listing.txt"
+        }, 
+        {
+            "displayPath": "magnet_link.txt", 
+            "fileName": "magnet_link.txt", 
+            "relativePath": "magnet_link.txt"
+        }, 
+        {
+            "displayPath": "version.yaml.txt", 
+            "fileName": "version.yaml.txt", 
+            "relativePath": "version.yaml.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "virtualbox/functions/product.sh"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dteselkin", 
+                    "fullName": "dteselkin"
+                }, 
+                "comment": "FORWARD rules for public network\n\nCentOS7 comes with pre-defined REJECT rule in FORWARD chain\nthat doesn't allow to access external networks from public\nnetwork.\n\nWhen deploying ISO with virtualbox scripts slave nodes are trying\nto connect to external networks via public net, with default\ngateway on master node. However, they can't establish a connection\nbecause there is no explicit rule in FORWARD chain to allow it,\nso they are rejected.\n\nThis commit adds rules to allow connection to ext networks in\nthat usecase.\n\nCompatible with CentOS6 & CentOS7 master node.\n\nBlueprint: master-on-centos7\n\nChange-Id: I5b61ae6e7562ea5b446809027c487acc11119889\n", 
+                "commitId": "0269e8fe61ddee899e665f02a540c6dbe7262880", 
+                "date": "2015-12-02T10:52:20+0000 +0000", 
+                "id": "0269e8fe61ddee899e665f02a540c6dbe7262880", 
+                "msg": "FORWARD rules for public network", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "virtualbox/functions/product.sh"
+                    }
+                ], 
+                "timestamp": 1449053540000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dteselkin", 
+            "fullName": "dteselkin"
+        }
+    ], 
+    "description": "<a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-245-2015-12-03_13-42-00.iso>ISO download link</a> <a href=http://srv89-bud.infra.mirantis.net/fuelweb-iso/fuel-8.0-245-2015-12-03_13-42-00.iso.torrent>ISO torrent link</a><br>magnet:?xt=urn:btih:cadff413214f80df642c76c0f3e568895ab15370&dn=fuel-8.0-245-2015-12-03%5F13-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-245-2015-12-03%5F13-42-00.iso<br>", 
+    "displayName": "#245", 
+    "duration": 1538011, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #245", 
+    "id": "245", 
+    "keepLog": false, 
+    "number": 245, 
+    "queueId": 19907, 
+    "result": "SUCCESS", 
+    "timestamp": 1449150120535, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/245/"
+}

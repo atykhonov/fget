@@ -1,0 +1,183 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:0223851217c45ed51bc61f674e0fd0ece4b1665c&dn=fuel-kilo-8.0-196-2015-10-27%5F12-23-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-kilo-8.0-196-2015-10-27%5F12-23-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0-kilo.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-10-26-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0-kilo.test_all\" build number 177", 
+                    "upstreamBuild": 177, 
+                    "upstreamProject": "8.0-kilo.test_all", 
+                    "upstreamUrl": "job/8.0-kilo.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 177, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "01dfd7116686025b0df2efd6dc59e6b568138432", 
+                        "branch": [
+                            {
+                                "SHA1": "01dfd7116686025b0df2efd6dc59e6b568138432", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "01dfd7116686025b0df2efd6dc59e6b568138432", 
+                        "branch": [
+                            {
+                                "SHA1": "01dfd7116686025b0df2efd6dc59e6b568138432", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "01dfd7116686025b0df2efd6dc59e6b568138432", 
+                "branch": [
+                    {
+                        "SHA1": "01dfd7116686025b0df2efd6dc59e6b568138432", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-10-27_14-21-14.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-10-27_14-21-14.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-10-27_14-21-14.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-10-27_13-15-56.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-10-27_13-15-56.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-10-27_13-15-56.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-10-27_13-22-56.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-10-27_13-22-56.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-10-27_13-22-56.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-10-27_13-15-16.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-10-27_13-15-16.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-10-27_13-15-16.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151027.yaml", 
+            "fileName": "timestat_20151027.yaml", 
+            "relativePath": "logs/timestat_20151027.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/requirements.txt"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add 'netaddr' Python module to requirements\n\nChange-Id: Ia101814eb7db806d58d690ca2ee11d25339ca66a\nRelated-bug: #1508986\n", 
+                "commitId": "f0a5cf0901fe5fd76af35b2d5721fdbc04414176", 
+                "date": "2015-10-23T12:49:51+0000 +0300", 
+                "id": "f0a5cf0901fe5fd76af35b2d5721fdbc04414176", 
+                "msg": "Add 'netaddr' Python module to requirements", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/requirements.txt"
+                    }
+                ], 
+                "timestamp": 1445604591000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#177", 
+    "duration": 5343356, 
+    "estimatedDuration": 5467640, 
+    "executor": null, 
+    "fullDisplayName": "8.0-kilo.ubuntu.smoke_neutron #177", 
+    "id": "177", 
+    "keepLog": false, 
+    "number": 177, 
+    "queueId": 5084, 
+    "result": "SUCCESS", 
+    "timestamp": 1445950407527, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/177/"
+}

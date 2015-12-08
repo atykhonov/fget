@@ -1,0 +1,331 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 56, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "0edb81872a6618d32a6c9703fdf79e37629ccee9", 
+                        "branch": [
+                            {
+                                "SHA1": "0edb81872a6618d32a6c9703fdf79e37629ccee9", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "0edb81872a6618d32a6c9703fdf79e37629ccee9", 
+                        "branch": [
+                            {
+                                "SHA1": "0edb81872a6618d32a6c9703fdf79e37629ccee9", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "0edb81872a6618d32a6c9703fdf79e37629ccee9", 
+                "branch": [
+                    {
+                        "SHA1": "0edb81872a6618d32a6c9703fdf79e37629ccee9", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "gates_tests/tests/test_review_in_fuel_agent.py", 
+                    "gates_tests/helpers/__init__.py", 
+                    "gates_tests/helpers/utils.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "doc/base_tests.rst", 
+                    "gates_tests/__init__.py", 
+                    "fuelweb_test/models/environment.py", 
+                    "gates_tests/tests/__init__.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+                    "fullName": "agrechanichenko"
+                }, 
+                "comment": "Add gate test for fuel-agent repo\n\nAdd gate test for fuel-agent that should be executed\nfor each review in openstack/fuel-agent repo.\n\nNext variables should be exported:\nUPDATE_FUEL=True\nUPDATE_FUEL_PATH=/path/to/source\n\nTest depends on ready,\nso it is better to run it with -k option.\n\nScenario:\n    1. Revert snapshot \"ready\"\n    2. Update fuel-agent in MCollective\n    3. Update bootstrap\n    4. Bootstrap 1 slave\n    5. Create environment via FUEL CLI\n    6. Assign controller role\n    7. Provisioning node\n\nChange-Id: I323398d5a039896f3ec8793ba64b6a6541a4967f\nCloses-Bug: #1519880\n", 
+                "commitId": "f17ec5d130844a434665990513626fd36bce3e63", 
+                "date": "2015-12-01T14:26:46+0000 +0200", 
+                "id": "f17ec5d130844a434665990513626fd36bce3e63", 
+                "msg": "Add gate test for fuel-agent repo", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/tests/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/__init__.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/tests/test_review_in_fuel_agent.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/helpers/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }
+                ], 
+                "timestamp": 1448980006000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_neutron_tun.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Fix scalability test\n\n- Add name named argument to 'get_node' method call\n\nChange-Id: I861a0ff673ac59eeba2ba47a3681c8b8e292fb6c\nCloses-Bug: #1521230\n", 
+                "commitId": "008dd5b4778470923c68d025a60ce43d472c52ef", 
+                "date": "2015-12-01T16:40:57+0000 +0200", 
+                "id": "008dd5b4778470923c68d025a60ce43d472c52ef", 
+                "msg": "Fix scalability test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_neutron_tun.py"
+                    }
+                ], 
+                "timestamp": 1448988057000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/tests_configs/scale/1ctrl_1comp_1cndr_neutronTUN_scale_3ctrl.yaml", 
+                    "system_test/tests/plugins/plugin_example/test_plugin_example_v3.py", 
+                    "system_test/tests/plugins_actions.py", 
+                    "doc/system_tests.rst", 
+                    "fuelweb_test/run_tests.py", 
+                    "system_test/tests/actions_base.py", 
+                    "system_test/tests/plugins/__init__.py", 
+                    "system_test/tests/plugins/plugin_example/__init__.py", 
+                    "system_test/tests/plugins/plugin_example/test_plugin_example.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+                    "fullName": "vkhlyunev"
+                }, 
+                "comment": "Add test for example plugins into system test\n\nAdd test cases for Example Plugin\n\nImplements blueprint template-based-testcases\nChange-Id: I4352dd895f7686445e1764cd3f026611265450e5\nCo-Authored-By: Vladimir Khlyunev <vkhlyunev@mirantis.com>\n", 
+                "commitId": "d698b2c2a0b4a32f43825fba0f5294af0547160f", 
+                "date": "2015-12-02T07:31:21+0000 +0100", 
+                "id": "d698b2c2a0b4a32f43825fba0f5294af0547160f", 
+                "msg": "Add test for example plugins into system test", 
+                "paths": [
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/plugin_example/test_plugin_example_v3.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/system_tests.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins_actions.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/plugin_example/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/scale/1ctrl_1comp_1cndr_neutronTUN_scale_3ctrl.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/plugin_example/test_plugin_example.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/plugins/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }
+                ], 
+                "timestamp": 1449041481000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_2ctrl_1comp_1comp_ceph_neutronVLAN.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml", 
+                    "fuelweb_test/run_tests.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Fix for incorrect names of configurations\n\n\nCloses-Bug: #1521902\nChange-Id: If3553a495e0a4a33e7abcd92607ce2d69cd22292\n", 
+                "commitId": "aae328cea7de9bd5f7ff68d11d4d2f211a8ec85e", 
+                "date": "2015-12-02T08:52:12+0000 +0000", 
+                "id": "aae328cea7de9bd5f7ff68d11d4d2f211a8ec85e", 
+                "msg": "Fix for incorrect names of configurations", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_2ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                    }
+                ], 
+                "timestamp": 1449046332000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/rally.py", 
+                    "fuelweb_test/tests/tests_strength/test_load.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "doc/base_tests.rst"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+                    "fullName": "ykotko"
+                }, 
+                "comment": "Add test for power outage\n\nCold restart of all cluster nodes\nduring its load.\n\nChange-Id: I31dff0081e062666518866890ead0053e6242dba\nCloses-Bug: #1511801\n", 
+                "commitId": "9b58549a3b8be4c0a970bb67331ffb2516f712f7", 
+                "date": "2015-12-02T11:56:24+0000 +0100", 
+                "id": "9b58549a3b8be4c0a970bb67331ffb2516f712f7", 
+                "msg": "Add test for power outage", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/rally.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "fuelweb_test/tests/tests_strength/test_load.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }
+                ], 
+                "timestamp": 1449057384000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/settings.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add default values for env variables (TestRail)\n\nThere are commonly used variables ENV_NAME and ISO_PATH\nwhich are required for template based tests initialization.\n\nChange-Id: I507afbc58c6c4968e5f023efb690807f565bf5eb\nCloses-bug: #1521986\n", 
+                "commitId": "df265316a2617f39f962893e36f1d0a7e68fe6f3", 
+                "date": "2015-12-02T14:42:51+0000 +0200", 
+                "id": "df265316a2617f39f962893e36f1d0a7e68fe6f3", 
+                "msg": "Add default values for env variables (TestRail)", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/settings.py"
+                    }
+                ], 
+                "timestamp": 1449067371000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+            "fullName": "agrechanichenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+            "fullName": "vkhlyunev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+            "fullName": "ykotko"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4792\">TestRail Report URL</a>", 
+    "displayName": "#56", 
+    "duration": 1894566, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #56", 
+    "id": "56", 
+    "keepLog": false, 
+    "number": 56, 
+    "queueId": 19664, 
+    "result": "SUCCESS", 
+    "timestamp": 1449088200546, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/56/"
+}

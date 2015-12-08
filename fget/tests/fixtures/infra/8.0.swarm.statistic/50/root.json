@@ -1,0 +1,112 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 50, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                        "branch": [
+                            {
+                                "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                        "branch": [
+                            {
+                                "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                "branch": [
+                    {
+                        "SHA1": "1ce056eb367b2594e0e63996d2c785b1f3819d3e", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py", 
+                    "fuelweb_test/testrail/testrail_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Update test plan with bug statistics\n\n- make_bug_statistics method was re-worked to get\nlatest list of bugs from provided test run\n- update test plan method was added to testrail_client\n\nChange-Id: I738be767c5dc11a098f7cce7eb122f475f9dfd08\nCloses-Bug: #1516950\n", 
+                "commitId": "d8afc76bc965c0629f48d1c67425cb687cff9e46", 
+                "date": "2015-11-26T12:36:18+0000 +0200", 
+                "id": "d8afc76bc965c0629f48d1c67425cb687cff9e46", 
+                "msg": "Update test plan with bug statistics", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }
+                ], 
+                "timestamp": 1448541378000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }
+    ], 
+    "description": "", 
+    "displayName": "#50", 
+    "duration": 3210096, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #50", 
+    "id": "50", 
+    "keepLog": false, 
+    "number": 50, 
+    "queueId": 17487, 
+    "result": "FAILURE", 
+    "timestamp": 1448569800542, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/50/"
+}

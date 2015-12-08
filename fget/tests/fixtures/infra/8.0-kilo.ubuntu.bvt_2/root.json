@@ -1,0 +1,372 @@
+{
+    "actions": [
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "iso magnet link", 
+                    "name": "MAGNET_LINK", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "Ubuntu"
+                    }, 
+                    "description": "Base distribution", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "8.0-kilo.main.Ubuntu.bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": true, 
+    "builds": [
+        {
+            "number": 216, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/216/"
+        }, 
+        {
+            "number": 215, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/215/"
+        }, 
+        {
+            "number": 214, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/214/"
+        }, 
+        {
+            "number": 213, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/213/"
+        }, 
+        {
+            "number": 212, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/212/"
+        }, 
+        {
+            "number": 211, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/211/"
+        }, 
+        {
+            "number": 210, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/210/"
+        }, 
+        {
+            "number": 209, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/209/"
+        }, 
+        {
+            "number": 208, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/208/"
+        }, 
+        {
+            "number": 207, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/207/"
+        }, 
+        {
+            "number": 206, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/206/"
+        }, 
+        {
+            "number": 205, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/205/"
+        }, 
+        {
+            "number": 204, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/204/"
+        }, 
+        {
+            "number": 203, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/203/"
+        }, 
+        {
+            "number": 202, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/202/"
+        }, 
+        {
+            "number": 201, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/201/"
+        }, 
+        {
+            "number": 200, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/200/"
+        }, 
+        {
+            "number": 199, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/199/"
+        }, 
+        {
+            "number": 198, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/198/"
+        }, 
+        {
+            "number": 197, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/197/"
+        }, 
+        {
+            "number": 196, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/196/"
+        }, 
+        {
+            "number": 195, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/195/"
+        }, 
+        {
+            "number": 194, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/194/"
+        }, 
+        {
+            "number": 193, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/193/"
+        }, 
+        {
+            "number": 192, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/192/"
+        }, 
+        {
+            "number": 191, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/191/"
+        }, 
+        {
+            "number": 190, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/190/"
+        }, 
+        {
+            "number": 189, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/189/"
+        }, 
+        {
+            "number": 188, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/188/"
+        }, 
+        {
+            "number": 187, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/187/"
+        }, 
+        {
+            "number": 186, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/186/"
+        }, 
+        {
+            "number": 185, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/185/"
+        }, 
+        {
+            "number": 184, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/184/"
+        }, 
+        {
+            "number": 183, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/183/"
+        }, 
+        {
+            "number": 182, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/182/"
+        }, 
+        {
+            "number": 181, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/181/"
+        }, 
+        {
+            "number": 180, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/180/"
+        }, 
+        {
+            "number": 179, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/179/"
+        }, 
+        {
+            "number": 178, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/178/"
+        }, 
+        {
+            "number": 177, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/177/"
+        }, 
+        {
+            "number": 176, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/176/"
+        }, 
+        {
+            "number": 175, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/175/"
+        }, 
+        {
+            "number": 174, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/174/"
+        }, 
+        {
+            "number": 173, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/173/"
+        }, 
+        {
+            "number": 172, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/172/"
+        }, 
+        {
+            "number": 171, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/171/"
+        }, 
+        {
+            "number": 170, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/170/"
+        }, 
+        {
+            "number": 169, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/169/"
+        }, 
+        {
+            "number": 168, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/168/"
+        }, 
+        {
+            "number": 167, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/167/"
+        }
+    ], 
+    "color": "red", 
+    "concurrentBuild": true, 
+    "description": "<p>Build verification test for Ubuntu</p>\n<pre style=\"font-size: 10px\">\nCase: ha_neutron_ceph\n1. Create cluster\n2. Add 3 nodes with controller and ceph OSD roles\n3. Add 1 node with ceph OSD roles\n4. Add 2 nodes with compute and ceph OSD roles\n5. Deploy the cluster\n6. Check ceph status\n</pre>\n\n<p>\n  <b>Ownership:</b> Issues with this job are tracked by QA team.\n<p>\n  <b>Contacts:</b> #fuel-qa\n<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0-kilo.ubuntu.bvt_2", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [], 
+    "firstBuild": {
+        "number": 167, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/167/"
+    }, 
+    "healthReport": [
+        {
+            "description": "Build stability: All recent builds failed.", 
+            "iconClassName": "icon-health-00to19", 
+            "iconUrl": "health-00to19.png", 
+            "score": 0
+        }, 
+        {
+            "description": "Test Result: 1 test failing out of a total of 3 tests.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }
+    ], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": {
+        "number": 216, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/216/"
+    }, 
+    "lastCompletedBuild": {
+        "number": 216, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/216/"
+    }, 
+    "lastFailedBuild": {
+        "number": 216, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/216/"
+    }, 
+    "lastStableBuild": {
+        "number": 210, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/210/"
+    }, 
+    "lastSuccessfulBuild": {
+        "number": 210, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/210/"
+    }, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": {
+        "number": 216, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/216/"
+    }, 
+    "name": "8.0-kilo.ubuntu.bvt_2", 
+    "nextBuildNumber": 217, 
+    "property": [
+        {}, 
+        {}, 
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "name": "MAGNET_LINK", 
+                        "value": ""
+                    }, 
+                    "description": "iso magnet link", 
+                    "name": "MAGNET_LINK", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "OPENSTACK_RELEASE", 
+                        "value": "Ubuntu"
+                    }, 
+                    "description": "Base distribution", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "TEST_GROUP", 
+                        "value": "bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "ENV_PREFIX", 
+                        "value": "8.0-kilo.main.Ubuntu.bvt_2"
+                    }, 
+                    "description": "", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "BUILD_MIRROR_URL", 
+                        "value": ""
+                    }, 
+                    "description": "", 
+                    "name": "BUILD_MIRROR_URL", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }
+    ], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [
+        {
+            "color": "disabled", 
+            "name": "8.0-kilo.test_all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.test_all/"
+        }
+    ], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/"
+}

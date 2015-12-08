@@ -1,0 +1,137 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:d0a32c0958fbd2fd968e647b15086e60d85f7eeb&dn=fuel-8.0-4-2015-09-16%5F16-10-28.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv88-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-4-2015-09-16%5F16-10-28.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Centos"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Centos.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by user afedorova", 
+                    "userId": "afedorova", 
+                    "userName": "afedorova"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 1, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "40f342456643d3ed1d4de792bd29b462dfcaf94b", 
+                        "branch": [
+                            {
+                                "SHA1": "40f342456643d3ed1d4de792bd29b462dfcaf94b", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "40f342456643d3ed1d4de792bd29b462dfcaf94b", 
+                        "branch": [
+                            {
+                                "SHA1": "40f342456643d3ed1d4de792bd29b462dfcaf94b", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "40f342456643d3ed1d4de792bd29b462dfcaf94b", 
+                "branch": [
+                    {
+                        "SHA1": "40f342456643d3ed1d4de792bd29b462dfcaf94b", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/stackforge/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "fail_error_ceph_rados_gw-fuel-snapshot-2015-09-30_11-34-40.tar.xz", 
+            "fileName": "fail_error_ceph_rados_gw-fuel-snapshot-2015-09-30_11-34-40.tar.xz", 
+            "relativePath": "logs/fail_error_ceph_rados_gw-fuel-snapshot-2015-09-30_11-34-40.tar.xz"
+        }, 
+        {
+            "displayPath": "fail_error_ceph_rados_gw-fuel-snapshot-2015-09-30_11-34-40.tar.xz.filtered.log", 
+            "fileName": "fail_error_ceph_rados_gw-fuel-snapshot-2015-09-30_11-34-40.tar.xz.filtered.log", 
+            "relativePath": "logs/fail_error_ceph_rados_gw-fuel-snapshot-2015-09-30_11-34-40.tar.xz.filtered.log"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20150930.yaml", 
+            "fileName": "timestat_20150930.yaml", 
+            "relativePath": "logs/timestat_20150930.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv44-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [], 
+    "description": null, 
+    "displayName": "#1", 
+    "duration": 2283753, 
+    "estimatedDuration": 2283753, 
+    "executor": null, 
+    "fullDisplayName": "8.0.centos.bvt_2 #1", 
+    "id": "1", 
+    "keepLog": false, 
+    "number": 1, 
+    "queueId": 10225, 
+    "result": "FAILURE", 
+    "timestamp": 1443610693010, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/1/"
+}

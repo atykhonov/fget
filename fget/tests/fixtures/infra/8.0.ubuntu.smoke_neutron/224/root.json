@@ -1,0 +1,218 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:0e71ceb611ba00dd34088b6e95281ed4dfbafce5&dn=fuel-8.0-239-2015-12-02%5F01-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-239-2015-12-02%5F01-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "smoke_neutron"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.ubuntu.smoke_neutron"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-12-01-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 224", 
+                    "upstreamBuild": 224, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 224, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "5d618561e5db47597afb565c8dc3574488702e84", 
+                        "branch": [
+                            {
+                                "SHA1": "5d618561e5db47597afb565c8dc3574488702e84", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "5d618561e5db47597afb565c8dc3574488702e84", 
+                        "branch": [
+                            {
+                                "SHA1": "5d618561e5db47597afb565c8dc3574488702e84", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "5d618561e5db47597afb565c8dc3574488702e84", 
+                "branch": [
+                    {
+                        "SHA1": "5d618561e5db47597afb565c8dc3574488702e84", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 4, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_deploy_neutron_tun-fuel-snapshot-2015-12-02_03-45-16.tar.xz", 
+            "fileName": "pass_deploy_neutron_tun-fuel-snapshot-2015-12-02_03-45-16.tar.xz", 
+            "relativePath": "logs/pass_deploy_neutron_tun-fuel-snapshot-2015-12-02_03-45-16.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-12-02_02-33-21.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-12-02_02-33-21.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-12-02_02-33-21.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_slaves_3-fuel-snapshot-2015-12-02_02-39-24.tar.xz", 
+            "fileName": "pass_prepare_slaves_3-fuel-snapshot-2015-12-02_02-39-24.tar.xz", 
+            "relativePath": "logs/pass_prepare_slaves_3-fuel-snapshot-2015-12-02_02-39-24.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-12-02_02-32-40.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-12-02_02-32-40.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-12-02_02-32-40.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151202.yaml", 
+            "fileName": "timestat_20151202.yaml", 
+            "relativePath": "logs/timestat_20151202.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv44-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/environment.py", 
+                    "gates_tests/tests/test_review_in_fuel_agent.py", 
+                    "gates_tests/helpers/__init__.py", 
+                    "gates_tests/helpers/utils.py", 
+                    "gates_tests/tests/__init__.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "gates_tests/__init__.py", 
+                    "doc/base_tests.rst"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+                    "fullName": "agrechanichenko"
+                }, 
+                "comment": "Add gate test for fuel-agent repo\n\nAdd gate test for fuel-agent that should be executed\nfor each review in openstack/fuel-agent repo.\n\nNext variables should be exported:\nUPDATE_FUEL=True\nUPDATE_FUEL_PATH=/path/to/source\n\nTest depends on ready,\nso it is better to run it with -k option.\n\nScenario:\n    1. Revert snapshot \"ready\"\n    2. Update fuel-agent in MCollective\n    3. Update bootstrap\n    4. Bootstrap 1 slave\n    5. Create environment via FUEL CLI\n    6. Assign controller role\n    7. Provisioning node\n\nChange-Id: I323398d5a039896f3ec8793ba64b6a6541a4967f\nCloses-Bug: #1519880\n", 
+                "commitId": "f17ec5d130844a434665990513626fd36bce3e63", 
+                "date": "2015-12-01T14:26:46+0000 +0200", 
+                "id": "f17ec5d130844a434665990513626fd36bce3e63", 
+                "msg": "Add gate test for fuel-agent repo", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "doc/base_tests.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/tests/__init__.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/helpers/__init__.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "gates_tests/tests/test_review_in_fuel_agent.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }
+                ], 
+                "timestamp": 1448980006000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+            "fullName": "agrechanichenko"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#224", 
+    "duration": 6020341, 
+    "estimatedDuration": 5951722, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.smoke_neutron #224", 
+    "id": "224", 
+    "keepLog": false, 
+    "number": 224, 
+    "queueId": 19443, 
+    "result": "SUCCESS", 
+    "timestamp": 1449021994385, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.smoke_neutron/224/"
+}

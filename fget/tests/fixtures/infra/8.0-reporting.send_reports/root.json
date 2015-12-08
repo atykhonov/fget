@@ -1,0 +1,242 @@
+{
+    "actions": [
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": true, 
+    "builds": [
+        {
+            "number": 41, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/41/"
+        }, 
+        {
+            "number": 40, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/40/"
+        }, 
+        {
+            "number": 39, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/39/"
+        }, 
+        {
+            "number": 38, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/38/"
+        }, 
+        {
+            "number": 37, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/37/"
+        }, 
+        {
+            "number": 36, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/36/"
+        }, 
+        {
+            "number": 35, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/35/"
+        }, 
+        {
+            "number": 34, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/34/"
+        }, 
+        {
+            "number": 33, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/33/"
+        }, 
+        {
+            "number": 32, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/32/"
+        }, 
+        {
+            "number": 31, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/31/"
+        }, 
+        {
+            "number": 30, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/30/"
+        }, 
+        {
+            "number": 29, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/29/"
+        }, 
+        {
+            "number": 28, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/28/"
+        }, 
+        {
+            "number": 27, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/27/"
+        }, 
+        {
+            "number": 26, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/26/"
+        }, 
+        {
+            "number": 25, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/25/"
+        }, 
+        {
+            "number": 24, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/24/"
+        }, 
+        {
+            "number": 23, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/23/"
+        }, 
+        {
+            "number": 22, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/22/"
+        }, 
+        {
+            "number": 21, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/21/"
+        }, 
+        {
+            "number": 20, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/20/"
+        }, 
+        {
+            "number": 19, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/19/"
+        }, 
+        {
+            "number": 18, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/18/"
+        }, 
+        {
+            "number": 17, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/17/"
+        }, 
+        {
+            "number": 16, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/16/"
+        }, 
+        {
+            "number": 15, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/15/"
+        }, 
+        {
+            "number": 14, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/14/"
+        }, 
+        {
+            "number": 13, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/13/"
+        }, 
+        {
+            "number": 12, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/12/"
+        }, 
+        {
+            "number": 11, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/11/"
+        }, 
+        {
+            "number": 10, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/10/"
+        }, 
+        {
+            "number": 9, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/9/"
+        }, 
+        {
+            "number": 8, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/8/"
+        }, 
+        {
+            "number": 7, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/7/"
+        }, 
+        {
+            "number": 6, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/6/"
+        }, 
+        {
+            "number": 5, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/5/"
+        }, 
+        {
+            "number": 4, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/4/"
+        }, 
+        {
+            "number": 3, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/3/"
+        }, 
+        {
+            "number": 2, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/2/"
+        }, 
+        {
+            "number": 1, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/1/"
+        }
+    ], 
+    "color": "blue", 
+    "concurrentBuild": false, 
+    "description": "Reporting job that does nothing except triggering reporting jobs specific for product infrastructure.\nIts behaviour can be overridden or job can be completely disabled at all if necessary.\n<p>\n  Owned by: Fuel CI Team<br/>\n  Job owner is responsible for keeping builds green.<br/>\n  Maintenance contacts: #infra<br/>\n</p>\n<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0-reporting.send_reports", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [
+        {
+            "color": "notbuilt", 
+            "name": "8.0.all-Testrail", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.all-Testrail/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "fuel_ci-status_reports", 
+            "url": "https://product-ci.infra.mirantis.net/job/fuel_ci-status_reports/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "trigger-external-events", 
+            "url": "https://product-ci.infra.mirantis.net/job/trigger-external-events/"
+        }
+    ], 
+    "firstBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/1/"
+    }, 
+    "healthReport": [
+        {
+            "description": "Build stability: No recent builds failed.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }
+    ], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": {
+        "number": 41, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/41/"
+    }, 
+    "lastCompletedBuild": {
+        "number": 41, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/41/"
+    }, 
+    "lastFailedBuild": null, 
+    "lastStableBuild": {
+        "number": 41, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/41/"
+    }, 
+    "lastSuccessfulBuild": {
+        "number": 41, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/41/"
+    }, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": null, 
+    "name": "8.0-reporting.send_reports", 
+    "nextBuildNumber": 42, 
+    "property": [], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [
+        {
+            "color": "red", 
+            "name": "8.0.all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.all/"
+        }
+    ], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/"
+}

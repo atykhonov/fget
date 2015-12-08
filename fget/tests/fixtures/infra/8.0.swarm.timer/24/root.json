@@ -1,0 +1,47 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by user afedorova", 
+                    "userId": "afedorova", 
+                    "userName": "afedorova"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "links.txt", 
+            "fileName": "links.txt", 
+            "relativePath": "links.txt"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv71-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": null
+    }, 
+    "culprits": [], 
+    "description": "ISO <a href=\"https://product-ci.infra.mirantis.net/job/8.0-kilo.all/169/\">169/</a>", 
+    "displayName": "#24", 
+    "duration": 203, 
+    "estimatedDuration": 162, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.timer #24", 
+    "id": "24", 
+    "keepLog": false, 
+    "number": 24, 
+    "queueId": 1842, 
+    "result": "SUCCESS", 
+    "timestamp": 1445384086658, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/24/"
+}

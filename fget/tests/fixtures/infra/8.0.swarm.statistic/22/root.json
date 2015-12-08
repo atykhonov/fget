@@ -1,0 +1,139 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by user afedorova", 
+                    "userId": "afedorova", 
+                    "userName": "afedorova"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 22, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                        "branch": [
+                            {
+                                "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                        "branch": [
+                            {
+                                "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                "branch": [
+                    {
+                        "SHA1": "49115b87c343f1c0ac3f2d4452a99e4e0aacbd78", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "bugs_link_stat.html", 
+            "fileName": "bugs_link_stat.html", 
+            "relativePath": "bugs_link_stat.html"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Increase timeout for env deletion over cli\n\nIn test delete cluster over cli we use\nrevert mechanism, but do not check if all the nodes\nbecome online after revert. This lead to the situation\nwhen cluster deletion takes a little bit more time.\nSo In this patch delete timeout was increased.\nAlso add check for node statuses after revert\nand log with error level if some of them is offline.\nWe don't interrupt tests here according to cluster should be deleted,even all the nodes are offline\n\nChange-Id: I769e5a17875595b632d111d6b5f1a782989e3a37\nCloses-Bug: #1508007\n", 
+                "commitId": "4509b95152f85f919e345ef7a088f6763a4f9b50", 
+                "date": "2015-10-30T18:44:49+0000 +0000", 
+                "id": "4509b95152f85f919e345ef7a088f6763a4f9b50", 
+                "msg": "Increase timeout for env deletion over cli", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }
+                ], 
+                "timestamp": 1446230689000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Fix usage of get_nailgun_cluster_nodes_by_roles()\n\nmethod get_nailgun_cluster_nodes_by_roles() expects\nlist not string.\n\nChange-Id: Ifcca579b7969599f1cf6cb51ed70b8c6fb0434fb\nCloses-Bug: #1512244\n", 
+                "commitId": "11aadbadb44594f52c8730feebca3efb85d04f79", 
+                "date": "2015-11-02T08:53:58+0000 +0200", 
+                "id": "11aadbadb44594f52c8730feebca3efb85d04f79", 
+                "msg": "Fix usage of get_nailgun_cluster_nodes_by_roles()", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }
+                ], 
+                "timestamp": 1446454438000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "<a href=\"https://mirantis.testrail.com/index.php?/plans/view/4330\">TestRail Report URL</a>", 
+    "displayName": "#22", 
+    "duration": 989926, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #22", 
+    "id": "22", 
+    "keepLog": false, 
+    "number": 22, 
+    "queueId": 8010, 
+    "result": "SUCCESS", 
+    "timestamp": 1446472285061, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/22/"
+}

@@ -1,0 +1,825 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "nessus"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "NEUTRON_ENABLE", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "VENV_PATH", 
+                    "value": "/home/jenkins/venv-nailgun-tests-2.9"
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "latest-stable"
+                }, 
+                {
+                    "name": "MIRROR_UBUNTU", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS", 
+                    "value": ""
+                }, 
+                {
+                    "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                    "value": "1052"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.nessus_security_scan"
+                }, 
+                {
+                    "name": "NESSUS_IMAGE_PATH", 
+                    "value": "/var/lib/libvirt/images/nessus.qcow2"
+                }, 
+                {
+                    "name": "NESSUS_USERNAME", 
+                    "value": "root"
+                }, 
+                {
+                    "name": "NESSUS_PASSWORD", 
+                    "value": "r00tme"
+                }, 
+                {
+                    "name": "SECURITY_TEST", 
+                    "value": "True"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 7, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                        "branch": [
+                            {
+                                "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                        "branch": [
+                            {
+                                "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                "branch": [
+                    {
+                        "SHA1": "77d0b5d8e1c69ec244bcbba9578c73b9834e8523", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 1, 
+            "skipCount": 0, 
+            "totalCount": 1, 
+            "urlName": "testReport"
+        }, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "nessus_report_scan_8_controller_cpa.html", 
+            "fileName": "nessus_report_scan_8_controller_cpa.html", 
+            "relativePath": "logs/nessus_report_scan_8_controller_cpa.html"
+        }, 
+        {
+            "displayPath": "nessus_report_scan_8_master_cpa.html", 
+            "fileName": "nessus_report_scan_8_master_cpa.html", 
+            "relativePath": "logs/nessus_report_scan_8_master_cpa.html"
+        }, 
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151116.yaml", 
+            "fileName": "timestat_20151116.yaml", 
+            "relativePath": "logs/timestat_20151116.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv16-msk.msk.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_net_templates.py", 
+                    "fuelweb_test/testrail/builds.py", 
+                    "system_test/tests/test_deploy_check_rados.py", 
+                    "fuelweb_test/helpers/utils.py", 
+                    "fuelweb_test/models/environment.py", 
+                    "fuelweb_test/tests/test_ceph.py", 
+                    "fuelweb_test/tests/tests_strength/test_cic_maintenance_mode.py", 
+                    "fuelweb_test/testrail/testrail_client.py", 
+                    "fuelweb_test/tests/test_vcenter.py", 
+                    "fuelweb_test/tests/tests_security/test_run_nessus.py", 
+                    "fuelweb_test/tests/test_offloading_types.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "fuelweb_test/helpers/checkers.py", 
+                    "fuelweb_test/models/fuel_web_client.py", 
+                    "fuelweb_test/helpers/patching.py", 
+                    "fuelweb_test/helpers/regenerate_repo.py", 
+                    "fuelweb_test/testrail/testrail.py", 
+                    "fuelweb_test/tests/test_ha_one_controller.py", 
+                    "fuelweb_test/tests/test_net_templates_base.py", 
+                    "fuelweb_test/tests/test_bonding_base.py", 
+                    "fuelweb_test/tests/plugins/plugin_contrail/test_fuel_plugin_contrail.py", 
+                    "fuelweb_test/helpers/fuel_actions.py", 
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+                    "fullName": "astepanov"
+                }, 
+                "comment": "Refactor & fix incorrect default args\n\nFix:\n  1. Default arguments should not be mutable\n  2. Set could be created without set() call (little faster)\n  3. Redundant parenthesis (readability)\n  4. lambdas is strictly not recommended by PEP8, especially as class variables\n  5. fix old style classes (not inherited from object)\nUpdate-reason: rebase\n\nCloses-Bug: #1512671\n\nChange-Id: Id8314b76848278b67da898600240b59cf76a7328\n", 
+                "commitId": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                "date": "2015-11-09T11:52:15+0000 +0300", 
+                "id": "b63dd9848bd5e6ade8c0bc740f10614be9237b45", 
+                "msg": "Refactor & fix incorrect default args", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_security/test_run_nessus.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_bonding_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_cic_maintenance_mode.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/patching.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ha_one_controller.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_vcenter.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/builds.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_offloading_types.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/plugins/plugin_contrail/test_fuel_plugin_contrail.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_net_templates_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_ceph.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_net_templates.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/checkers.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_deploy_check_rados.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/regenerate_repo.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }
+                ], 
+                "timestamp": 1447069935000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_separate_services/test_separate_rabbitmq.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_multiroles.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_keystone.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_db.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_horizon.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Change should fail value\n\nFor tests where we destroy controller change\nshould fail value  according to test for\nhaproxy backend should fail\n\nChange-Id: I7960e701767dc2bed7f215ca847b3097dc865183\nCloses-Bug: #1514755\n", 
+                "commitId": "d0165ed04549f52155815a313c01aa7dbf79d2fe", 
+                "date": "2015-11-11T12:26:49+0000 +0200", 
+                "id": "d0165ed04549f52155815a313c01aa7dbf79d2fe", 
+                "msg": "Change should fail value", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_multiroles.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_horizon.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_db.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_keystone.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_rabbitmq.py"
+                    }
+                ], 
+                "timestamp": 1447244809000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests/strength/strength_base.py", 
+                    "doc/system_tests.rst", 
+                    "system_test/tests/test_deploy_check_rados.py", 
+                    "system_test/tests/actions_base.py", 
+                    "system_test/tests/strength/strenght_base.py", 
+                    "doc/index.rst", 
+                    "system_test/helpers/utils.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Hotfix for fuel-qa docs to apply zero-errors in verify-fuel-qa-docs job\n\nChange-Id: Ic3baa6b56aacaea3c01682f5410abf2ef8b34693\nRelated-Bug: #1515234\n", 
+                "commitId": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                "date": "2015-11-11T13:42:47+0000 +0200", 
+                "id": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                "msg": "Hotfix for fuel-qa docs to apply zero-errors in verify-fuel-qa-docs job", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_deploy_check_rados.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/strength/strength_base.py"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests/strength/strenght_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/index.rst"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "doc/system_tests.rst"
+                    }
+                ], 
+                "timestamp": 1447249367000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_backup_restore.py", 
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/msamoylov", 
+                    "fullName": "msamoylov"
+                }, 
+                "comment": "Remove deprecated option \"--mode ha\" for cli tests.\n\nChange-Id: I2b57da3cd3d23d5a5672019f84ca39ddd75f1efd\nCloses-Bug: #1515202\n", 
+                "commitId": "197aa8471ddddae01c32202a2398764cdaf02ad4", 
+                "date": "2015-11-11T14:16:28+0000 +0300", 
+                "id": "197aa8471ddddae01c32202a2398764cdaf02ad4", 
+                "msg": "Remove deprecated option \"--mode ha\" for cli tests.", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_backup_restore.py"
+                    }
+                ], 
+                "timestamp": 1447251388000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests/strength/destroy_controllers.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akostrikov", 
+                    "fullName": "akostrikov"
+                }, 
+                "comment": "Fix typo strenght\n\nRelated-Bug: #1515234\nCloses-Bug: #1515322\nChange-Id: I39bbb4ed97f409d522e174fc8655a47ffbfe5961\n", 
+                "commitId": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                "date": "2015-11-11T16:52:48+0000 +0300", 
+                "id": "dc2d51e525c24c607b684e3cb67df445829f5b51", 
+                "msg": "Fix typo strenght", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/destroy_controllers.py"
+                    }
+                ], 
+                "timestamp": 1447260768000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/testrail.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add retries to TestRail client\n\nIn order to workaround API limitations (such as\nrequests rate), adding mechanism of requests\nretries based on predefined error codes.\n\nTry to resend request 3 times if '429' code is\nreceived from API.\n\nCloses-bug: #1514797\nChange-Id: I723ef7886c86b7e418627962a1ff8aa7a4281c0a\n", 
+                "commitId": "0debb2816160b27660449cf16561191e75539d82", 
+                "date": "2015-11-11T19:52:01+0000 +0200", 
+                "id": "0debb2816160b27660449cf16561191e75539d82", 
+                "msg": "Add retries to TestRail client", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail.py"
+                    }
+                ], 
+                "timestamp": 1447271521000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_multiple_networks.py", 
+                    "fuelweb_test/helpers/multiple_networks_hacks.py", 
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Add test with assigning controllers to non-default nodegroup\n\nScenario:\n1. Revert snapshot with ready master node\n2. Create environment with Neutron VXLAN and custom nodegroup\n3. Configure network floating ranges to use public network\n   from custom nodegroup\n4. Bootstrap slaves from custom nodegroup\n5. Bootstrap slave nodes from default nodegroup\n6. Add 3 nodes from 'custom' nodegroup as controllers\n   Add 2 nodes from 'default' nodegroup as compute and cinder\n7. Run network verification\n8. Check addresses allocated for VIPs belong to networks\n   from custom nodegroup\n9. Deploy environment\n10. Run network verification\n11. Run OSTF\n\nChange-Id: I3b6db9a1ca0c98444998ad05353a03efc8243c71\nImplements: blueprint test-custom-nodegroup-controllers\n", 
+                "commitId": "42aadc4c537a385f5c0a3d34b86df63f0912a6ee", 
+                "date": "2015-11-12T05:17:51+0000 +0200", 
+                "id": "42aadc4c537a385f5c0a3d34b86df63f0912a6ee", 
+                "msg": "Add test with assigning controllers to non-default nodegroup", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_multiple_networks.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/multiple_networks_hacks.py"
+                    }
+                ], 
+                "timestamp": 1447305471000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add 'blocked' status to TestRail test results\n\nMark result as blocked if test was skipped due to\nfailure of another dependent test.\n\nChange-Id: I05713ead653b2dc4bb1a4021cef6404abc079036\nCloses-bug: #1515529\n", 
+                "commitId": "facef2e74e08e3a9c10f8b5fe46909fc3e2a9602", 
+                "date": "2015-11-12T11:14:14+0000 +0200", 
+                "id": "facef2e74e08e3a9c10f8b5fe46909fc3e2a9602", 
+                "msg": "Add 'blocked' status to TestRail test results", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1447326854000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/__init__.py", 
+                    "system_test/tests_templates/cluster_configs/settings/cephVolImg_wo_components.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml", 
+                    "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cndr_neutronVLAN.yaml", 
+                    "fuelweb_test/__init__.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "system_test/tests/strength/destroy_controllers.py", 
+                    "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Add custom groups for template base cases\n\nFor define own group, put it into group_list in\n    define_custom_group() at run_tests.py\n\nImplements blueprint template-based-testcases\nChange-Id: I8804768f17dc2368b7c2f99dc838ec0308bba79a\n", 
+                "commitId": "68ed1d679300151ca1a5d8a03912b92acb2c5827", 
+                "date": "2015-11-12T13:47:43+0000 +0200", 
+                "id": "68ed1d679300151ca1a5d8a03912b92acb2c5827", 
+                "msg": "Add custom groups for template base cases", 
+                "paths": [
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests_templates/tests_configs/ha/3ctrl_2comp_1cndr_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/__init__.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/__init__.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/ha/pairwise/1ctrl_ceph_1ctrl_1comp_1comp_ceph_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/tests_configs/ha/single/3ctrl_2comp_1cndr_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/strength/destroy_controllers.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests_templates/cluster_configs/settings/cephVolImg_wo_components.yaml"
+                    }
+                ], 
+                "timestamp": 1447336063000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_os_upgrade.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+                    "fullName": "asledzinskiy"
+                }, 
+                "comment": "Split os upgrade tests into two classes\n\n- Split os upgrade tests into 2 separate\nclasses: one to prepare env for upgrade and\none to do upgrade itself\n\nChange-Id: I98abab4bfb589bb6d39395f1b7b618ac30ba1bdc\nCloses-Bug: #1515629\n", 
+                "commitId": "3b120bec3d0505153f862dd36d7d2704ed99083a", 
+                "date": "2015-11-12T14:28:15+0000 +0200", 
+                "id": "3b120bec3d0505153f862dd36d7d2704ed99083a", 
+                "msg": "Split os upgrade tests into two classes", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_os_upgrade.py"
+                    }
+                ], 
+                "timestamp": 1447338495000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report.py", 
+                    "fuelweb_test/testrail/testrail_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Add skip message to result comments\n\nChange-Id: I38e12f4735bb83977e19a1eee75fe905fce0a3fc\nRelated-bug: #1515601\n", 
+                "commitId": "c6e10735e5b8078342414891d8500ad56b63388a", 
+                "date": "2015-11-12T18:03:21+0000 +0200", 
+                "id": "c6e10735e5b8078342414891d8500ad56b63388a", 
+                "msg": "Add skip message to result comments", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report.py"
+                    }
+                ], 
+                "timestamp": 1447351401000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/fuel_web_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "check if 'ironic' network exist in devops\n\n In release settings all networks are present.\n Since 'ironic' is optional component and 'ironic' network is\n created in devops ONLY if IRONIC_ENABLED=True we need\n to check that 'ironic' network exist in devops before trying to update\n release network settings.\n\nChange-Id: Ic5acb0d15c0012a824b2381abda96d6e8aa7cfb9\n", 
+                "commitId": "df45a35b8bd0969d850f566c062dcec4c62d8978", 
+                "date": "2015-11-13T10:57:29+0000 +0000", 
+                "id": "df45a35b8bd0969d850f566c062dcec4c62d8978", 
+                "msg": "check if 'ironic' network exist in devops", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/fuel_web_client.py"
+                    }
+                ], 
+                "timestamp": 1447412249000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/models/environment.py", 
+                    "system_test/helpers/decorators.py", 
+                    "system_test/tests/base_actions_factory.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+                    "fullName": "dtyzhnenko"
+                }, 
+                "comment": "Fix snapshot name fot template test cases\n\nFor snapshot name used case class + hash from config name + step\n    DeployCheckRadosGW_562aa0fd_Step002\n\nImplements blueprint template-based-testcases\n\nChange-Id: Iad3be3f4a4f7cd7977ed7a22948247e4c2354624\n", 
+                "commitId": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                "date": "2015-11-13T13:11:52+0000 +0200", 
+                "id": "f3363b2a79ab35c7e7b7b7bd6eb97c0c71e4a114", 
+                "msg": "Fix snapshot name fot template test cases", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/models/environment.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/base_actions_factory.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/decorators.py"
+                    }
+                ], 
+                "timestamp": 1447420312000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/fuel_actions.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+                    "fullName": "vkhlyunev"
+                }, 
+                "comment": "Install dpkg-dev package to docker\n\nWe need this package for \"dpkg-scanpackages\" utility\n\nCloses-bug:#1516550\nChange-Id: Icd9699a4d7d13af3224965f187539e6b14c82d07\n", 
+                "commitId": "c022bd132944f281364525eee89c0cb4fb4c1bf0", 
+                "date": "2015-11-16T09:58:14+0000 +0300", 
+                "id": "c022bd132944f281364525eee89c0cb4fb4c1bf0", 
+                "msg": "Install dpkg-dev package to docker", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/fuel_actions.py"
+                    }
+                ], 
+                "timestamp": 1447667894000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/helpers/regenerate_repo.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+                    "fullName": "apanchenko"
+                }, 
+                "comment": "Install 'dpkg-dev' before regenerating repository\n\nCurrently 'dpkg-scanpackages' tool is provided by 'dpkg-dev'\npackage (see bug #1515563), so it must be installed for\ntests which regenerate Ubuntu repository on master node.\n\nChange-Id: Ieb2968d428b098bdd5457dd298aebe0131562f26\nCloses-bug: #1516662\n", 
+                "commitId": "c131fda8eb33b10e74acfe204aa4e91e92230f98", 
+                "date": "2015-11-16T15:27:43+0000 +0200", 
+                "id": "c131fda8eb33b10e74acfe204aa4e91e92230f98", 
+                "msg": "Install 'dpkg-dev' before regenerating repository", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/helpers/regenerate_repo.py"
+                    }
+                ], 
+                "timestamp": 1447687663000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/report_tempest_results.py", 
+                    "fuelweb_test/testrail/testrail_client.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tnurlygayanov", 
+                    "fullName": "tnurlygayanov"
+                }, 
+                "comment": "Fixed issue with 429 code for Tempest results\n\nWe fixed issue with TestRail API 429 errors for\nSWARM tests, but for Tempest results we need to\nuse minimum API requests and upload all results\nwith only one bulk API request.\n\nI sent support request to TestRail support team\nand they provided me the information how we can\nchange our API calls to TestRail to avoid any\nissues in the future.\n\nChange-Id: I7d8ffc3238eefe186f9ec904d8dca153527261ab\nRelated-Bug: #1514797\n", 
+                "commitId": "ad12ece81e5249a26e0647c17bbfcfe3da26276d", 
+                "date": "2015-11-16T15:31:13+0000 +0300", 
+                "id": "ad12ece81e5249a26e0647c17bbfcfe3da26276d", 
+                "msg": "Fixed issue with 429 code for Tempest results", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/testrail_client.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/report_tempest_results.py"
+                    }
+                ], 
+                "timestamp": 1447687873000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/test_cli.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+                    "fullName": "ykotko"
+                }, 
+                "comment": "Fix cli parameter\n\nDelete '--net' parameter,\ndue to existing only single net provider type\nand removing '--net' parameter from the fuel-client\n\nChange-Id: I61d48cfa9d715b0162536f50c372646d89783667\nCloses-Bug: #1516051\n", 
+                "commitId": "ae8208eb78a8e0e475741b60229903b01cbfec0f", 
+                "date": "2015-11-16T17:36:52+0000 +0000", 
+                "id": "ae8208eb78a8e0e475741b60229903b01cbfec0f", 
+                "msg": "Fix cli parameter", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_cli.py"
+                    }
+                ], 
+                "timestamp": 1447695412000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/akostrikov", 
+            "fullName": "akostrikov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/asledzinskiy", 
+            "fullName": "asledzinskiy"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/msamoylov", 
+            "fullName": "msamoylov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/sand8080", 
+            "fullName": "sand8080"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tnurlygayanov", 
+            "fullName": "tnurlygayanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/vkhlyunev", 
+            "fullName": "vkhlyunev"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/ykotko", 
+            "fullName": "ykotko"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#7", 
+    "duration": 12669396, 
+    "estimatedDuration": 12326188, 
+    "executor": null, 
+    "fullDisplayName": "8.0.nessus_security_scan #7", 
+    "id": "7", 
+    "keepLog": false, 
+    "number": 7, 
+    "queueId": 14023, 
+    "result": "FAILURE", 
+    "timestamp": 1447714800573, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/7/"
+}

@@ -1,0 +1,224 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:d2e3c51d3a01a7ba4cc571e0698b6700625e4894&dn=fuel-8.0-231-2015-11-30%5F13-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-231-2015-11-30%5F13-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-29-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 218", 
+                    "upstreamBuild": 218, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 218, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "ce27efe1ba23ec1ce8319cbdc2abeb18ae1abffa", 
+                        "branch": [
+                            {
+                                "SHA1": "ce27efe1ba23ec1ce8319cbdc2abeb18ae1abffa", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "ce27efe1ba23ec1ce8319cbdc2abeb18ae1abffa", 
+                        "branch": [
+                            {
+                                "SHA1": "ce27efe1ba23ec1ce8319cbdc2abeb18ae1abffa", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "ce27efe1ba23ec1ce8319cbdc2abeb18ae1abffa", 
+                "branch": [
+                    {
+                        "SHA1": "ce27efe1ba23ec1ce8319cbdc2abeb18ae1abffa", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-11-30_16-30-12.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-11-30_16-30-12.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-11-30_16-30-12.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-30_14-40-39.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-30_14-40-39.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-30_14-40-39.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-30_14-39-58.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-30_14-39-58.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-30_14-39-58.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151130.yaml", 
+            "fileName": "timestat_20151130.yaml", 
+            "relativePath": "logs/timestat_20151130.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv44-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/run_tests.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+                    "fullName": "agrechanichenko"
+                }, 
+                "comment": "Alias for system_test.failover.filling_root\n\nCreate system_test.failover.filling_root alias for\nsystem_test.failover.filling_root.3ctrl_2comp_1cndr_neutronVLAN\n\nChange-Id: Ieeb36ceaae9cd4ac995d2a522af39b8e8e8767ab\nCloses-Bug: #1521137\n", 
+                "commitId": "4c58d91f24cca43569a202d671dc78afa9238eeb", 
+                "date": "2015-11-30T10:56:38+0000 +0000", 
+                "id": "4c58d91f24cca43569a202d671dc78afa9238eeb", 
+                "msg": "Alias for system_test.failover.filling_root", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }
+                ], 
+                "timestamp": 1448880998000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/upload_cases_description.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Fix for uploading template cases to test suite\n\n\nCloses-Bug: #1521147\n\nChange-Id: Ic170cc1366dc23d5d62bb865edd48c0adbd74f96\n", 
+                "commitId": "6e9e2aa08d42b11798354e8b4b21fb71957a1e1e", 
+                "date": "2015-11-30T11:13:28+0000 +0000", 
+                "id": "6e9e2aa08d42b11798354e8b4b21fb71957a1e1e", 
+                "msg": "Fix for uploading template cases to test suite", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/upload_cases_description.py"
+                    }
+                ], 
+                "timestamp": 1448882008000
+            }, 
+            {
+                "affectedPaths": [
+                    "fuelweb_test/testrail/upload_cases_description.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+                    "fullName": "aurlapova"
+                }, 
+                "comment": "Revert \"Fix for uploading template cases to test suite\"\n\nThis reverts commit 6e9e2aa08d42b11798354e8b4b21fb71957a1e1e.\n\nChange-Id: I20fb40f20f17ef1c9caed18049212d57196fb148\n", 
+                "commitId": "dc77e88f8640f5f8ffe9f4ee80b1087672596298", 
+                "date": "2015-11-30T12:29:36+0000 +0000", 
+                "id": "dc77e88f8640f5f8ffe9f4ee80b1087672596298", 
+                "msg": "Revert \"Fix for uploading template cases to test suite\"", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/testrail/upload_cases_description.py"
+                    }
+                ], 
+                "timestamp": 1448886576000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/agrechanichenko", 
+            "fullName": "agrechanichenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/aurlapova", 
+            "fullName": "aurlapova"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#218", 
+    "duration": 8787558, 
+    "estimatedDuration": 8594353, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.bvt_2 #218", 
+    "id": "218", 
+    "keepLog": false, 
+    "number": 218, 
+    "queueId": 18839, 
+    "result": "SUCCESS", 
+    "timestamp": 1448892452034, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/218/"
+}

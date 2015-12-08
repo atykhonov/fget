@@ -1,0 +1,2035 @@
+{
+    "assignedLabels": [
+        {}
+    ], 
+    "description": "<h1>Product CI</h1>\r\n\r\n<p><font size=\"3\">\r\nFor other CI systems check <a href=\"https://mirantis.jira.com/wiki/display/PRD/CI+systems\">CI systems overview</a>\r\n</font></p>\r\n<hr>\r\n\r\n<p><font size=\"2\">\r\n  INFO: For custom iso builds and tests use <a href=\"http://jenkins-product.srt.mirantis.net:8080/view/custom_iso/\">custom_iso</a> view on Jenkins Product\r\n</font></p>", 
+    "jobs": [
+        {
+            "color": "red", 
+            "name": "6.1.swarm.runner", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.swarm.runner/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "6.1.swarm.timer", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.swarm.timer/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.bonding_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.bonding_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.bonding_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.bonding_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.ceph_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ceph_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.ceph_multinode_compact.upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ceph_multinode_compact.upgrade/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.ceph_multinode_compact_neutron.rollback", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ceph_multinode_compact_neutron.rollback/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.ceph_multinode_compact_neutron.upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ceph_multinode_compact_neutron.upgrade/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.cic_maintenance_mode", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.cic_maintenance_mode/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.classic_provisioning", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.classic_provisioning/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.cluster_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.cluster_actions/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.command_line", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.command_line/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.deploy_neutron_gre.rollback", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.deploy_neutron_gre.rollback/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.deploy_neutron_gre_ha.rollback", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.deploy_neutron_gre_ha.rollback/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.deploy_neutron_gre_ha.upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.deploy_neutron_gre_ha.upgrade/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.ha_destructive_ceph_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ha_destructive_ceph_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.ha_destructive_ceph_nova", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ha_destructive_ceph_nova/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ha_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.ha_neutron_destructive", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.ha_neutron_destructive/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.huge_ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.huge_ha_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.huge_ha_nova", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.huge_ha_nova/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.known_issues", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.known_issues/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.repeatable_image_based", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.repeatable_image_based/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.services_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.services_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.services_ha.ceilometer", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.services_ha.ceilometer/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.services_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.services_ha_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "6.1.system_test.centos.setup", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.setup/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.thread_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_1/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "6.1.system_test.centos.thread_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_2/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "6.1.system_test.centos.thread_3", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_3/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "6.1.system_test.centos.thread_4", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_4/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.thread_5", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_5/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.centos.thread_7", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_7/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.thread_non_func_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_non_func_1/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.centos.thread_usb", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.centos.thread_usb/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.bonding_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.bonding_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.bonding_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.bonding_ha_one_controller/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.ceph_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ceph_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.ceph_multinode_compact.upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ceph_multinode_compact.upgrade/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.ceph_multinode_compact_neutron.rollback", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ceph_multinode_compact_neutron.rollback/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.ceph_multinode_compact_neutron.upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ceph_multinode_compact_neutron.upgrade/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.cic_maintenance_mode", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.cic_maintenance_mode/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "6.1.system_test.ubuntu.classic_provisioning", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.classic_provisioning/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.cluster_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.cluster_actions/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.command_line", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.command_line/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.deploy_neutron_gre.rollback", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.deploy_neutron_gre.rollback/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.deploy_neutron_gre_ha.rollback", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.deploy_neutron_gre_ha.rollback/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.deploy_neutron_gre_ha.upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.deploy_neutron_gre_ha.upgrade/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.ha_destructive_ceph_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ha_destructive_ceph_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.ha_destructive_ceph_nova", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ha_destructive_ceph_nova/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ha_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.ha_neutron_destructive", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.ha_neutron_destructive/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.huge_ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.huge_ha_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.huge_ha_nova", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.huge_ha_nova/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.known_issues", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.known_issues/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.repeatable_image_based", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.repeatable_image_based/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.services_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.services_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.services_ha.ceilometer", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.services_ha.ceilometer/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "6.1.system_test.ubuntu.services_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.services_ha_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "6.1.system_test.ubuntu.setup", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.setup/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.thread_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_1/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.thread_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.thread_3", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_3/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.thread_4", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_4/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.thread_5", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_5/"
+        }, 
+        {
+            "color": "red", 
+            "name": "6.1.system_test.ubuntu.thread_7", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_7/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.thread_non_func_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_non_func_1/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.system_test.ubuntu.thread_usb", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.system_test.ubuntu.thread_usb/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.ubuntu-proposed.test", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.ubuntu-proposed.test/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.ubuntu-proposed.ubuntu.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.ubuntu-proposed.ubuntu.bvt_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "6.1.ubuntu-proposed.ubuntu.smoke_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/6.1.ubuntu-proposed.ubuntu.smoke_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0-test-reports-Testrail", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0-test-reports-Testrail/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.all", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.all/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.all-Testrail", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.all-Testrail/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.build_staging_mirror", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.build_staging_mirror/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.nessus_security_scan", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.nessus_security_scan/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.set_stable_mirror", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.set_stable_mirror/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.staging.iso", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.staging.iso/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.staging.ubuntu.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.staging.ubuntu.bvt_2/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.swarm.runner", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.swarm.runner/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.swarm.statistic", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.swarm.statistic/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.swarm.timer", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.swarm.timer/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.backup_restore_master", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.backup_restore_master/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.bonding_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.bonding_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.bonding_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.bonding_ha_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.bvt_ubuntu_bootstrap", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.bvt_ubuntu_bootstrap/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.ceph_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ceph_ha_one_controller/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.cic_maintenance_mode", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.cic_maintenance_mode/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.cluster_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.cluster_actions/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.cluster_actions_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.cluster_actions_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.command_line", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.command_line/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.controller_replacement", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.controller_replacement/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.custom_hostname", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.custom_hostname/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.error_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.error_node_reinstallation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.fuel_master_migrate", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.fuel_master_migrate/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.fuel_plugin_reboot", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.fuel_plugin_reboot/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.fuel_plugin_vip_reservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.fuel_plugin_vip_reservation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.full_cluster_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.full_cluster_reinstallation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.ha_destructive_ceph_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ha_destructive_ceph_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ha_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.ha_neutron_destructive", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ha_neutron_destructive/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.ha_neutron_destructive_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ha_neutron_destructive_2/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.ha_neutron_public", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ha_neutron_public/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.ha_neutron_tun", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ha_neutron_tun/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.ha_neutron_tun_scale", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ha_neutron_tun_scale/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.huge_ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.huge_ha_neutron/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.jumbo_frames", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.jumbo_frames/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.known_issues", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.known_issues/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.multirole", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.multirole/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.network_templates", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.network_templates/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.offloading", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.offloading/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.one_controller_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.one_controller_actions/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.os_upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.os_upgrade/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.partition_preservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.partition_preservation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.plugins.fuel_plugin_example", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.plugins.fuel_plugin_example/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.plugins.thread_1_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.plugins.thread_1_separate_services/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.plugins.thread_2_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.plugins.thread_2_separate_services/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.plugins.thread_db_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.plugins.thread_db_separate_services/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.plugins.thread_keystone_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.plugins.thread_keystone_separate_services/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.ready_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.ready_node_reinstallation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.reduced_footprint", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.reduced_footprint/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.repeatable_image_based", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.repeatable_image_based/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.rollback_neutron_gre", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.rollback_neutron_gre/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.centos.rollback_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.rollback_neutron_gre_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.centos.rollback_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.rollback_one_controller/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.services_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.services_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.services_ha.ceilometer", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.services_ha.ceilometer/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.services_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.services_ha_one_controller/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.centos.setup", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.setup/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.centos.test.upgrade.chain", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.test.upgrade.chain/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.thread_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.thread_1/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.thread_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.thread_2/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.thread_3", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.thread_3/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.thread_7", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.thread_7/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.thread_non_func_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.thread_non_func_1/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.centos.thread_usb", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.thread_usb/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.centos.upgrade_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.centos.upgrade_ha_one_controller_delete_node", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_ha_one_controller_delete_node/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.centos.upgrade_neutron_ceph", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_neutron_ceph/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.centos.upgrade_neutron_ceph_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_neutron_ceph_classic/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.upgrade_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_neutron_gre_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.centos.upgrade_nova_cinder", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_nova_cinder/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.centos.upgrade_nova_cinder_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_nova_cinder_classic/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.upgrade_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.upgrade_one_controller_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_one_controller_classic/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.upgrade_one_controller_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.upgrade_one_controller_neutron/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.centos.zabbix", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.centos.zabbix/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.backup_restore_master", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.backup_restore_master/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.bonding_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.bonding_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.bonding_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.bonding_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.bvt_ubuntu_bootstrap", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.bvt_ubuntu_bootstrap/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.ceph_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ceph_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.cic_maintenance_mode", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.cic_maintenance_mode/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.cluster_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.cluster_actions/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.cluster_actions_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.cluster_actions_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.command_line", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.command_line/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.controller_replacement", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.controller_replacement/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.custom_hostname", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.custom_hostname/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.error_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.error_node_reinstallation/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.fuel_master_migrate", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.fuel_master_migrate/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.fuel_plugin_reboot", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.fuel_plugin_reboot/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.fuel_plugin_vip_reservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.fuel_plugin_vip_reservation/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.full_cluster_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.full_cluster_reinstallation/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.ha_destructive_ceph_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ha_destructive_ceph_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ha_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.ha_neutron_destructive", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ha_neutron_destructive/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.ha_neutron_destructive_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ha_neutron_destructive_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.ha_neutron_public", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ha_neutron_public/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.ha_neutron_tun", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ha_neutron_tun/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.ha_neutron_tun_scale", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ha_neutron_tun_scale/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.huge_ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.huge_ha_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.jumbo_frames", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.jumbo_frames/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.known_issues", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.known_issues/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.multirole", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.multirole/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.network_templates", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.network_templates/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.offloading", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.offloading/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.one_controller_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.one_controller_actions/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.os_upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.os_upgrade/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.partition_preservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.partition_preservation/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.plugins.fuel_plugin_example", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.plugins.fuel_plugin_example/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.ubuntu.plugins.thread_1_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.plugins.thread_1_separate_services/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.ubuntu.plugins.thread_2_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.plugins.thread_2_separate_services/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.plugins.thread_db_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.plugins.thread_db_separate_services/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.plugins.thread_keystone_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.plugins.thread_keystone_separate_services/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.ready_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.ready_node_reinstallation/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.reduced_footprint", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.reduced_footprint/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.repeatable_image_based", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.repeatable_image_based/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.rollback_neutron_gre", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.rollback_neutron_gre/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.rollback_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.rollback_neutron_gre_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.rollback_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.rollback_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.services_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.services_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.services_ha.ceilometer", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.services_ha.ceilometer/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.services_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.services_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.setup", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.setup/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.test.upgrade.chain", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.test.upgrade.chain/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.thread_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.thread_1/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.ubuntu.thread_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.thread_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.thread_3", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.thread_3/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.thread_7", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.thread_7/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.thread_non_func_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.thread_non_func_1/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.thread_usb", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.thread_usb/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.ubuntu.upgrade_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_ha_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "7.0.system_test.ubuntu.upgrade_ha_one_controller_delete_node", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_ha_one_controller_delete_node/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.ubuntu.upgrade_neutron_ceph", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_neutron_ceph/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "7.0.system_test.ubuntu.upgrade_neutron_ceph_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_neutron_ceph_classic/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.upgrade_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_neutron_gre_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "7.0.system_test.ubuntu.upgrade_nova_cinder", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_nova_cinder/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.upgrade_nova_cinder_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_nova_cinder_classic/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.upgrade_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.upgrade_one_controller_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_one_controller_classic/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.upgrade_one_controller_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.upgrade_one_controller_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.system_test.ubuntu.zabbix", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.system_test.ubuntu.zabbix/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.test_all", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.test_all/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.test_staging_mirror", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.test_staging_mirror/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.testrail_reports", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.testrail_reports/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.ubuntu-proposed.test", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.ubuntu-proposed.test/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.ubuntu-proposed.ubuntu.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.ubuntu-proposed.ubuntu.bvt_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.ubuntu-proposed.ubuntu.smoke_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.ubuntu-proposed.ubuntu.smoke_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.ubuntu.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.ubuntu.bvt_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "7.0.ubuntu.smoke_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/7.0.ubuntu.smoke_neutron/"
+        }, 
+        {
+            "color": "disabled", 
+            "name": "8.0-kilo.all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.all/"
+        }, 
+        {
+            "color": "disabled", 
+            "name": "8.0-kilo.test_all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.test_all/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0-kilo.ubuntu.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.bvt_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0-kilo.ubuntu.smoke_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-kilo.ubuntu.smoke_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0-reporting.send_reports", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-reporting.send_reports/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0-test-reports-Testrail", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-test-reports-Testrail/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.all/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.all-Testrail", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.all-Testrail/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.centos.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.centos.bvt_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.nessus_security_scan", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.swarm.runner", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.runner/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.swarm.statistic", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.swarm.timer", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.backup_restore_master", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.backup_restore_master/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.bonding_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.bonding_ha/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.bonding_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.bonding_ha_one_controller/"
+        }, 
+        {
+            "color": "disabled", 
+            "name": "8.0.system_test.centos.bvt_ubuntu_bootstrap", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.bvt_ubuntu_bootstrap/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ceph_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ceph_ha_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.check_radosgw", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.check_radosgw/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.cic_maintenance_mode", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.cic_maintenance_mode/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.cluster_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.cluster_actions/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.cluster_actions_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.cluster_actions_ha/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.command_line", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.command_line/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.controller_replacement", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.controller_replacement/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.custom_hostname", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.custom_hostname/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.error_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.error_node_reinstallation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.filling_root", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.filling_root/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.fuel_master_migrate", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.fuel_master_migrate/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.fuel_plugin_reboot", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.fuel_plugin_reboot/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.fuel_plugin_vip_reservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.fuel_plugin_vip_reservation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.full_cluster_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.full_cluster_reinstallation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_destructive_ceph_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_destructive_ceph_neutron/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_destructive", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_destructive/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_destructive_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_destructive_2/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_destructive_gre", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_destructive_gre/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_destructive_vlan", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_destructive_vlan/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_destructive_vxlan", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_destructive_vxlan/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_public", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_public/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_tun", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_tun/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ha_neutron_tun_scale", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ha_neutron_tun_scale/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.huge_ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.huge_ha_neutron/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ironic_base", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ironic_base/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.jumbo_frames", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.jumbo_frames/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.known_issues", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.known_issues/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.logrotate", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.logrotate/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.multirole", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.multirole/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.network_templates", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.network_templates/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.offloading", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.offloading/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.one_controller_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.one_controller_actions/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.os_upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.os_upgrade/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.partition_preservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.partition_preservation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.plugins.fuel_plugin_example", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.plugins.fuel_plugin_example/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.plugins.thread_2_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.plugins.thread_2_separate_services/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.plugins.thread_db_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.plugins.thread_db_separate_services/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.plugins.thread_keystone_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.plugins.thread_keystone_separate_services/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.ready_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.ready_node_reinstallation/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.reduced_footprint", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.reduced_footprint/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.repeatable_image_based", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.repeatable_image_based/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.rollback_neutron_gre", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.rollback_neutron_gre/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.rollback_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.rollback_neutron_gre_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.rollback_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.rollback_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.services_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.services_ha/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.services_ha.ceilometer", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.services_ha.ceilometer/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.services_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.services_ha_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.setup", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.setup/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.thread_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.thread_1/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.thread_3", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.thread_3/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.thread_7", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.thread_7/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.thread_non_func_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.thread_non_func_1/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.thread_usb", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.thread_usb/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.upgrade_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_ha_one_controller/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.upgrade_ha_one_controller_delete_node", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_ha_one_controller_delete_node/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.upgrade_neutron_ceph", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_neutron_ceph/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.upgrade_neutron_ceph_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_neutron_ceph_classic/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.upgrade_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_neutron_gre_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.upgrade_nova_cinder", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_nova_cinder/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.centos.upgrade_nova_cinder_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_nova_cinder_classic/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.upgrade_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.upgrade_one_controller_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_one_controller_classic/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.upgrade_one_controller_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.upgrade_one_controller_neutron/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.centos.zabbix", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.centos.zabbix/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.backup_restore_master", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.backup_restore_master/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.bonding_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.bonding_ha/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.bonding_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.bonding_ha_one_controller/"
+        }, 
+        {
+            "color": "disabled", 
+            "name": "8.0.system_test.ubuntu.bvt_ubuntu_bootstrap", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.bvt_ubuntu_bootstrap/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.ceph_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ceph_ha_one_controller/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.check_radosgw", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.check_radosgw/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.cic_maintenance_mode", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.cic_maintenance_mode/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.cluster_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.cluster_actions/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.cluster_actions_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.cluster_actions_ha/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.command_line", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.command_line/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.controller_replacement", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.controller_replacement/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.custom_hostname", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.custom_hostname/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.error_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.error_node_reinstallation/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.filling_root", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.filling_root/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.fuel_master_migrate", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.fuel_master_migrate/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.fuel_plugin_reboot", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.fuel_plugin_reboot/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.fuel_plugin_vip_reservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.fuel_plugin_vip_reservation/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.full_cluster_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.full_cluster_reinstallation/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.ha_destructive_ceph_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_destructive_ceph_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_destructive", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_destructive/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_destructive_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_destructive_2/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_destructive_gre", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_destructive_gre/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_destructive_vlan", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_destructive_vlan/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_destructive_vxlan", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_destructive_vxlan/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_public", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_public/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_tun", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_tun/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.ha_neutron_tun_scale", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ha_neutron_tun_scale/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.huge_ha_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.huge_ha_neutron/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.ironic_base", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ironic_base/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.jumbo_frames", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.jumbo_frames/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.ubuntu.known_issues", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.known_issues/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.logrotate", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.logrotate/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.multirole", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.multirole/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.network_templates", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.network_templates/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.offloading", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.offloading/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.one_controller_actions", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.one_controller_actions/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "8.0.system_test.ubuntu.os_upgrade", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.os_upgrade/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.partition_preservation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.partition_preservation/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.plugins.fuel_plugin_example", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.plugins.fuel_plugin_example/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.plugins.thread_2_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.plugins.thread_2_separate_services/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.plugins.thread_db_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.plugins.thread_db_separate_services/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.plugins.thread_keystone_separate_services", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.plugins.thread_keystone_separate_services/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.ready_node_reinstallation", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.ready_node_reinstallation/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.reduced_footprint", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.reduced_footprint/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.repeatable_image_based", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.repeatable_image_based/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.rollback_neutron_gre", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.rollback_neutron_gre/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.rollback_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.rollback_neutron_gre_ha/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.rollback_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.rollback_one_controller/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.services_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.services_ha/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.services_ha.ceilometer", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.services_ha.ceilometer/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.services_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.services_ha_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.setup", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.setup/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.thread_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.thread_1/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.thread_3", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.thread_3/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.thread_7", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.thread_7/"
+        }, 
+        {
+            "color": "blue_anime", 
+            "name": "8.0.system_test.ubuntu.thread_non_func_1", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.thread_non_func_1/"
+        }, 
+        {
+            "color": "red_anime", 
+            "name": "8.0.system_test.ubuntu.thread_usb", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.thread_usb/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.ubuntu.upgrade_ha_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_ha_one_controller/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "8.0.system_test.ubuntu.upgrade_ha_one_controller_delete_node", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_ha_one_controller_delete_node/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "8.0.system_test.ubuntu.upgrade_neutron_ceph", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_neutron_ceph/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "8.0.system_test.ubuntu.upgrade_neutron_ceph_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_neutron_ceph_classic/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.upgrade_neutron_gre_ha", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_neutron_gre_ha/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.upgrade_nova_cinder", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_nova_cinder/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.upgrade_nova_cinder_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_nova_cinder_classic/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.upgrade_one_controller", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_one_controller/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.system_test.ubuntu.upgrade_one_controller_classic", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_one_controller_classic/"
+        }, 
+        {
+            "color": "red", 
+            "name": "8.0.system_test.ubuntu.upgrade_one_controller_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.system_test.ubuntu.upgrade_one_controller_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.test_all", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.test_all/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.testrail_reports", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.testrail_reports/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.ubuntu-proposed.test", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu-proposed.test/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.ubuntu-proposed.ubuntu.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu-proposed.ubuntu.bvt_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.ubuntu-proposed.ubuntu.smoke_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu-proposed.ubuntu.smoke_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.ubuntu.bvt_2", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "8.0.ubuntu.smoke_neutron", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.smoke_neutron/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "cleaner", 
+            "url": "https://product-ci.infra.mirantis.net/job/cleaner/"
+        }, 
+        {
+            "color": "red", 
+            "name": "cleaner-on-labels", 
+            "url": "https://product-ci.infra.mirantis.net/job/cleaner-on-labels/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "debug_session_12", 
+            "url": "https://product-ci.infra.mirantis.net/job/debug_session_12/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "debug_session_24", 
+            "url": "https://product-ci.infra.mirantis.net/job/debug_session_24/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "debug_session_4", 
+            "url": "https://product-ci.infra.mirantis.net/job/debug_session_4/"
+        }, 
+        {
+            "color": "aborted", 
+            "name": "debug_session_8", 
+            "url": "https://product-ci.infra.mirantis.net/job/debug_session_8/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "deploy_iso_on_cachers", 
+            "url": "https://product-ci.infra.mirantis.net/job/deploy_iso_on_cachers/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "docker-build", 
+            "url": "https://product-ci.infra.mirantis.net/job/docker-build/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "docker-deploy", 
+            "url": "https://product-ci.infra.mirantis.net/job/docker-deploy/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "docker-publish", 
+            "url": "https://product-ci.infra.mirantis.net/job/docker-publish/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "fuel_ci-status_reports", 
+            "url": "https://product-ci.infra.mirantis.net/job/fuel_ci-status_reports/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "iso_deployer", 
+            "url": "https://product-ci.infra.mirantis.net/job/iso_deployer/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "label_job_manager", 
+            "url": "https://product-ci.infra.mirantis.net/job/label_job_manager/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "prepare_env", 
+            "url": "https://product-ci.infra.mirantis.net/job/prepare_env/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "run_on_node", 
+            "url": "https://product-ci.infra.mirantis.net/job/run_on_node/"
+        }, 
+        {
+            "color": "blue", 
+            "name": "trigger-external-events", 
+            "url": "https://product-ci.infra.mirantis.net/job/trigger-external-events/"
+        }, 
+        {
+            "color": "red", 
+            "name": "verify-slave-label", 
+            "url": "https://product-ci.infra.mirantis.net/job/verify-slave-label/"
+        }, 
+        {
+            "color": "notbuilt", 
+            "name": "verify-slave-on-label", 
+            "url": "https://product-ci.infra.mirantis.net/job/verify-slave-on-label/"
+        }
+    ], 
+    "mode": "NORMAL", 
+    "nodeDescription": "the master Jenkins node", 
+    "nodeName": "", 
+    "numExecutors": 0, 
+    "overallLoad": {}, 
+    "primaryView": {
+        "name": "8.0", 
+        "url": "https://product-ci.infra.mirantis.net/"
+    }, 
+    "quietingDown": false, 
+    "slaveAgentPort": 0, 
+    "unlabeledLoad": {}, 
+    "useCrumbs": false, 
+    "useSecurity": true, 
+    "views": [
+        {
+            "name": "6.1_swarm", 
+            "url": "https://product-ci.infra.mirantis.net/view/6.1_swarm/"
+        }, 
+        {
+            "name": "7.0", 
+            "url": "https://product-ci.infra.mirantis.net/view/7.0/"
+        }, 
+        {
+            "name": "7.0_swarm", 
+            "url": "https://product-ci.infra.mirantis.net/view/7.0_swarm/"
+        }, 
+        {
+            "name": "8.0", 
+            "url": "https://product-ci.infra.mirantis.net/"
+        }, 
+        {
+            "name": "8.0_swarm", 
+            "url": "https://product-ci.infra.mirantis.net/view/8.0_swarm/"
+        }, 
+        {
+            "name": "All", 
+            "url": "https://product-ci.infra.mirantis.net/view/All/"
+        }, 
+        {
+            "name": "debug", 
+            "url": "https://product-ci.infra.mirantis.net/view/debug/"
+        }, 
+        {
+            "name": "tools", 
+            "url": "https://product-ci.infra.mirantis.net/view/tools/"
+        }, 
+        {
+            "name": "ubuntu-proposed", 
+            "url": "https://product-ci.infra.mirantis.net/view/ubuntu-proposed/"
+        }
+    ]
+}

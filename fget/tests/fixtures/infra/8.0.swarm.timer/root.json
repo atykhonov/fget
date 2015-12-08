@@ -1,0 +1,309 @@
+{
+    "actions": [
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": true, 
+    "builds": [
+        {
+            "number": 61, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/61/"
+        }, 
+        {
+            "number": 60, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/60/"
+        }, 
+        {
+            "number": 59, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/59/"
+        }, 
+        {
+            "number": 58, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/58/"
+        }, 
+        {
+            "number": 57, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/57/"
+        }, 
+        {
+            "number": 56, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/56/"
+        }, 
+        {
+            "number": 55, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/55/"
+        }, 
+        {
+            "number": 54, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/54/"
+        }, 
+        {
+            "number": 53, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/53/"
+        }, 
+        {
+            "number": 52, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/52/"
+        }, 
+        {
+            "number": 51, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/51/"
+        }, 
+        {
+            "number": 50, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/50/"
+        }, 
+        {
+            "number": 49, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/49/"
+        }, 
+        {
+            "number": 48, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/48/"
+        }, 
+        {
+            "number": 47, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/47/"
+        }, 
+        {
+            "number": 46, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/46/"
+        }, 
+        {
+            "number": 45, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/45/"
+        }, 
+        {
+            "number": 44, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/44/"
+        }, 
+        {
+            "number": 43, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/43/"
+        }, 
+        {
+            "number": 42, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/42/"
+        }, 
+        {
+            "number": 41, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/41/"
+        }, 
+        {
+            "number": 40, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/40/"
+        }, 
+        {
+            "number": 39, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/39/"
+        }, 
+        {
+            "number": 38, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/38/"
+        }, 
+        {
+            "number": 37, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/37/"
+        }, 
+        {
+            "number": 36, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/36/"
+        }, 
+        {
+            "number": 35, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/35/"
+        }, 
+        {
+            "number": 34, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/34/"
+        }, 
+        {
+            "number": 33, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/33/"
+        }, 
+        {
+            "number": 32, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/32/"
+        }, 
+        {
+            "number": 31, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/31/"
+        }, 
+        {
+            "number": 30, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/30/"
+        }, 
+        {
+            "number": 29, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/29/"
+        }, 
+        {
+            "number": 28, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/28/"
+        }, 
+        {
+            "number": 27, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/27/"
+        }, 
+        {
+            "number": 26, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/26/"
+        }, 
+        {
+            "number": 25, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/25/"
+        }, 
+        {
+            "number": 24, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/24/"
+        }, 
+        {
+            "number": 23, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/23/"
+        }, 
+        {
+            "number": 22, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/22/"
+        }, 
+        {
+            "number": 21, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/21/"
+        }, 
+        {
+            "number": 20, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/20/"
+        }, 
+        {
+            "number": 19, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/19/"
+        }, 
+        {
+            "number": 18, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/18/"
+        }, 
+        {
+            "number": 17, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/17/"
+        }, 
+        {
+            "number": 16, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/16/"
+        }, 
+        {
+            "number": 15, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/15/"
+        }, 
+        {
+            "number": 14, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/14/"
+        }, 
+        {
+            "number": 13, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/13/"
+        }, 
+        {
+            "number": 12, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/12/"
+        }, 
+        {
+            "number": 11, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/11/"
+        }, 
+        {
+            "number": 10, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/10/"
+        }, 
+        {
+            "number": 9, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/9/"
+        }, 
+        {
+            "number": 8, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/8/"
+        }, 
+        {
+            "number": 7, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/7/"
+        }, 
+        {
+            "number": 6, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/6/"
+        }, 
+        {
+            "number": 5, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/5/"
+        }, 
+        {
+            "number": 4, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/4/"
+        }, 
+        {
+            "number": 3, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/3/"
+        }, 
+        {
+            "number": 2, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/2/"
+        }, 
+        {
+            "number": 1, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/1/"
+        }
+    ], 
+    "color": "blue", 
+    "concurrentBuild": false, 
+    "description": "Trigger 8.0.swarm.runner with latest stable iso build\n<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0.swarm.timer", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [
+        {
+            "color": "red_anime", 
+            "name": "8.0.swarm.runner", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.runner/"
+        }
+    ], 
+    "firstBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/1/"
+    }, 
+    "healthReport": [
+        {
+            "description": "Build stability: No recent builds failed.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }
+    ], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": {
+        "number": 61, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/61/"
+    }, 
+    "lastCompletedBuild": {
+        "number": 61, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/61/"
+    }, 
+    "lastFailedBuild": null, 
+    "lastStableBuild": {
+        "number": 61, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/61/"
+    }, 
+    "lastSuccessfulBuild": {
+        "number": 61, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/61/"
+    }, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": null, 
+    "name": "8.0.swarm.timer", 
+    "nextBuildNumber": 62, 
+    "property": [
+        {}
+    ], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.timer/"
+}

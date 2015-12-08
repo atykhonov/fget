@@ -1,0 +1,343 @@
+{
+    "actions": [
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "value": "nessus"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "Ubuntu"
+                    }, 
+                    "description": "", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "true"
+                    }, 
+                    "description": "", 
+                    "name": "NEUTRON_ENABLE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "/home/jenkins/venv-nailgun-tests-2.9"
+                    }, 
+                    "description": "", 
+                    "name": "VENV_PATH", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "latest-stable"
+                    }, 
+                    "description": "'latest' - latest available; 'latest-stable' - mirror from successful run of 8.0.test_all job; 'ubuntu-2015-01-01-030500'\n", 
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "If empty, it will be set automatically based on UBUNTU_MIRROR_ID value.\n<p>\ndeb http://../ubuntu trusty main universe multiverse|deb http://../ubuntu trusty-updates main universe multiverse|deb http://../ubuntu trusty-security main universe multiverse|deb http://../ubuntu trusty-proposed main universe multiverse\n", 
+                    "name": "MIRROR_UBUNTU", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": ""
+                    }, 
+                    "description": "deb http://... trusty main", 
+                    "name": "EXTRA_DEB_REPOS", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "1052"
+                    }, 
+                    "description": "", 
+                    "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "8.0.nessus_security_scan"
+                    }, 
+                    "description": "Define env prefix name. This parameter should not be changed", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "/var/lib/libvirt/images/nessus.qcow2"
+                    }, 
+                    "description": "", 
+                    "name": "NESSUS_IMAGE_PATH", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "root"
+                    }, 
+                    "description": "", 
+                    "name": "NESSUS_USERNAME", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "r00tme"
+                    }, 
+                    "description": "", 
+                    "name": "NESSUS_PASSWORD", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "value": "True"
+                    }, 
+                    "description": "", 
+                    "name": "SECURITY_TEST", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "buildable": true, 
+    "builds": [
+        {
+            "number": 9, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/9/"
+        }, 
+        {
+            "number": 8, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/8/"
+        }, 
+        {
+            "number": 7, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/7/"
+        }, 
+        {
+            "number": 6, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/6/"
+        }, 
+        {
+            "number": 5, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/5/"
+        }, 
+        {
+            "number": 4, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/4/"
+        }, 
+        {
+            "number": 3, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/3/"
+        }, 
+        {
+            "number": 2, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/2/"
+        }, 
+        {
+            "number": 1, 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/1/"
+        }
+    ], 
+    "color": "blue", 
+    "concurrentBuild": true, 
+    "description": "<p>Nessus security scan</p>\n<pre style=\"font-size: 10px\">\nCase: nessus\nhttps://blueprints.launchpad.net/fuel/+spec/security-scanning-nessus\n</pre>\n\n<p>\n  <b>Ownership:</b> Issues with this job are tracked by QA team.\n<p>\n  <b>Contacts:</b> fuel-ci, aheczko, dkalashnik, fuel-qa\n<!-- Managed by Jenkins Job Builder -->", 
+    "displayName": "8.0.nessus_security_scan", 
+    "displayNameOrNull": null, 
+    "downstreamProjects": [
+        {
+            "color": "blue_anime", 
+            "name": "8.0-test-reports-Testrail", 
+            "url": "https://product-ci.infra.mirantis.net/job/8.0-test-reports-Testrail/"
+        }
+    ], 
+    "firstBuild": {
+        "number": 1, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/1/"
+    }, 
+    "healthReport": [
+        {
+            "description": "Build stability: 2 out of the last 5 builds failed.", 
+            "iconClassName": "icon-health-40to59", 
+            "iconUrl": "health-40to59.png", 
+            "score": 60
+        }, 
+        {
+            "description": "Test Result: 0 tests failing out of a total of 7 tests.", 
+            "iconClassName": "icon-health-80plus", 
+            "iconUrl": "health-80plus.png", 
+            "score": 100
+        }
+    ], 
+    "inQueue": false, 
+    "keepDependencies": false, 
+    "lastBuild": {
+        "number": 9, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/9/"
+    }, 
+    "lastCompletedBuild": {
+        "number": 9, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/9/"
+    }, 
+    "lastFailedBuild": {
+        "number": 7, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/7/"
+    }, 
+    "lastStableBuild": {
+        "number": 9, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/9/"
+    }, 
+    "lastSuccessfulBuild": {
+        "number": 9, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/9/"
+    }, 
+    "lastUnstableBuild": null, 
+    "lastUnsuccessfulBuild": {
+        "number": 7, 
+        "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/7/"
+    }, 
+    "name": "8.0.nessus_security_scan", 
+    "nextBuildNumber": 10, 
+    "property": [
+        {}, 
+        {
+            "parameterDefinitions": [
+                {
+                    "defaultParameterValue": {
+                        "name": "TEST_GROUP", 
+                        "value": "nessus"
+                    }, 
+                    "description": "", 
+                    "name": "TEST_GROUP", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "OPENSTACK_RELEASE", 
+                        "value": "Ubuntu"
+                    }, 
+                    "description": "", 
+                    "name": "OPENSTACK_RELEASE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "NEUTRON_ENABLE", 
+                        "value": "true"
+                    }, 
+                    "description": "", 
+                    "name": "NEUTRON_ENABLE", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "VENV_PATH", 
+                        "value": "/home/jenkins/venv-nailgun-tests-2.9"
+                    }, 
+                    "description": "", 
+                    "name": "VENV_PATH", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "UBUNTU_MIRROR_ID", 
+                        "value": "latest-stable"
+                    }, 
+                    "description": "'latest' - latest available; 'latest-stable' - mirror from successful run of 8.0.test_all job; 'ubuntu-2015-01-01-030500'\n", 
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "MIRROR_UBUNTU", 
+                        "value": ""
+                    }, 
+                    "description": "If empty, it will be set automatically based on UBUNTU_MIRROR_ID value.\n<p>\ndeb http://../ubuntu trusty main universe multiverse|deb http://../ubuntu trusty-updates main universe multiverse|deb http://../ubuntu trusty-security main universe multiverse|deb http://../ubuntu trusty-proposed main universe multiverse\n", 
+                    "name": "MIRROR_UBUNTU", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "EXTRA_DEB_REPOS", 
+                        "value": ""
+                    }, 
+                    "description": "deb http://... trusty main", 
+                    "name": "EXTRA_DEB_REPOS", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                        "value": "1052"
+                    }, 
+                    "description": "", 
+                    "name": "EXTRA_DEB_REPOS_PRIORITY", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "ENV_PREFIX", 
+                        "value": "8.0.nessus_security_scan"
+                    }, 
+                    "description": "Define env prefix name. This parameter should not be changed", 
+                    "name": "ENV_PREFIX", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "NESSUS_IMAGE_PATH", 
+                        "value": "/var/lib/libvirt/images/nessus.qcow2"
+                    }, 
+                    "description": "", 
+                    "name": "NESSUS_IMAGE_PATH", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "NESSUS_USERNAME", 
+                        "value": "root"
+                    }, 
+                    "description": "", 
+                    "name": "NESSUS_USERNAME", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "NESSUS_PASSWORD", 
+                        "value": "r00tme"
+                    }, 
+                    "description": "", 
+                    "name": "NESSUS_PASSWORD", 
+                    "type": "StringParameterDefinition"
+                }, 
+                {
+                    "defaultParameterValue": {
+                        "name": "SECURITY_TEST", 
+                        "value": "True"
+                    }, 
+                    "description": "", 
+                    "name": "SECURITY_TEST", 
+                    "type": "StringParameterDefinition"
+                }
+            ]
+        }
+    ], 
+    "queueItem": null, 
+    "scm": {}, 
+    "upstreamProjects": [], 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.nessus_security_scan/"
+}

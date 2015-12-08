@@ -1,0 +1,212 @@
+{
+    "actions": [
+        {}, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by Naginator after build #32 failure"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 33, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                        "branch": [
+                            {
+                                "SHA1": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                        "branch": [
+                            {
+                                "SHA1": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                "branch": [
+                    {
+                        "SHA1": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv07-srt.srt.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "fuelweb_test/tests/tests_separate_services/test_separate_rabbitmq.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_multiroles.py", 
+                    "fuelweb_test/tests/tests_strength/test_neutron_base.py", 
+                    "fuelweb_test/tests/tests_strength/test_failover_base.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_keystone.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_horizon.py", 
+                    "fuelweb_test/tests/tests_separate_services/test_separate_db.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+                    "fullName": "tleontovich"
+                }, 
+                "comment": "Change should fail value\n\nFor tests where we destroy controller change\nshould fail value  according to test for\nhaproxy backend should fail\n\nChange-Id: I7960e701767dc2bed7f215ca847b3097dc865183\nCloses-Bug: #1514755\n", 
+                "commitId": "d0165ed04549f52155815a313c01aa7dbf79d2fe", 
+                "date": "2015-11-11T12:26:49+0000 +0200", 
+                "id": "d0165ed04549f52155815a313c01aa7dbf79d2fe", 
+                "msg": "Change should fail value", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_rabbitmq.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_multiroles.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_horizon.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_failover_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_keystone.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_separate_services/test_separate_db.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/tests_strength/test_neutron_base.py"
+                    }
+                ], 
+                "timestamp": 1447244809000
+            }, 
+            {
+                "affectedPaths": [
+                    "system_test/tests/strength/strength_base.py", 
+                    "system_test/tests/test_deploy_check_rados.py", 
+                    "doc/system_tests.rst", 
+                    "system_test/tests/strength/strenght_base.py", 
+                    "system_test/tests/actions_base.py", 
+                    "doc/index.rst", 
+                    "system_test/helpers/utils.py"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+                    "fullName": "mstrukov"
+                }, 
+                "comment": "Hotfix for fuel-qa docs to apply zero-errors in verify-fuel-qa-docs job\n\nChange-Id: Ic3baa6b56aacaea3c01682f5410abf2ef8b34693\nRelated-Bug: #1515234\n", 
+                "commitId": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                "date": "2015-11-11T13:42:47+0000 +0200", 
+                "id": "cbb12596c5d30a3ba9a1663ddb49d354bba52243", 
+                "msg": "Hotfix for fuel-qa docs to apply zero-errors in verify-fuel-qa-docs job", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/test_deploy_check_rados.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "doc/system_tests.rst"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests/actions_base.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "doc/index.rst"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/helpers/utils.py"
+                    }, 
+                    {
+                        "editType": "add", 
+                        "file": "system_test/tests/strength/strength_base.py"
+                    }, 
+                    {
+                        "editType": "delete", 
+                        "file": "system_test/tests/strength/strenght_base.py"
+                    }
+                ], 
+                "timestamp": 1447249367000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/apanchenko", 
+            "fullName": "apanchenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/astepanov", 
+            "fullName": "astepanov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dtyzhnenko", 
+            "fullName": "dtyzhnenko"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/mstrukov", 
+            "fullName": "mstrukov"
+        }, 
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/tleontovich", 
+            "fullName": "tleontovich"
+        }
+    ], 
+    "description": "", 
+    "displayName": "#33", 
+    "duration": 760295, 
+    "estimatedDuration": 1881912, 
+    "executor": null, 
+    "fullDisplayName": "8.0.swarm.statistic #33", 
+    "id": "33", 
+    "keepLog": false, 
+    "number": 33, 
+    "queueId": 11951, 
+    "result": "FAILURE", 
+    "timestamp": 1447253375486, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.swarm.statistic/33/"
+}

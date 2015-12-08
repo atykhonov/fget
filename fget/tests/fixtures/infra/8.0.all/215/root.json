@@ -1,0 +1,96 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by timer"
+                }
+            ]
+        }, 
+        {
+            "parameters": [
+                {
+                    "name": "deep_clean", 
+                    "value": "true"
+                }, 
+                {
+                    "name": "make_args", 
+                    "value": ""
+                }, 
+                {
+                    "name": "trigger_community_build", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 215, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "743a8df03579d0d622b09e4d786f8435279840fd", 
+                        "branch": [
+                            {
+                                "SHA1": "743a8df03579d0d622b09e4d786f8435279840fd", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "743a8df03579d0d622b09e4d786f8435279840fd", 
+                        "branch": [
+                            {
+                                "SHA1": "743a8df03579d0d622b09e4d786f8435279840fd", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "743a8df03579d0d622b09e4d786f8435279840fd", 
+                "branch": [
+                    {
+                        "SHA1": "743a8df03579d0d622b09e4d786f8435279840fd", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-main.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}, 
+        {}
+    ], 
+    "artifacts": [], 
+    "building": false, 
+    "builtOn": "srv89-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [], 
+        "kind": "git"
+    }, 
+    "culprits": [], 
+    "description": "", 
+    "displayName": "#215", 
+    "duration": 313705, 
+    "estimatedDuration": 1491111, 
+    "executor": null, 
+    "fullDisplayName": "8.0.all #215", 
+    "id": "215", 
+    "keepLog": false, 
+    "number": 215, 
+    "queueId": 17444, 
+    "result": "FAILURE", 
+    "timestamp": 1448566920535, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.all/215/"
+}

@@ -1,0 +1,193 @@
+{
+    "actions": [
+        {
+            "parameters": [
+                {
+                    "name": "MAGNET_LINK", 
+                    "value": "magnet:?xt=urn:btih:2f0eec1302b1a75dcb1777fdac7f5c192aafe3da&dn=fuel-8.0-220-2015-11-27%5F19-42-00.iso&tr=http%3A%2F%2Ftracker01-bud.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-mnv.infra.mirantis.net%3A8080%2Fannounce&tr=http%3A%2F%2Ftracker01-msk.infra.mirantis.net%3A8080%2Fannounce&ws=http%3A%2F%2Fsrv89-bud.infra.mirantis.net%2Ffuelweb-iso%2Ffuel-8.0-220-2015-11-27%5F19-42-00.iso"
+                }, 
+                {
+                    "name": "OPENSTACK_RELEASE", 
+                    "value": "Ubuntu"
+                }, 
+                {
+                    "name": "TEST_GROUP", 
+                    "value": "bvt_2"
+                }, 
+                {
+                    "name": "ENV_PREFIX", 
+                    "value": "8.0.main.Ubuntu.bvt_2"
+                }, 
+                {
+                    "name": "BUILD_MIRROR_URL", 
+                    "value": ""
+                }, 
+                {
+                    "name": "UBUNTU_MIRROR_ID", 
+                    "value": "ubuntu-2015-11-27-170158"
+                }
+            ]
+        }, 
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by upstream project \"8.0.test_all\" build number 207", 
+                    "upstreamBuild": 207, 
+                    "upstreamProject": "8.0.test_all", 
+                    "upstreamUrl": "job/8.0.test_all/"
+                }
+            ]
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "buildsByBranchName": {
+                "refs/remotes/origin/master": {
+                    "buildNumber": 207, 
+                    "buildResult": null, 
+                    "marked": {
+                        "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                        "branch": [
+                            {
+                                "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }, 
+                    "revision": {
+                        "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                        "branch": [
+                            {
+                                "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                                "name": "refs/remotes/origin/master"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "lastBuiltRevision": {
+                "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                "branch": [
+                    {
+                        "SHA1": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                        "name": "refs/remotes/origin/master"
+                    }
+                ]
+            }, 
+            "remoteUrls": [
+                "https://git.openstack.org/openstack/fuel-qa.git"
+            ], 
+            "scmName": ""
+        }, 
+        {}, 
+        {}, 
+        {}, 
+        {
+            "failCount": 0, 
+            "skipCount": 0, 
+            "totalCount": 3, 
+            "urlName": "testReport"
+        }, 
+        {}
+    ], 
+    "artifacts": [
+        {
+            "displayPath": "packages.json", 
+            "fileName": "packages.json", 
+            "relativePath": "logs/packages.json"
+        }, 
+        {
+            "displayPath": "pass_ceph_rados_gw-fuel-snapshot-2015-11-27_22-06-16.tar.xz", 
+            "fileName": "pass_ceph_rados_gw-fuel-snapshot-2015-11-27_22-06-16.tar.xz", 
+            "relativePath": "logs/pass_ceph_rados_gw-fuel-snapshot-2015-11-27_22-06-16.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_prepare_release-fuel-snapshot-2015-11-27_20-33-59.tar.xz", 
+            "fileName": "pass_prepare_release-fuel-snapshot-2015-11-27_20-33-59.tar.xz", 
+            "relativePath": "logs/pass_prepare_release-fuel-snapshot-2015-11-27_20-33-59.tar.xz"
+        }, 
+        {
+            "displayPath": "pass_setup_master-fuel-snapshot-2015-11-27_20-33-20.tar.xz", 
+            "fileName": "pass_setup_master-fuel-snapshot-2015-11-27_20-33-20.tar.xz", 
+            "relativePath": "logs/pass_setup_master-fuel-snapshot-2015-11-27_20-33-20.tar.xz"
+        }, 
+        {
+            "displayPath": "sys_test.log", 
+            "fileName": "sys_test.log", 
+            "relativePath": "logs/sys_test.log"
+        }, 
+        {
+            "displayPath": "timestat_20151127.yaml", 
+            "fileName": "timestat_20151127.yaml", 
+            "relativePath": "logs/timestat_20151127.yaml"
+        }, 
+        {
+            "displayPath": "nosetests.xml", 
+            "fileName": "nosetests.xml", 
+            "relativePath": "nosetests.xml"
+        }
+    ], 
+    "building": false, 
+    "builtOn": "srv41-bud.infra.mirantis.net", 
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml", 
+                    "fuelweb_test/tests/test_admin_node.py", 
+                    "fuelweb_test/run_tests.py", 
+                    "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml"
+                ], 
+                "author": {
+                    "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+                    "fullName": "dkruglov"
+                }, 
+                "comment": "Correct custom group name of Fuel master migration test\n\n- Correct custom group name of the test (as it was refactored\nto use template based runner) to have the existing CI job\nbeing able to pick and run the moved test.\n- Remove the inital version of the test.\n\nChange-Id: If5bde759d39f2779ea0c9e4b74c1ab94b91774ff\nPartial-bug: #1512677\n", 
+                "commitId": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                "date": "2015-11-27T12:55:14+0000 +0000", 
+                "id": "78109fed9e61e0d7991ecdf33395127a2719f30d", 
+                "msg": "Correct custom group name of Fuel master migration test", 
+                "paths": [
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/tests/test_admin_node.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronVLAN.yaml"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "fuelweb_test/run_tests.py"
+                    }, 
+                    {
+                        "editType": "edit", 
+                        "file": "system_test/tests_templates/tests_configs/simple/single/1ctrl_1comp_neutronTUN.yaml"
+                    }
+                ], 
+                "timestamp": 1448628914000
+            }
+        ], 
+        "kind": "git"
+    }, 
+    "culprits": [
+        {
+            "absoluteUrl": "https://product-ci.infra.mirantis.net/user/dkruglov", 
+            "fullName": "dkruglov"
+        }
+    ], 
+    "description": null, 
+    "displayName": "#207", 
+    "duration": 7405018, 
+    "estimatedDuration": 8594353, 
+    "executor": null, 
+    "fullDisplayName": "8.0.ubuntu.bvt_2 #207", 
+    "id": "207", 
+    "keepLog": false, 
+    "number": 207, 
+    "queueId": 17859, 
+    "result": "SUCCESS", 
+    "timestamp": 1448654771355, 
+    "url": "https://product-ci.infra.mirantis.net/job/8.0.ubuntu.bvt_2/207/"
+}
