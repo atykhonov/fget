@@ -11,6 +11,9 @@ class Job(Resource):
         super(Job, self).__init__(url)
         self.name = job_name
 
+    def get_name(self):
+        return self.name
+
     def get_builds(self):
         if not self.builds:
             self.builds = [Build(build['url'], build['number'])

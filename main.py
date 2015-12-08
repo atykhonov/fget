@@ -1,71 +1,25 @@
 #!/usr/bin/env python
 
 import glob
-import pkg_resources
 import os
 import sys
-import yaml
 
+from fget.settings import CachedSettings
 from fget.resource.root import Root
 from fget.parser import ArgParser
 from fget.utils import download_iso, fgetprint
 
 
-def main():
-    settings_filename = 'fget.yaml'
-    cached_filename = 'fget.jobs'
+def main(job, build=None, iso=False, author=None):
 
-    cache_dir = os.path.expanduser(os.path.join('~', '.cache', 'fget'))
-    cached_settings_file = os.path.join(cache_dir, cached_filename)
-
-    cached_settings = {}
-    if not os.path.isfile(cached_settings_file):
-
-        fgetprint('Initiating. Please wait...')
-
-        settings_file = pkg_resources.resource_filename('fget', settings_filename)
-        with open(settings_file) as f:
-            settings = yaml.load(f.read())
-
-        for url in settings.get('JENKINS_URLS', []):
-            url = url.strip('/')
-            fgetprint('Retrieving jobs from {0}'.format(url))
-            root_resource = Root(url)
-            for job in root_resource.get_jobs():
-                if url not in cached_settings:
-                    cached_settings[url] = []
-                cached_settings[url].append(str(job['name']))
-        with open(cached_settings_file, 'w') as f:
-            for key in cached_settings.keys():
-                f.write(key + '\n')
-                for value in cached_settings[key]:
-                    f.write(value + '\n')
-
-        fgetprint('Initiating. Finished.')
-    else:
-        with open(cached_settings_file) as f:
-            for line in f:
-                if line.startswith('http://'):
-                    url = line.strip()
-                    cached_settings[url] = []
-                    continue
-                cached_settings[url].append(line.strip())
-
-    jobs = []
-    jobs += [value for _, value in cached_settings.items()]
-    jobs = [job + ' ' for job in jobs[0]]
-
-    parser = ArgParser(jobs)
-    args = parser.parse_args()
-
-    artifacts_dir = os.path.join(cache_dir, args.job)
+    artifacts_dir = os.path.join(cache_dir, job)
 
     if not os.path.isdir(artifacts_dir):
         os.makedirs(artifacts_dir)
 
     url = None
-    for u, jobs in cached_settings.items():
-        if args.job in jobs:
+    for u, jobs in settings.get_settings().items():
+        if job in jobs:
             url = u
             break
     else:
@@ -74,11 +28,11 @@ def main():
 
     build = None
     root_resource = Root(url)
-    job = root_resource.get_job(args.job)
-    if args.author:
-        build = job.get_build_by_author(args.author)
-    elif args.build:
-        build = job.get_build(args.build)
+    job = root_resource.get_job(job)
+    if author:
+        build = job.get_build_by_author(author)
+    elif build:
+        build = job.get_build(build)
     else:
         build = job.get_last_successful_build()
 
@@ -105,7 +59,7 @@ def main():
         fgetprint('No artifacts were found', error=True)
         sys.exit(1)
 
-    if args.iso:
+    if iso:
         glob_path = os.path.join(build_dir, '*.iso.data.txt')
         for data_file in glob.glob(glob_path):
             with open(data_file) as f:
@@ -120,4 +74,15 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+
+    cache_dir = os.path.expanduser(os.path.join('~', '.cache', 'fget'))
+    settings = CachedSettings(cache_dir)
+
+    jobs = []
+    jobs += [value for _, value in settings.get_settings().items()]
+    jobs = [job + ' ' for job in jobs[0]]
+
+    parser = ArgParser(jobs)
+    args = parser.parse_args()
+
+    main(job, build=None, iso=False, author=None)
